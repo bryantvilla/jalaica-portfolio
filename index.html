@@ -14,8 +14,55 @@
     <script src="assets/js/main.js" defer></script>
 </head>
 <body>
-    <!-- Floating cherry blossom petals -->
+    <!-- Floating ambient tropical petals -->
     <div class="petals-container" aria-hidden="true" id="petals"></div>
+
+    <!-- Subtle Background Watermark (Isolated strictly to canvas background) -->
+    <div class="bg-backdrop-art" aria-hidden="true">
+        <svg class="bg-sunburst" viewBox="0 0 160 160" xmlns="http://www.w3.org/2000/svg" shape-rendering="crispEdges">
+            <!-- Center Disc -->
+            <rect x="70" y="70" width="20" height="20" fill="currentColor" />
+            <rect x="66" y="74" width="28" height="12" fill="currentColor" />
+            <rect x="74" y="66" width="12" height="28" fill="currentColor" />
+            <!-- 8 Ray Clusters (Central ray flanked by 2 smaller rays) -->
+            <!-- North -->
+            <rect x="78" y="44" width="4" height="20" fill="currentColor" />
+            <rect x="74" y="50" width="3" height="12" fill="currentColor" />
+            <rect x="83" y="50" width="3" height="12" fill="currentColor" />
+            <!-- South -->
+            <rect x="78" y="96" width="4" height="20" fill="currentColor" />
+            <rect x="74" y="98" width="3" height="12" fill="currentColor" />
+            <rect x="83" y="98" width="3" height="12" fill="currentColor" />
+            <!-- West -->
+            <rect x="44" y="78" width="20" height="4" fill="currentColor" />
+            <rect x="50" y="74" width="12" height="3" fill="currentColor" />
+            <rect x="50" y="83" width="12" height="3" fill="currentColor" />
+            <!-- East -->
+            <rect x="96" y="78" width="20" height="4" fill="currentColor" />
+            <rect x="98" y="74" width="12" height="3" fill="currentColor" />
+            <rect x="98" y="83" width="12" height="3" fill="currentColor" />
+            <!-- North-West -->
+            <rect x="52" y="52" width="12" height="12" fill="currentColor" />
+            <rect x="48" y="58" width="4" height="4" fill="currentColor" />
+            <rect x="58" y="48" width="4" height="4" fill="currentColor" />
+            <!-- North-East -->
+            <rect x="96" y="52" width="12" height="12" fill="currentColor" />
+            <rect x="108" y="58" width="4" height="4" fill="currentColor" />
+            <rect x="98" y="48" width="4" height="4" fill="currentColor" />
+            <!-- South-West -->
+            <rect x="52" y="96" width="12" height="12" fill="currentColor" />
+            <rect x="48" y="98" width="4" height="4" fill="currentColor" />
+            <rect x="58" y="108" width="4" height="4" fill="currentColor" />
+            <!-- South-East -->
+            <rect x="96" y="96" width="12" height="12" fill="currentColor" />
+            <rect x="108" y="98" width="4" height="4" fill="currentColor" />
+            <rect x="98" y="108" width="4" height="4" fill="currentColor" />
+            <!-- 3 Corner Pixel Stars -->
+            <rect x="24" y="24" width="6" height="6" fill="currentColor" />
+            <rect x="130" y="24" width="6" height="6" fill="currentColor" />
+            <rect x="77" y="136" width="6" height="6" fill="currentColor" />
+        </svg>
+    </div>
 
     <!-- Pixel Art Icon Symbol Sprite (Full-Color Stardew Valley Palette) -->
     <svg xmlns="http://www.w3.org/2000/svg" style="display:none;" aria-hidden="true" shape-rendering="crispEdges">
@@ -396,16 +443,51 @@
                 <rect x="12" y="3" width="1" height="1" fill="#ffffff"/>
             </symbol>
 
-            <!-- 22. Cebu Golden Carabao Mango -->
+            <!-- 22. Philippine Carabao Mango (Cebu Golden Mango) -->
             <symbol id="px-mango" viewBox="0 0 16 16">
-                <rect x="7" y="1" width="2" height="3" fill="#5c2d16"/>
-                <rect x="9" y="1" width="3" height="2" fill="#15803d"/>
-                <rect x="10" y="0" width="3" height="2" fill="#22c55e"/>
-                <path d="M6 3h4v2h2v2h2v4h-2v2h-2v1H6v-1H4v-2H3V7h1V5h2V3z" fill="#b45309"/>
-                <rect x="5" y="4" width="6" height="7" fill="#f59e0b"/>
-                <rect x="4" y="6" width="7" height="4" fill="#fbbf24"/>
-                <rect x="5" y="5" width="4" height="4" fill="#fde047"/>
-                <rect x="6" y="6" width="2" height="2" fill="#ffffff"/>
+                <!-- Slender Wood Stem -->
+                <rect x="6" y="1" width="1" height="2" fill="#452312"/>
+                <rect x="7" y="2" width="1" height="1" fill="#78350f"/>
+                <!-- Tropical Mango Leaf with vein -->
+                <rect x="9" y="0" width="3" height="1" fill="#4ade80"/>
+                <rect x="8" y="1" width="4" height="1" fill="#16a34a"/>
+                <rect x="7" y="2" width="3" height="1" fill="#15803d"/>
+                <rect x="9" y="1" width="2" height="1" fill="#86efac"/>
+
+                <!-- Philippine Carabao Mango Silhouette (Kidney / S-curve shape) -->
+                <rect x="5" y="3" width="4" height="1" fill="#92400e"/>
+                <rect x="4" y="4" width="6" height="1" fill="#b45309"/>
+                <rect x="3" y="5" width="8" height="1" fill="#b45309"/>
+                <rect x="3" y="6" width="9" height="2" fill="#b45309"/>
+                <rect x="4" y="8" width="8" height="1" fill="#b45309"/>
+                <rect x="4" y="9" width="7" height="1" fill="#b45309"/>
+                <rect x="5" y="10" width="5" height="1" fill="#b45309"/>
+                <rect x="5" y="11" width="4" height="1" fill="#b45309"/>
+                <rect x="6" y="12" width="3" height="1" fill="#b45309"/>
+                <rect x="7" y="13" width="2" height="1" fill="#92400e"/>
+
+                <!-- Golden Ripe Mango Flesh (Layer 1) -->
+                <rect x="5" y="4" width="4" height="1" fill="#f59e0b"/>
+                <rect x="4" y="5" width="6" height="1" fill="#f59e0b"/>
+                <rect x="4" y="6" width="7" height="2" fill="#f59e0b"/>
+                <rect x="5" y="8" width="6" height="1" fill="#f59e0b"/>
+                <rect x="5" y="9" width="5" height="1" fill="#f59e0b"/>
+                <rect x="6" y="10" width="3" height="1" fill="#f59e0b"/>
+                <rect x="6" y="11" width="2" height="1" fill="#f59e0b"/>
+                <rect x="7" y="12" width="1" height="1" fill="#d97706"/>
+
+                <!-- Luminous Canary Yellow (Layer 2) -->
+                <rect x="6" y="4" width="2" height="1" fill="#fde047"/>
+                <rect x="5" y="5" width="4" height="1" fill="#fde047"/>
+                <rect x="5" y="6" width="5" height="2" fill="#fbbf24"/>
+                <rect x="5" y="8" width="4" height="1" fill="#fbbf24"/>
+                <rect x="5" y="9" width="3" height="1" fill="#fbbf24"/>
+                <rect x="6" y="10" width="2" height="1" fill="#fde047"/>
+
+                <!-- Juicy Specular Gloss Highlights -->
+                <rect x="6" y="4" width="1" height="1" fill="#ffffff"/>
+                <rect x="5" y="5" width="2" height="1" fill="#ffffff"/>
+                <rect x="5" y="6" width="1" height="1" fill="#fef08a"/>
             </symbol>
         </defs>
     </svg>
@@ -468,16 +550,13 @@
                     <div class="dialogue-box">
                         <div class="dialogue-header">
                             <span class="dialogue-badge">SHL Medical</span>
-                            <span class="dialogue-badge" style="background: var(--pink-vibrant); color: #ffffff;">
-                                <svg class="pixel-icon" style="vertical-align: -2px; width: 14px; height: 14px;"><use href="#px-hibiscus"></use></svg> Cebuana Engineer
-                            </span>
                             <span class="dialogue-company">Analytical Sciences Engineer &middot; Deerfield Beach, FL</span>
                         </div>
 
                         <h1 class="dialogue-speech">"I engineer quality, precision, and compliance into life-saving medical devices."</h1>
 
                         <p class="dialogue-body">
-                            <strong>Maayong adlaw!</strong> I'm Jalaica, an Analytical Sciences Engineer originally from Cebu, Philippines, and now innovating in South Florida. I specialize in autoinjector combination products, test method validation (TMV/TMD/TMT), and container closure integrity testing (CCIT), ensuring high-volume pharmaceutical delivery systems comply with ISO 13485 and FDA 21 CFR 820 regulations.
+                            Hello! I'm Jalaica, an Analytical Sciences Engineer specializing in autoinjector combination products, test method validation (TMV/TMD/TMT), and container closure integrity testing (CCIT), ensuring high-volume pharmaceutical delivery systems comply with ISO 13485 and FDA 21 CFR 820 regulations.
                         </p>
 
                         <!-- Dialogue Response Navigation -->
@@ -918,12 +997,12 @@
                 <div class="about-columns">
                     <!-- Bio Narrative -->
                     <div>
-                        <h3 style="margin-bottom: 1rem; color: var(--pink-vibrant);">From Cebu to Combination Products: Biomaterials &amp; Regulated Innovation</h3>
+                        <h3 style="margin-bottom: 1rem; color: var(--pink-vibrant);">Biomaterials Foundation. Regulated Execution.</h3>
                         <p style="color: var(--text-secondary); margin-bottom: 1rem; line-height: 1.7;">
-                            Born and raised in <strong>Cebu, Philippines</strong>—the vibrant Queen City of the South celebrated for its craftsmanship, coastal resilience, and industrious spirit—I carried a natural curiosity for biological systems to the United States. I earned my B.Sc. in Biomedical Engineering from <strong>Florida International University (FIU)</strong> in Miami, specializing in Biomaterials and Biomechanics.
+                            I earned my B.Sc. in Biomedical Engineering from <strong>Florida International University (FIU)</strong> in Miami, specializing in Biomaterials and Biomechanics. Grounded in an analytical mindset and hands-on laboratory rigor, I bring deep precision to regulated medical device manufacturing and combination drug delivery systems.
                         </p>
                         <p style="color: var(--text-secondary); margin-bottom: 1rem; line-height: 1.7;">
-                            At SHL Medical, I lead test method validation (TMV/TMD/TMT), container closure integrity testing (CCIT), and stability programs for high-volume autoinjector combination products. Grounded in the Filipino value of <em>bayanihan</em> (collaborative community teamwork), I unite physical laboratory testing with enterprise QMS modernization to ensure life-saving devices perform flawlessly in patient hands.
+                            At SHL Medical, I lead test method validation (TMV/TMD/TMT), container closure integrity testing (CCIT), and stability programs for high-volume autoinjector combination products, ensuring life-saving therapies perform reliably in patient hands.
                         </p>
                         <p style="color: var(--text-secondary); margin-bottom: 1.25rem; line-height: 1.7; font-size: 0.9rem;">
                             <strong>Multilingual Fluency:</strong> English &middot; Tagalog &middot; Cebuano (Bisaya)
@@ -979,16 +1058,6 @@
                                 <p>Opportunities for Undergraduate Research and Scholarship</p>
                             </div>
                         </div>
-
-                        <div class="credential-item">
-                            <div class="credential-icon-box" title="Cebuano Roots & Global Communication">
-                                <svg class="pixel-icon"><use href="#px-hibiscus"></use></svg>
-                            </div>
-                            <div class="credential-text">
-                                <h4>Cebuano Heritage &amp; Roots</h4>
-                                <p>Cebu, Philippines &bull; Multilingual Global Perspective</p>
-                            </div>
-                        </div>
                     </div>
                 </div>
             </div>
@@ -1008,10 +1077,16 @@
 
             <div class="contact-wrapper">
                 <div class="contact-sheet">
-                    <div class="contact-header">
-                        <div class="contact-recipient">To: Jalaica Jaramillo &middot; Analytical Sciences Engineer</div>
-                        <div style="font-family: 'Press Start 2P', monospace; font-size: 0.6rem; color: var(--text-muted);">
-                            Location: Miami / Deerfield Beach, FL
+                    <div class="contact-header" style="display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 0.75rem;">
+                        <div>
+                            <div class="contact-recipient">To: Jalaica Jaramillo &middot; Analytical Sciences Engineer</div>
+                            <div style="font-family: 'Press Start 2P', monospace; font-size: 0.6rem; color: var(--text-muted); margin-top: 0.25rem;">
+                                Location: Miami / Deerfield Beach, FL
+                            </div>
+                        </div>
+                        <div style="display: inline-flex; align-items: center; gap: 0.45rem; border: 1.5px dashed var(--pink-vibrant); background: rgba(244, 63, 94, 0.08); padding: 0.35rem 0.65rem; font-family: 'Press Start 2P', monospace; font-size: 0.55rem; color: var(--pink-vibrant); border-radius: 2px;" title="Cebu Carabao Mango Airmail Routing Stamp">
+                            <svg class="pixel-icon" style="width: 15px; height: 15px;"><use href="#px-mango"></use></svg>
+                            <span>CEB &bull; AIRMAIL</span>
                         </div>
                     </div>
 

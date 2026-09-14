@@ -28,11 +28,11 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     }
 
-    // 2. Floating Tropical Petals (Hibiscus, Sampaguita, & Sakura)
+    // 2. Floating Background Petals (Tropical Hibiscus, Sampaguita, & Golden Sun Drift)
     const petalsContainer = document.getElementById('petals');
     if (petalsContainer && !window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
         const petalCount = 18;
-        const petalTypes = ['petal-hibiscus', 'petal-sampaguita', 'petal-sakura'];
+        const petalTypes = ['petal-hibiscus', 'petal-sampaguita', 'petal-gold-drift', 'petal-sakura'];
         for (let i = 0; i < petalCount; i++) {
             const petal = document.createElement('div');
             const type = petalTypes[i % petalTypes.length];
