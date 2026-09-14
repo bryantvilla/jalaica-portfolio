@@ -1,34 +1,29 @@
 /* ==========================================================================
-   STARDEW VALLEY THEME ENGINE & HUD SCRIPTS
+   PIXEL ART THEME & NAVIGATION CONTROLLER
    ========================================================================== */
 
 document.addEventListener('DOMContentLoaded', () => {
-    // 1. Day / Night Cycle Controller
+    // 1. Day / Night Mode Toggle
     const themeBtn = document.getElementById('theme-button');
     const themeIcon = document.getElementById('theme-icon');
-    const timeIcon = document.getElementById('time-icon');
-    const timeText = document.getElementById('time-text');
 
     function applyTheme(theme) {
         document.documentElement.dataset.theme = theme;
         if (theme === 'dark') {
-            themeIcon.textContent = '☀️';
-            timeIcon.textContent = '🌙';
-            timeText.textContent = 'Spring 13 · 10:00PM';
-            themeBtn.setAttribute('aria-label', 'Switch to Sunny Day Mode');
+            themeIcon.innerHTML = '<use href="#px-sun"></use>';
+            themeBtn.setAttribute('aria-label', 'Switch to Day Mode');
+            themeBtn.setAttribute('title', 'Switch to Day Mode');
         } else {
-            themeIcon.textContent = '🌙';
-            timeIcon.textContent = '☀️';
-            timeText.textContent = 'Spring 13 · 10:00AM';
-            themeBtn.setAttribute('aria-label', 'Switch to Starlight Night Mode');
+            themeIcon.innerHTML = '<use href="#px-moon"></use>';
+            themeBtn.setAttribute('aria-label', 'Switch to Night Mode');
+            themeBtn.setAttribute('title', 'Switch to Night Mode');
         }
         try {
-            localStorage.setItem('stardew-portfolio-theme', theme);
+            localStorage.setItem('pixel-portfolio-theme', theme);
         } catch (e) {}
     }
 
-    // Initialize from storage or preference
-    const savedTheme = localStorage.getItem('stardew-portfolio-theme') || 'light';
+    const savedTheme = localStorage.getItem('pixel-portfolio-theme') || 'light';
     applyTheme(savedTheme);
 
     themeBtn.addEventListener('click', () => {
@@ -36,14 +31,14 @@ document.addEventListener('DOMContentLoaded', () => {
         applyTheme(nextTheme);
     });
 
-    // 2. Generate Floating Cherry Blossom Petals
+    // 2. Floating Cherry Blossom Petals
     const petalsContainer = document.getElementById('petals');
     if (petalsContainer && !window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
-        const petalCount = 18;
+        const petalCount = 16;
         for (let i = 0; i < petalCount; i++) {
             const petal = document.createElement('div');
             petal.className = 'petal';
-            const size = Math.random() * 8 + 6; // 6px to 14px
+            const size = Math.random() * 8 + 6;
             petal.style.width = `${size}px`;
             petal.style.height = `${size * 1.3}px`;
             petal.style.left = `${Math.random() * 100}%`;
@@ -53,7 +48,7 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     }
 
-    // 3. HUD Navigation Scroll Spy
+    // 3. Navigation Scroll Spy
     const navTabs = document.querySelectorAll('.nav-tab[href^="#"]');
     const sections = [...navTabs].map(tab => {
         const target = document.querySelector(tab.getAttribute('href'));

@@ -1,93 +1,112 @@
 <svg xmlns="http://www.w3.org/2000/svg" style="display:none;" shape-rendering="crispEdges">
   <defs>
-    <!-- Pixel Heart -->
-    <g id="px-heart">
-      <path d="M4 1h4v2H4V1zm8 0h4v2h-4V1zM2 3h2v4H2V3zm16 0h2v4h-2V3zM4 7h2v2H4V7zm12 0h2v2h-2V7zM6 9h2v2H6V9zm8 0h2v2h-2V9zM8 11h4v2H8v-2z" fill="#d84b72"/>
-      <path d="M4 3h4v4H4V3zm8 0h4v4h-4V3zm-6 4h8v2H6V7zm2 2h4v2H8V9z" fill="#ff769d"/>
-      <rect x="4" y="3" width="2" height="2" fill="#ffa1b9"/>
+    <!-- Briefcase / Work -->
+    <g id="px-work" viewBox="0 0 16 16">
+      <path d="M5 2h6v2H5V2zM2 4h12v2H2V4zm-1 2h14v8H1V6zm3 2v4h8V8H4zm2 1h4v2H6V9z" fill="currentColor"/>
     </g>
 
-    <!-- Pixel Star / Stardrop -->
-    <g id="px-star">
-      <path d="M9 1h2v2H9V1zm-2 2h6v2H7V3zM1 7h18v2H1V7zm3 2h14v2H4V9zm2 2h10v2H6v-2zm-2 2h4v2H4v-2zm10 0h4v2h-4v-2zm-2 2h2v2h-2v-2z" fill="#ca8a04"/>
-      <path d="M9 3h2v4H9V3zm-6 4h14v2H3V7zm3 2h8v2H6V9zm-1 2h3v2H5v-2zm7 0h3v2h-3v-2z" fill="#facc15"/>
-      <rect x="8" y="4" width="2" height="2" fill="#fef08a"/>
+    <!-- Toolkit / Skills -->
+    <g id="px-skills" viewBox="0 0 16 16">
+      <path d="M2 2h4v4H2V2zm8 0h4v4h-4V2zM2 10h4v4H2v-4zm8 0h4v4h-4v-4z" fill="currentColor"/>
+      <rect x="3" y="3" width="2" height="2" fill="var(--pink-vibrant)"/>
+      <rect x="11" y="3" width="2" height="2" fill="var(--pink-vibrant)"/>
+      <rect x="3" y="11" width="2" height="2" fill="var(--pink-vibrant)"/>
+      <rect x="11" y="11" width="2" height="2" fill="var(--pink-vibrant)"/>
     </g>
 
-    <!-- Pixel Scroll / Resume -->
-    <g id="px-scroll">
-      <path d="M3 2h12v2H3V2zm-1 2h14v12H2V4zm2 12h12v2H4v-2z" fill="#9e6634"/>
-      <rect x="3" y="3" width="12" height="12" fill="#fff1db"/>
-      <rect x="5" y="5" width="8" height="1" fill="#c49567"/>
-      <rect x="5" y="7" width="8" height="1" fill="#c49567"/>
-      <rect x="5" y="9" width="6" height="1" fill="#c49567"/>
-      <rect x="5" y="11" width="8" height="1" fill="#c49567"/>
-      <rect x="12" y="11" width="2" height="2" fill="#d84b72"/>
+    <!-- Project / Blueprint -->
+    <g id="px-project" viewBox="0 0 16 16">
+      <path d="M2 2h5l2 2h5v10H2V2zm2 4h8v6H4V6zm2 2h4v2H6V8z" fill="currentColor"/>
     </g>
 
-    <!-- Pixel Autoinjector / Medical Device -->
-    <g id="px-injector">
-      <path d="M2 17l6-6 2 2-6 6-2-2z" fill="#94a3b8"/>
-      <path d="M1 18l1-1 1 1-1 1-1-1z" fill="#64748b"/>
-      <path d="M8 11l6-6 3 3-6 6-3-3z" fill="#f472b6"/>
-      <path d="M13 6l2-2 2 2-2 2-2-2z" fill="#f9a8d4"/>
-      <rect x="14" y="3" width="3" height="3" fill="#cbd5e1"/>
-      <line x1="1" y1="19" x2="0" y2="20" stroke="#475569" stroke-width="1"/>
+    <!-- About / User -->
+    <g id="px-about" viewBox="0 0 16 16">
+      <path d="M6 2h4v4H6V2zM3 8h10v2H3V8zm-1 3h12v3H2v-3z" fill="currentColor"/>
     </g>
 
-    <!-- Pixel Laboratory Flask -->
-    <g id="px-flask">
-      <path d="M7 1h6v2H7V1zm2 2h2v4H9V3zm-5 8h12v2H4v-2zm-1 2h14v4H3v-4zm2 4h10v1H5v-1z" fill="#713f5c"/>
-      <path d="M8 2h4v1H8V2zm1 2h2v3H9V4zm-4 8h10v3H5v-3z" fill="#f472b6"/>
-      <rect x="4" y="13" width="12" height="4" fill="#fb7185"/>
-      <rect x="6" y="14" width="2" height="2" fill="#ffffff" opacity="0.6"/>
-      <rect x="11" y="15" width="1" height="1" fill="#ffffff" opacity="0.6"/>
+    <!-- Contact / Mailbox -->
+    <g id="px-contact" viewBox="0 0 16 16">
+      <path d="M1 3h14v10H1V3zm2 2v6h10V5L8 8 3 5z" fill="currentColor"/>
     </g>
 
-    <!-- Pixel Shield / Compliance -->
-    <g id="px-shield">
-      <path d="M3 2h14v3H3V2zm0 3h2v7H3V5zm12 0h2v7h-2V5zm-2 7h2v3h-2v-3zm-8 0h2v3H5v-3zm2 3h6v2H7v-2z" fill="#4a2135"/>
-      <rect x="5" y="3" width="10" height="9" fill="#fce7f3"/>
-      <path d="M7 7l2 2 4-4" stroke="#e11d48" stroke-width="2" fill="none"/>
+    <!-- Resume / Document -->
+    <g id="px-resume" viewBox="0 0 16 16">
+      <path d="M3 1h7l4 4v9H3V1zm2 5h6v1H5V6zm0 2h6v1H5V8zm0 2h4v1H5v-1z" fill="currentColor"/>
     </g>
 
-    <!-- Pixel Mail / Letter -->
-    <g id="px-mail">
-      <path d="M2 3h16v12H2V3z" fill="#8d5b36"/>
-      <rect x="3" y="4" width="14" height="10" fill="#fffbf5"/>
-      <path d="M3 4l7 5 7-5" stroke="#c49567" stroke-width="1" fill="none"/>
-      <!-- Pink heart wax seal -->
-      <rect x="9" y="8" width="2" height="2" fill="#e11d48"/>
+    <!-- Shield / Quality & ISO Standards -->
+    <g id="px-shield" viewBox="0 0 16 16">
+      <path d="M2 1h12v4H2V1zm0 4h2v6H2V5zm10 0h2v6h-2V5zm-8 6h6v2H4v-2zm2 2h2v2H6v-2z" fill="currentColor"/>
+      <path d="M5 6l2 2 4-4" stroke="var(--pink-vibrant)" stroke-width="2" fill="none"/>
     </g>
 
-    <!-- Pixel Clock / Sun -->
-    <g id="px-sun">
-      <rect x="7" y="1" width="2" height="2" fill="#f59e0b"/>
-      <rect x="7" y="13" width="2" height="2" fill="#f59e0b"/>
-      <rect x="1" y="7" width="2" height="2" fill="#f59e0b"/>
-      <rect x="13" y="7" width="2" height="2" fill="#f59e0b"/>
-      <rect x="4" y="4" width="8" height="8" fill="#fbbf24"/>
-      <rect x="5" y="5" width="6" height="6" fill="#fef08a"/>
+    <!-- Laboratory Flask / Analytical Testing -->
+    <g id="px-flask" viewBox="0 0 16 16">
+      <path d="M6 1h4v2H6V1zm1 2h2v4H7V3zm-4 7h10v2H3v-2zm-1 2h12v3H2v-3z" fill="currentColor"/>
+      <rect x="4" y="11" width="8" height="3" fill="var(--pink-vibrant)"/>
+      <rect x="5" y="12" width="2" height="1" fill="#ffffff" opacity="0.6"/>
     </g>
 
-    <!-- Pixel Moon -->
-    <g id="px-moon">
-      <path d="M6 2h5v2H6V2zm5 2h3v3h-3V4zm2 3h2v4h-2V7zm-2 4h3v3h-3v-3zm-5 3h5v2H6v-2z" fill="#c084fc"/>
-      <rect x="7" y="4" width="3" height="8" fill="#e9d5ff"/>
+    <!-- Gear / Engineering & Process Optimization -->
+    <g id="px-gear" viewBox="0 0 16 16">
+      <path d="M6 1h4v2H6V1zm-4 5h2v4H2V6zm10 0h2v4h-2V6zm-6 7h4v2H6v-2zm-2-9h2v2H4V4zm6 0h2v2h-2V4zm-6 6h2v2H4v-2zm6 0h2v2h-2v-2z" fill="currentColor"/>
+      <rect x="6" y="6" width="4" height="4" fill="var(--pink-vibrant)"/>
     </g>
 
-    <!-- Pixel Checkmark -->
-    <g id="px-check">
-      <path d="M2 6l3 3 7-7" stroke="#16a34a" stroke-width="2" fill="none"/>
+    <!-- Chart / Statistical Process & Metrics -->
+    <g id="px-chart" viewBox="0 0 16 16">
+      <path d="M1 1h2v12h12v2H1V1zm4 8h2v3H5V9zm4-4h2v7H9V5zm4-3h2v10h-2V2z" fill="currentColor"/>
     </g>
 
-    <!-- Pixel Gold Coin -->
-    <g id="px-coin">
-      <rect x="4" y="2" width="8" height="12" fill="#ca8a04"/>
-      <rect x="2" y="4" width="12" height="8" fill="#ca8a04"/>
-      <rect x="4" y="4" width="8" height="8" fill="#facc15"/>
-      <rect x="6" y="5" width="2" height="6" fill="#fef08a"/>
-      <rect x="8" y="7" width="2" height="2" fill="#ca8a04"/>
+    <!-- Dollar / Financial Metric & Revenue Recovery -->
+    <g id="px-dollar" viewBox="0 0 16 16">
+      <path d="M7 1h2v14H7V1zm-3 2h6v2H4V3zm-1 3h2v3H3V6zm2 3h6v2H5V9zm6 2h2v3h-2v-3zm-7 2h8v2H4v-2z" fill="currentColor"/>
+    </g>
+
+    <!-- Star / Featured Status -->
+    <g id="px-star" viewBox="0 0 16 16">
+      <path d="M7 1h2v2H7V1zm-2 3h6v2H5V4zm-4 3h14v2H1V7zm2 2h10v2H3V9zm2 2h6v2H5v-2zm-1 2h2v2H4v-2zm6 0h2v2h-2v-2z" fill="currentColor"/>
+    </g>
+
+    <!-- Checkmark / Completed Milestone -->
+    <g id="px-check" viewBox="0 0 16 16">
+      <path d="M2 8l4 4 8-8" stroke="currentColor" stroke-width="2" fill="none"/>
+    </g>
+
+    <!-- Award / Academic Degree -->
+    <g id="px-award" viewBox="0 0 16 16">
+      <path d="M8 1l6 3-6 3-6-3 6-3zm5 5v5l-5 2-5-2V6l5 2 5-2zm-5 4l3-1v2l-3 1-3-1v-2l3 1z" fill="currentColor"/>
+    </g>
+
+    <!-- Sun / Day Mode -->
+    <g id="px-sun" viewBox="0 0 16 16">
+      <path d="M7 1h2v2H7V1zm7 6h2v2h-2V7zM7 13h2v2H7v-2zM0 7h2v2H0V7zm4-4h2v2H4V3zm6 0h2v2h-2V3zm-6 8h2v2H4v-2zm6 0h2v2h-2v-2zm-5-4h4v4H5V7z" fill="currentColor"/>
+    </g>
+
+    <!-- Moon / Night Mode -->
+    <g id="px-moon" viewBox="0 0 16 16">
+      <path d="M5 2h5v2H5V2zm5 2h3v3h-3V4zm2 3h2v4h-2V7zm-2 4h3v3h-3v-3zm-5 3h5v2H5v-2zm-2-3h2v2H3v-2zm-1-4h2v4H2V7zm1-3h2v2H3V4z" fill="currentColor"/>
+    </g>
+
+    <!-- Phone -->
+    <g id="px-phone" viewBox="0 0 16 16">
+      <path d="M2 2h4v3L4 6c1 2 2 3 4 4l1-2h3v4h-2c-6 0-9-3-9-9V2z" fill="currentColor"/>
+    </g>
+
+    <!-- Mail -->
+    <g id="px-mail" viewBox="0 0 16 16">
+      <path d="M1 3h14v10H1V3zm2 2v6h10V5L8 8 3 5z" fill="currentColor"/>
+    </g>
+
+    <!-- Map Location -->
+    <g id="px-location" viewBox="0 0 16 16">
+      <path d="M5 1h6v2H5V1zm-2 2h10v4H3V3zm1 4h8v3H4V7zm2 3h4v3H6v-3zm1 3h2v2H7v-2z" fill="currentColor"/>
+      <rect x="7" y="5" width="2" height="2" fill="var(--pink-vibrant)"/>
+    </g>
+
+    <!-- Arrow Right -->
+    <g id="px-arrow" viewBox="0 0 16 16">
+      <path d="M2 7h8v2H2V7zm6-4h2v2H8V3zm2 2h2v2h-2V5zm0 4h2v2h-2V9zm-2 2h2v2H8v-2z" fill="currentColor"/>
     </g>
   </defs>
 </svg>

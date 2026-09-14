@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
     <meta name="color-scheme" content="light dark">
-    <meta name="theme-color" content="#ffeef2">
+    <meta name="theme-color" content="#fff0f3">
     <title>Jalaica Jaramillo | Biomedical &amp; Analytical Sciences Engineer</title>
     <meta name="description" content="Jalaica Jaramillo — Analytical Sciences Engineer at SHL Medical. Autoinjector combination products, test method validation (TMV), CCIT, ISO 13485, and FDA 21 CFR 820.">
     <link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml">
@@ -12,43 +12,76 @@
     <script src="assets/js/main.js" defer></script>
 </head>
 <body>
-    <!-- Gentle floating cherry blossom petals -->
+    <!-- Floating cherry blossom petals -->
     <div class="petals-container" aria-hidden="true" id="petals"></div>
 
-    <!-- STARDEW VALLEY GAME HUD / TOP NAVIGATION -->
+    <!-- Pixel Art Icon Symbol Sprite -->
+    <svg xmlns="http://www.w3.org/2000/svg" style="display:none;" aria-hidden="true" shape-rendering="crispEdges">
+        <defs>
+            <g id="px-work" viewBox="0 0 16 16"><path d="M5 2h6v2H5V2zM2 4h12v2H2V4zm-1 2h14v8H1V6zm3 2v4h8V8H4zm2 1h4v2H6V9z" fill="currentColor"/></g>
+            <g id="px-skills" viewBox="0 0 16 16"><path d="M2 2h4v4H2V2zm8 0h4v4h-4V2zM2 10h4v4H2v-4zm8 0h4v4h-4v-4z" fill="currentColor"/></g>
+            <g id="px-project" viewBox="0 0 16 16"><path d="M2 2h5l2 2h5v10H2V2zm2 4h8v6H4V6zm2 2h4v2H6V8z" fill="currentColor"/></g>
+            <g id="px-about" viewBox="0 0 16 16"><path d="M6 2h4v4H6V2zM3 8h10v2H3V8zm-1 3h12v3H2v-3z" fill="currentColor"/></g>
+            <g id="px-contact" viewBox="0 0 16 16"><path d="M1 3h14v10H1V3zm2 2v6h10V5L8 8 3 5z" fill="currentColor"/></g>
+            <g id="px-resume" viewBox="0 0 16 16"><path d="M3 1h7l4 4v9H3V1zm2 5h6v1H5V6zm0 2h6v1H5V8zm0 2h4v1H5v-1z" fill="currentColor"/></g>
+            <g id="px-shield" viewBox="0 0 16 16"><path d="M2 1h12v4H2V1zm0 4h2v6H2V5zm10 0h2v6h-2V5zm-8 6h6v2H4v-2zm2 2h2v2H6v-2z" fill="currentColor"/><path d="M5 6l2 2 4-4" stroke="var(--pink-vibrant)" stroke-width="2" fill="none"/></g>
+            <g id="px-flask" viewBox="0 0 16 16"><path d="M6 1h4v2H6V1zm1 2h2v4H7V3zm-4 7h10v2H3v-2zm-1 2h12v3H2v-3z" fill="currentColor"/><rect x="4" y="11" width="8" height="3" fill="var(--pink-vibrant)"/></g>
+            <g id="px-gear" viewBox="0 0 16 16"><path d="M6 1h4v2H6V1zm-4 5h2v4H2V6zm10 0h2v4h-2V6zm-6 7h4v2H6v-2zm-2-9h2v2H4V4zm6 0h2v2h-2V4zm-6 6h2v2H4v-2zm6 0h2v2h-2v-2z" fill="currentColor"/><rect x="6" y="6" width="4" height="4" fill="var(--pink-vibrant)"/></g>
+            <g id="px-chart" viewBox="0 0 16 16"><path d="M1 1h2v12h12v2H1V1zm4 8h2v3H5V9zm4-4h2v7H9V5zm4-3h2v10h-2V2z" fill="currentColor"/></g>
+            <g id="px-dollar" viewBox="0 0 16 16"><path d="M7 1h2v14H7V1zm-3 2h6v2H4V3zm-1 3h2v3H3V6zm2 3h6v2H5V9zm6 2h2v3h-2v-3zm-7 2h8v2H4v-2z" fill="currentColor"/></g>
+            <g id="px-star" viewBox="0 0 16 16"><path d="M7 1h2v2H7V1zm-2 3h6v2H5V4zm-4 3h14v2H1V7zm2 2h10v2H3V9zm2 2h6v2H5v-2zm-1 2h2v2H4v-2zm6 0h2v2h-2v-2z" fill="currentColor"/></g>
+            <g id="px-check" viewBox="0 0 16 16"><path d="M2 8l4 4 8-8" stroke="currentColor" stroke-width="2" fill="none"/></g>
+            <g id="px-award" viewBox="0 0 16 16"><path d="M8 1l6 3-6 3-6-3 6-3zm5 5v5l-5 2-5-2V6l5 2 5-2zm-5 4l3-1v2l-3 1-3-1v-2l3 1z" fill="currentColor"/></g>
+            <g id="px-sun" viewBox="0 0 16 16"><path d="M7 1h2v2H7V1zm7 6h2v2h-2V7zM7 13h2v2H7v-2zM0 7h2v2H0V7zm4-4h2v2H4V3zm6 0h2v2h-2V3zm-6 8h2v2H4v-2zm6 0h2v2h-2v-2zm-5-4h4v4H5V7z" fill="currentColor"/></g>
+            <g id="px-moon" viewBox="0 0 16 16"><path d="M5 2h5v2H5V2zm5 2h3v3h-3V4zm2 3h2v4h-2V7zm-2 4h3v3h-3v-3zm-5 3h5v2H5v-2zm-2-3h2v2H3v-2zm-1-4h2v4H2V7zm1-3h2v2H3V4z" fill="currentColor"/></g>
+            <g id="px-phone" viewBox="0 0 16 16"><path d="M2 2h4v3L4 6c1 2 2 3 4 4l1-2h3v4h-2c-6 0-9-3-9-9V2z" fill="currentColor"/></g>
+            <g id="px-mail" viewBox="0 0 16 16"><path d="M1 3h14v10H1V3zm2 2v6h10V5L8 8 3 5z" fill="currentColor"/></g>
+            <g id="px-location" viewBox="0 0 16 16"><path d="M5 1h6v2H5V1zm-2 2h10v4H3V3zm1 4h8v3H4V7zm2 3h4v3H6v-3zm1 3h2v2H7v-2z" fill="currentColor"/></g>
+            <g id="px-arrow" viewBox="0 0 16 16"><path d="M2 7h8v2H2V7zm6-4h2v2H8V3zm2 2h2v2h-2V5zm0 4h2v2h-2V9zm-2 2h2v2H8v-2z" fill="currentColor"/></g>
+        </defs>
+    </svg>
+
+    <!-- TOP HUD NAVIGATION -->
     <header class="game-hud" id="header">
         <div class="container hud-inner">
             <div class="player-badge">
                 <img src="assets/img/jalaica-pixel-portrait.svg" alt="Jalaica Pixel Portrait" class="player-avatar-mini" width="40" height="40">
                 <div class="player-info">
-                    <a href="#home" class="player-name">Jalaica Jaramillo <span>★</span></a>
-                    <span class="player-title">Lv. 26 Analytical Sciences Engineer</span>
+                    <a href="#home" class="player-name">Jalaica Jaramillo</a>
+                    <span class="player-title">Analytical Sciences Engineer &middot; SHL Medical</span>
                 </div>
             </div>
 
-            <nav class="hud-nav" aria-label="Game Menu">
-                <a href="#work" class="nav-tab"><span>📜</span> Quests</a>
-                <a href="#skills" class="nav-tab"><span>🎒</span> Skills</a>
-                <a href="#projects" class="nav-tab"><span>🏆</span> Orders</a>
-                <a href="#about" class="nav-tab"><span>🏡</span> About</a>
-                <a href="#contact" class="nav-tab"><span>📬</span> Mailbox</a>
-                <a href="assets/pdf/jalaica-jaramillo-resume.pdf" target="_blank" rel="noopener noreferrer" class="nav-tab pixel-btn" style="padding: 0.35rem 0.75rem; font-size: 0.7rem;"><span>📄</span> Resume ↗</a>
+            <nav class="hud-nav" aria-label="Main Menu">
+                <a href="#experience" class="nav-tab">
+                    <svg class="pixel-icon"><use href="#px-work"></use></svg> Experience
+                </a>
+                <a href="#skills" class="nav-tab">
+                    <svg class="pixel-icon"><use href="#px-skills"></use></svg> Skills
+                </a>
+                <a href="#projects" class="nav-tab">
+                    <svg class="pixel-icon"><use href="#px-project"></use></svg> Projects
+                </a>
+                <a href="#about" class="nav-tab">
+                    <svg class="pixel-icon"><use href="#px-about"></use></svg> About
+                </a>
+                <a href="#contact" class="nav-tab">
+                    <svg class="pixel-icon"><use href="#px-contact"></use></svg> Contact
+                </a>
+                <a href="assets/pdf/jalaica-jaramillo-resume.pdf" target="_blank" rel="noopener noreferrer" class="nav-tab pixel-btn" style="padding: 0.35rem 0.75rem; font-size: 0.7rem;">
+                    <svg class="pixel-icon"><use href="#px-resume"></use></svg> Resume ↗
+                </a>
             </nav>
 
-            <div class="hud-clock">
-                <div class="time-box" id="hud-time" aria-label="Game Time">
-                    <span id="time-icon">☀️</span> <span id="time-text">Spring 13 · 10:00AM</span>
-                </div>
-                <button class="theme-toggle-btn" id="theme-button" type="button" aria-label="Toggle Day / Night Mode" title="Toggle Day/Night Mode">
-                    <span id="theme-icon">🌙</span>
-                </button>
-            </div>
+            <button class="theme-toggle-btn" id="theme-button" type="button" aria-label="Toggle Day / Night Mode" title="Toggle Day/Night Mode">
+                <svg class="pixel-icon pixel-icon-lg" id="theme-icon"><use href="#px-moon"></use></svg>
+            </button>
         </div>
     </header>
 
     <main class="container" id="main">
         <!-- ==========================================================================
-             HERO SECTION: STARDEW DIALOGUE BOX
+             HERO SECTION / DIALOGUE BOX
              ========================================================================== -->
         <section class="hero-section" id="home" aria-labelledby="hero-name">
             <div class="pixel-panel">
@@ -61,7 +94,7 @@
                         <div class="dialogue-nameplate" id="hero-name">Jalaica Jaramillo</div>
                     </div>
 
-                    <!-- Right: Dialogue Box Content -->
+                    <!-- Right: Speech Content Box -->
                     <div class="dialogue-box">
                         <div class="dialogue-header">
                             <span class="dialogue-badge">SHL Medical</span>
@@ -74,31 +107,33 @@
                             Hello! I'm Jalaica, an Analytical Sciences Engineer specializing in autoinjector combination products, test method validation (TMV/TMD/TMT), and container closure integrity testing (CCIT). I ensure high-volume pharmaceutical delivery systems comply with ISO 13485 and FDA 21 CFR 820 regulations.
                         </p>
 
-                        <!-- Dialogue Response Choices -->
+                        <!-- Dialogue Response Navigation -->
                         <div class="dialogue-choices">
-                            <a href="#work" class="choice-option">
-                                <span class="choice-pointer">▶</span> Inspect active career quests &amp; engineering contributions
+                            <a href="#experience" class="choice-option">
+                                <svg class="pixel-icon choice-pointer"><use href="#px-arrow"></use></svg> Review professional experience &amp; validation contributions
                             </a>
                             <a href="#skills" class="choice-option">
-                                <span class="choice-pointer">▶</span> Open standards, testing tools, and QMS inventory
+                                <svg class="pixel-icon choice-pointer"><use href="#px-arrow"></use></svg> View regulatory standards, testing tools, and QMS skills
                             </a>
                             <a href="#projects" class="choice-option">
-                                <span class="choice-pointer">▶</span> Check special orders board ($60K needle project &amp; STEM outreach)
+                                <svg class="pixel-icon choice-pointer"><use href="#px-arrow"></use></svg> Explore featured projects ($60K needle system &amp; STEM outreach)
                             </a>
                             <a href="#contact" class="choice-option">
-                                <span class="choice-pointer">▶</span> Send a letter via postbox (Inquire for opportunities)
+                                <svg class="pixel-icon choice-pointer"><use href="#px-arrow"></use></svg> Get in touch for engineering roles or inquiries
                             </a>
                             <a href="assets/pdf/jalaica-jaramillo-resume.pdf" target="_blank" rel="noopener noreferrer" class="choice-option" style="color: var(--pink-vibrant); font-weight: 700;">
-                                <span class="choice-pointer">▶</span> Download Official 1-Page Resume (PDF) ↗
+                                <svg class="pixel-icon choice-pointer"><use href="#px-arrow"></use></svg> Download official 1-page resume (PDF) ↗
                             </a>
                         </div>
                     </div>
                 </div>
 
-                <!-- Player Stats Bar -->
+                <!-- Engineering Impact & Stats Grid -->
                 <div class="stats-bar-grid">
                     <div class="stat-item">
-                        <div class="stat-icon-wrapper">🛡️</div>
+                        <div class="stat-icon-wrapper">
+                            <svg class="pixel-icon pixel-icon-lg"><use href="#px-shield"></use></svg>
+                        </div>
                         <div class="stat-details">
                             <span class="stat-label">Quality &amp; Standards</span>
                             <span class="stat-value">ISO 13485 &middot; 21 CFR 820</span>
@@ -107,16 +142,20 @@
                     </div>
 
                     <div class="stat-item">
-                        <div class="stat-icon-wrapper">🧪</div>
+                        <div class="stat-icon-wrapper">
+                            <svg class="pixel-icon pixel-icon-lg"><use href="#px-flask"></use></svg>
+                        </div>
                         <div class="stat-details">
-                            <span class="stat-label">Test Method Validation</span>
+                            <span class="stat-label">Validation &amp; Integrity</span>
                             <span class="stat-value">CCIT &middot; TMV &middot; Instron</span>
                             <div class="stat-meter"><div class="stat-meter-fill" style="width: 98%;"></div></div>
                         </div>
                     </div>
 
                     <div class="stat-item">
-                        <div class="stat-icon-wrapper">💰</div>
+                        <div class="stat-icon-wrapper">
+                            <svg class="pixel-icon pixel-icon-lg"><use href="#px-dollar"></use></svg>
+                        </div>
                         <div class="stat-details">
                             <span class="stat-label">Billing Revenue Recovered</span>
                             <span class="stat-value">+$1,000,000+ Invoiced</span>
@@ -125,7 +164,9 @@
                     </div>
 
                     <div class="stat-item">
-                        <div class="stat-icon-wrapper">⚙️</div>
+                        <div class="stat-icon-wrapper">
+                            <svg class="pixel-icon pixel-icon-lg"><use href="#px-gear"></use></svg>
+                        </div>
                         <div class="stat-details">
                             <span class="stat-label">Process Optimization</span>
                             <span class="stat-value">+$70,000/yr Saved</span>
@@ -137,43 +178,49 @@
         </section>
 
         <!-- ==========================================================================
-             CAREER QUEST LOG (WORK EXPERIENCE)
+             PROFESSIONAL EXPERIENCE
              ========================================================================== -->
-        <section class="section-spacing" id="work" aria-labelledby="quests-title">
+        <section class="section-spacing" id="experience" aria-labelledby="experience-title">
             <div class="section-header-banner">
                 <div class="banner-title-group">
-                    <span class="banner-ribbon">Quest Journal</span>
-                    <h2 id="quests-title">Professional Experience</h2>
+                    <span class="banner-ribbon">Career</span>
+                    <h2 id="experience-title">Professional Experience</h2>
                 </div>
-                <span class="pixel-font" style="font-size: 0.8rem; color: var(--text-muted);">4 Quests Logged</span>
+                <span class="pixel-font" style="font-size: 0.8rem; color: var(--text-muted);">4 Roles Documented</span>
             </div>
 
-            <!-- Quest 1: SHL Medical -->
-            <article class="quest-item">
-                <div class="quest-header">
-                    <div class="quest-title-area">
-                        <div class="quest-status-icon" title="Active Main Quest">⭐</div>
+            <!-- Role 1: SHL Medical -->
+            <article class="experience-card">
+                <div class="experience-header">
+                    <div class="experience-title-area">
+                        <div class="status-icon-box" title="Current Role">
+                            <svg class="pixel-icon"><use href="#px-star"></use></svg>
+                        </div>
                         <div>
-                            <h3 class="quest-title">SHL Medical &middot; Analytical Sciences Engineer</h3>
-                            <div class="quest-meta">
+                            <h3 class="experience-title">SHL Medical &middot; Analytical Sciences Engineer</h3>
+                            <div class="experience-meta">
                                 <span>Deerfield Beach, FL</span> &middot;
                                 <time datetime="2025-12">Dec 2025 &ndash; Present</time>
                             </div>
                         </div>
                     </div>
-                    <span class="quest-badge">Active Main Quest</span>
+                    <span class="role-badge">Current Role</span>
                 </div>
-                <div class="quest-body">
+                <div class="experience-body">
                     <div>
-                        <h4 class="quest-section-heading"><span>🎯</span> Quest Objectives &amp; Focus</h4>
+                        <h4 class="subheading-row">
+                            <svg class="pixel-icon"><use href="#px-arrow"></use></svg> Scope &amp; Technical Challenge
+                        </h4>
                         <p style="color: var(--text-secondary); margin-bottom: 0.75rem;">
                             Direct customer-facing stability testing programs, protocol/report authoring, and regulated deviation investigations across multiple global accounts for high-precision autoinjector combination products.
                         </p>
                     </div>
 
                     <div>
-                        <h4 class="quest-section-heading"><span>📜</span> Log Entries &amp; Contributions</h4>
-                        <ul class="quest-bullets">
+                        <h4 class="subheading-row">
+                            <svg class="pixel-icon"><use href="#px-arrow"></use></svg> Key Responsibilities &amp; Contributions
+                        </h4>
+                        <ul class="bullet-list">
                             <li>Manage customer-facing stability testing programs, protocol and report writing, and cross-functional project coordination across accounts for autoinjector combination products.</li>
                             <li>Author and execute deviation documentation for regulated stability and testing programs, ensuring findings are investigated and closed per ISO 13485 and 21 CFR 820 in Polarion and Teamcenter EQMS.</li>
                             <li>Conduct research and lead internal technical training on <strong>ISO 11040-8</strong> and <strong>USP &lt;382&gt;</strong> leak-testing methodology to strengthen test method development.</li>
@@ -185,44 +232,52 @@
                         </ul>
                     </div>
 
-                    <div class="quest-rewards">
-                        <div class="reward-title"><span>🏆</span> Unlocked Rewards &amp; Impact</div>
-                        <div class="reward-tags">
-                            <span class="reward-tag">+$1M+ Revenue Recovered</span>
-                            <span class="reward-tag">ISO 11040-8 &middot; USP &lt;382&gt; Trainer</span>
-                            <span class="reward-tag">CCIT &amp; Instron Validation</span>
-                            <span class="reward-tag">Polarion &amp; Teamcenter Workflows</span>
+                    <div class="impact-box">
+                        <div class="impact-title">
+                            <svg class="pixel-icon"><use href="#px-chart"></use></svg> Key Metrics &amp; Impact
+                        </div>
+                        <div class="impact-tags">
+                            <span class="impact-tag">+$1M+ Revenue Recovered</span>
+                            <span class="impact-tag">ISO 11040-8 &middot; USP &lt;382&gt; Lead Trainer</span>
+                            <span class="impact-tag">CCIT &amp; Instron Validation</span>
+                            <span class="impact-tag">Polarion &amp; Teamcenter Workflows</span>
                         </div>
                     </div>
                 </div>
             </article>
 
-            <!-- Quest 2: Integer -->
-            <article class="quest-item">
-                <div class="quest-header">
-                    <div class="quest-title-area">
-                        <div class="quest-status-icon" title="Completed Quest">✔</div>
+            <!-- Role 2: Integer -->
+            <article class="experience-card">
+                <div class="experience-header">
+                    <div class="experience-title-area">
+                        <div class="status-icon-box" title="Previous Role">
+                            <svg class="pixel-icon"><use href="#px-check"></use></svg>
+                        </div>
                         <div>
-                            <h3 class="quest-title">Integer (Previously InNeuroCo) &middot; Quality Engineer</h3>
-                            <div class="quest-meta">
+                            <h3 class="experience-title">Integer (Previously InNeuroCo) &middot; Quality Engineer</h3>
+                            <div class="experience-meta">
                                 <span>Pembroke Pines, FL</span> &middot;
                                 <time datetime="2024-07/2025-08">Jul 2024 &ndash; Aug 2025</time>
                             </div>
                         </div>
                     </div>
-                    <span class="quest-badge" style="background: var(--pink-pastel);">Quest Complete</span>
+                    <span class="role-badge" style="background: var(--pink-pastel);">Previous Role</span>
                 </div>
-                <div class="quest-body">
+                <div class="experience-body">
                     <div>
-                        <h4 class="quest-section-heading"><span>🎯</span> Quest Objectives &amp; Focus</h4>
+                        <h4 class="subheading-row">
+                            <svg class="pixel-icon"><use href="#px-arrow"></use></svg> Scope &amp; Technical Challenge
+                        </h4>
                         <p style="color: var(--text-secondary); margin-bottom: 0.75rem;">
-                            Serve as company-wide Subject Matter Expert (SME) during enterprise quality system migration, lead software validations, and ensure regulatory readiness for FDA and ISO audits.
+                            Served as company-wide Subject Matter Expert (SME) during enterprise quality system migration, leading software validations and ensuring audit readiness for FDA and ISO inspections.
                         </p>
                     </div>
 
                     <div>
-                        <h4 class="quest-section-heading"><span>📜</span> Log Entries &amp; Contributions</h4>
-                        <ul class="quest-bullets">
+                        <h4 class="subheading-row">
+                            <svg class="pixel-icon"><use href="#px-arrow"></use></svg> Key Responsibilities &amp; Contributions
+                        </h4>
+                        <ul class="bullet-list">
                             <li>Served as SME in company-wide QMS transition to <strong>ETQ Reliance</strong>, authoring and reviewing validation protocols, training staff, and ensuring FDA 21 CFR 820 and ISO 13485 compliance.</li>
                             <li>Led Installation Qualification (IQ), software validation, and cross-functional validation activities, supporting process and product compliance through design transfer and lifecycle management.</li>
                             <li>Prepared and maintained validation documentation for internal, supplier, and FDA/ISO regulatory audits, addressing findings to maintain audit readiness.</li>
@@ -230,44 +285,52 @@
                         </ul>
                     </div>
 
-                    <div class="quest-rewards">
-                        <div class="reward-title"><span>🏆</span> Unlocked Rewards &amp; Impact</div>
-                        <div class="reward-tags">
-                            <span class="reward-tag">ETQ Reliance QMS SME</span>
-                            <span class="reward-tag">FDA / ISO Audit Readiness</span>
-                            <span class="reward-tag">Installation Qualification (IQ)</span>
-                            <span class="reward-tag">CAPA Root Cause Analysis</span>
+                    <div class="impact-box">
+                        <div class="impact-title">
+                            <svg class="pixel-icon"><use href="#px-chart"></use></svg> Key Metrics &amp; Impact
+                        </div>
+                        <div class="impact-tags">
+                            <span class="impact-tag">ETQ Reliance QMS SME</span>
+                            <span class="impact-tag">FDA / ISO Audit Readiness</span>
+                            <span class="impact-tag">Installation Qualification (IQ)</span>
+                            <span class="impact-tag">CAPA Root Cause Analysis</span>
                         </div>
                     </div>
                 </div>
             </article>
 
-            <!-- Quest 3: InNeuroCo Mfg -->
-            <article class="quest-item">
-                <div class="quest-header">
-                    <div class="quest-title-area">
-                        <div class="quest-status-icon" title="Completed Quest">✔</div>
+            <!-- Role 3: InNeuroCo Mfg -->
+            <article class="experience-card">
+                <div class="experience-header">
+                    <div class="experience-title-area">
+                        <div class="status-icon-box" title="Previous Role">
+                            <svg class="pixel-icon"><use href="#px-check"></use></svg>
+                        </div>
                         <div>
-                            <h3 class="quest-title">InNeuroCo &middot; Manufacturing Engineer Intern</h3>
-                            <div class="quest-meta">
+                            <h3 class="experience-title">InNeuroCo &middot; Manufacturing Engineer Intern</h3>
+                            <div class="experience-meta">
                                 <span>Pembroke Pines, FL</span> &middot;
                                 <time datetime="2023-07/2024-07">Jul 2023 &ndash; Jul 2024</time>
                             </div>
                         </div>
                     </div>
-                    <span class="quest-badge" style="background: var(--pink-pastel);">Quest Complete</span>
+                    <span class="role-badge" style="background: var(--pink-pastel);">Previous Role</span>
                 </div>
-                <div class="quest-body">
+                <div class="experience-body">
                     <div>
-                        <h4 class="quest-section-heading"><span>🎯</span> Quest Objectives &amp; Focus</h4>
+                        <h4 class="subheading-row">
+                            <svg class="pixel-icon"><use href="#px-arrow"></use></svg> Scope &amp; Technical Challenge
+                        </h4>
                         <p style="color: var(--text-secondary); margin-bottom: 0.75rem;">
-                            Execute cleanroom validation protocols (IQ, OQ) and process optimization projects for neurovascular catheter devices to improve yield and regulatory compliance.
+                            Executed cleanroom validation protocols (IQ, OQ) and process optimization projects for neurovascular catheter devices to improve manufacturing yield and compliance.
                         </p>
                     </div>
 
                     <div>
-                        <h4 class="quest-section-heading"><span>📜</span> Log Entries &amp; Contributions</h4>
-                        <ul class="quest-bullets">
+                        <h4 class="subheading-row">
+                            <svg class="pixel-icon"><use href="#px-arrow"></use></svg> Key Responsibilities &amp; Contributions
+                        </h4>
+                        <ul class="bullet-list">
                             <li>Executed validation protocols (IQ, OQ), FMEA, and CAPA to support compliant manufacturing of neurovascular catheter devices.</li>
                             <li>Drafted and executed validation documents (work instructions, protocols, reports) in collaboration with R&amp;D, Quality, and Regulatory teams.</li>
                             <li>Conducted comparability assessments and process optimization projects, including a catheter coiling efficiency improvement that saved <strong>$70,000/year</strong>.</li>
@@ -276,55 +339,65 @@
                         </ul>
                     </div>
 
-                    <div class="quest-rewards">
-                        <div class="reward-title"><span>🏆</span> Unlocked Rewards &amp; Impact</div>
-                        <div class="reward-tags">
-                            <span class="reward-tag">+$70,000/yr Coiling Savings</span>
-                            <span class="reward-tag">IQ / OQ Execution</span>
-                            <span class="reward-tag">Minitab Pareto Analysis</span>
-                            <span class="reward-tag">SOLID-WORKS Packaging Specs</span>
+                    <div class="impact-box">
+                        <div class="impact-title">
+                            <svg class="pixel-icon"><use href="#px-chart"></use></svg> Key Metrics &amp; Impact
+                        </div>
+                        <div class="impact-tags">
+                            <span class="impact-tag">+$70,000/yr Coiling Savings</span>
+                            <span class="impact-tag">IQ / OQ Protocol Execution</span>
+                            <span class="impact-tag">Minitab Pareto Analysis</span>
+                            <span class="impact-tag">SOLID-WORKS Packaging Specs</span>
                         </div>
                     </div>
                 </div>
             </article>
 
-            <!-- Quest 4: Prasad Lab -->
-            <article class="quest-item">
-                <div class="quest-header">
-                    <div class="quest-title-area">
-                        <div class="quest-status-icon" title="Completed Quest">✔</div>
+            <!-- Role 4: Prasad Lab -->
+            <article class="experience-card">
+                <div class="experience-header">
+                    <div class="experience-title-area">
+                        <div class="status-icon-box" title="Research Role">
+                            <svg class="pixel-icon"><use href="#px-check"></use></svg>
+                        </div>
                         <div>
-                            <h3 class="quest-title">Prasad Lab for Materials Research &middot; Researcher</h3>
-                            <div class="quest-meta">
+                            <h3 class="experience-title">Prasad Lab for Materials Research &middot; Researcher</h3>
+                            <div class="experience-meta">
                                 <span>Miami, FL</span> &middot;
                                 <time datetime="2022-08/2023-12">Aug 2022 &ndash; Dec 2023</time>
                             </div>
                         </div>
                     </div>
-                    <span class="quest-badge" style="background: var(--pink-pastel);">Quest Complete</span>
+                    <span class="role-badge" style="background: var(--pink-pastel);">Research Role</span>
                 </div>
-                <div class="quest-body">
+                <div class="experience-body">
                     <div>
-                        <h4 class="quest-section-heading"><span>🎯</span> Quest Objectives &amp; Focus</h4>
+                        <h4 class="subheading-row">
+                            <svg class="pixel-icon"><use href="#px-arrow"></use></svg> Scope &amp; Technical Challenge
+                        </h4>
                         <p style="color: var(--text-secondary); margin-bottom: 0.75rem;">
-                            Biomaterial polymer synthesis, biomechanical testing, and physiological sensor development for real-time biological monitoring.
+                            Biomaterial polymer synthesis, biomechanical characterization, and physiological sensor development for real-time biological monitoring.
                         </p>
                     </div>
 
                     <div>
-                        <h4 class="quest-section-heading"><span>📜</span> Log Entries &amp; Contributions</h4>
-                        <ul class="quest-bullets">
-                            <li>Conducted material synthesis, mechanical characterization, and data analysis of biomaterials and PDMS composites for biomedical applications.</li>
+                        <h4 class="subheading-row">
+                            <svg class="pixel-icon"><use href="#px-arrow"></use></svg> Key Responsibilities &amp; Contributions
+                        </h4>
+                        <ul class="bullet-list">
+                            <li>Conducted material synthesis, mechanical testing, and data analysis of biomaterials and PDMS composites for biomedical applications.</li>
                             <li>Developed and validated sensors for real-time biological monitoring, integrating experimental sensor hardware with statistical analysis in <strong>MATLAB</strong> and <strong>Arduino</strong>.</li>
                         </ul>
                     </div>
 
-                    <div class="quest-rewards">
-                        <div class="reward-title"><span>🏆</span> Unlocked Rewards &amp; Impact</div>
-                        <div class="reward-tags">
-                            <span class="reward-tag">PDMS Polymer Synthesis</span>
-                            <span class="reward-tag">Biosensor Calibration</span>
-                            <span class="reward-tag">MATLAB &amp; Arduino Data Modeling</span>
+                    <div class="impact-box">
+                        <div class="impact-title">
+                            <svg class="pixel-icon"><use href="#px-chart"></use></svg> Key Metrics &amp; Impact
+                        </div>
+                        <div class="impact-tags">
+                            <span class="impact-tag">PDMS Polymer Synthesis</span>
+                            <span class="impact-tag">Biosensor Calibration</span>
+                            <span class="impact-tag">MATLAB &amp; Arduino Data Modeling</span>
                         </div>
                     </div>
                 </div>
@@ -332,123 +405,125 @@
         </section>
 
         <!-- ==========================================================================
-             SKILLS & INVENTORY BAGS (#skills)
+             TECHNICAL TOOLKIT & STANDARDS (#skills)
              ========================================================================== -->
         <section class="section-spacing" id="skills" aria-labelledby="skills-title">
             <div class="section-header-banner">
                 <div class="banner-title-group">
-                    <span class="banner-ribbon">Item Inventory</span>
-                    <h2 id="skills-title">Technical Skills &amp; Standards</h2>
+                    <span class="banner-ribbon">Toolkit</span>
+                    <h2 id="skills-title">Technical Toolkit &amp; Standards</h2>
                 </div>
-                <span class="pixel-font" style="font-size: 0.8rem; color: var(--text-muted);">4 Inventory Bags</span>
+                <span class="pixel-font" style="font-size: 0.8rem; color: var(--text-muted);">4 Core Competencies</span>
             </div>
 
-            <div class="inventory-bags-grid">
-                <!-- Bag 1: Quality Systems & Standards -->
-                <div class="inventory-bag">
-                    <div class="bag-header">
-                        <span>🛡️</span> Quality &amp; Regulatory Standards
+            <div class="toolkit-grid">
+                <!-- Group 1: Standards -->
+                <div class="toolkit-card">
+                    <div class="toolkit-header">
+                        <svg class="pixel-icon"><use href="#px-shield"></use></svg> Regulatory Standards
                     </div>
-                    <div class="bag-slots">
-                        <div class="inventory-slot"><span class="slot-item-name">ISO 13485</span><span class="slot-category-tag">Medical QMS</span></div>
-                        <div class="inventory-slot"><span class="slot-item-name">FDA 21 CFR 820</span><span class="slot-category-tag">QSR / cGMP</span></div>
-                        <div class="inventory-slot"><span class="slot-item-name">ISO 11040-8</span><span class="slot-category-tag">Leak Testing</span></div>
-                        <div class="inventory-slot"><span class="slot-item-name">USP &lt;382&gt;</span><span class="slot-category-tag">Package Integrity</span></div>
-                        <div class="inventory-slot"><span class="slot-item-name">EU MDR &amp; MDSAP</span><span class="slot-category-tag">Global Regs</span></div>
-                        <div class="inventory-slot"><span class="slot-item-name">ISO 9001</span><span class="slot-category-tag">Quality Mgmt</span></div>
-                    </div>
-                </div>
-
-                <!-- Bag 2: Testing & Validation -->
-                <div class="inventory-bag">
-                    <div class="bag-header">
-                        <span>🧪</span> Testing &amp; Validation
-                    </div>
-                    <div class="bag-slots">
-                        <div class="inventory-slot"><span class="slot-item-name">TMV / TMD / TMT</span><span class="slot-category-tag">Test Methods</span></div>
-                        <div class="inventory-slot"><span class="slot-item-name">CCIT Leak Testing</span><span class="slot-category-tag">Container Closure</span></div>
-                        <div class="inventory-slot"><span class="slot-item-name">Instron Mechanical</span><span class="slot-category-tag">Tensile / Break</span></div>
-                        <div class="inventory-slot"><span class="slot-item-name">IQ, OQ, PQ</span><span class="slot-category-tag">Equipment Qual</span></div>
-                        <div class="inventory-slot"><span class="slot-item-name">Stability Protocols</span><span class="slot-category-tag">Drug Delivery</span></div>
-                        <div class="inventory-slot"><span class="slot-item-name">Autoinjectors &amp; Catheters</span><span class="slot-category-tag">Device Types</span></div>
+                    <div class="slot-list">
+                        <div class="pixel-slot"><span class="slot-name">ISO 13485</span><span class="slot-meta">Medical QMS</span></div>
+                        <div class="pixel-slot"><span class="slot-name">FDA 21 CFR 820</span><span class="slot-meta">QSR / cGMP</span></div>
+                        <div class="pixel-slot"><span class="slot-name">ISO 11040-8</span><span class="slot-meta">Leak Testing</span></div>
+                        <div class="pixel-slot"><span class="slot-name">USP &lt;382&gt;</span><span class="slot-meta">Package Integrity</span></div>
+                        <div class="pixel-slot"><span class="slot-name">EU MDR &amp; MDSAP</span><span class="slot-meta">Global Regs</span></div>
+                        <div class="pixel-slot"><span class="slot-name">ISO 9001</span><span class="slot-meta">Quality Mgmt</span></div>
                     </div>
                 </div>
 
-                <!-- Bag 3: Quality Engineering & Risk -->
-                <div class="inventory-bag">
-                    <div class="bag-header">
-                        <span>⚡</span> Quality &amp; Risk Methodologies
+                <!-- Group 2: Testing & Validation -->
+                <div class="toolkit-card">
+                    <div class="toolkit-header">
+                        <svg class="pixel-icon"><use href="#px-flask"></use></svg> Testing &amp; Validation
                     </div>
-                    <div class="bag-slots">
-                        <div class="inventory-slot"><span class="slot-item-name">CAPA &amp; NCR</span><span class="slot-category-tag">Corrective Actions</span></div>
-                        <div class="inventory-slot"><span class="slot-item-name">Root Cause Analysis</span><span class="slot-category-tag">RCA / 5-Why</span></div>
-                        <div class="inventory-slot"><span class="slot-item-name">FMEA Risk Analysis</span><span class="slot-category-tag">Failure Modes</span></div>
-                        <div class="inventory-slot"><span class="slot-item-name">Statistical Process Control</span><span class="slot-category-tag">SPC &middot; Cpk</span></div>
-                        <div class="inventory-slot"><span class="slot-item-name">QMS Audits Readiness</span><span class="slot-category-tag">FDA / ISO</span></div>
-                        <div class="inventory-slot"><span class="slot-item-name">Change Control</span><span class="slot-category-tag">ECO / MCO</span></div>
+                    <div class="slot-list">
+                        <div class="pixel-slot"><span class="slot-name">TMV / TMD / TMT</span><span class="slot-meta">Test Methods</span></div>
+                        <div class="pixel-slot"><span class="slot-name">CCIT Leak Testing</span><span class="slot-meta">Container Closure</span></div>
+                        <div class="pixel-slot"><span class="slot-name">Instron Mechanical</span><span class="slot-meta">Tensile / Break</span></div>
+                        <div class="pixel-slot"><span class="slot-name">IQ, OQ, PQ</span><span class="slot-meta">Equipment Qual</span></div>
+                        <div class="pixel-slot"><span class="slot-name">Stability Protocols</span><span class="slot-meta">Drug Delivery</span></div>
+                        <div class="pixel-slot"><span class="slot-name">Autoinjectors &amp; Catheters</span><span class="slot-meta">Device Types</span></div>
                     </div>
                 </div>
 
-                <!-- Bag 4: Software & Tools -->
-                <div class="inventory-bag">
-                    <div class="bag-header">
-                        <span>💻</span> Software &amp; Engineering Tools
+                <!-- Group 3: Quality & Risk -->
+                <div class="toolkit-card">
+                    <div class="toolkit-header">
+                        <svg class="pixel-icon"><use href="#px-gear"></use></svg> Quality &amp; Risk Methods
                     </div>
-                    <div class="bag-slots">
-                        <div class="inventory-slot"><span class="slot-item-name">Teamcenter</span><span class="slot-category-tag">PLM System</span></div>
-                        <div class="inventory-slot"><span class="slot-item-name">Polarion</span><span class="slot-category-tag">ALM / OOS</span></div>
-                        <div class="inventory-slot"><span class="slot-item-name">ETQ Reliance</span><span class="slot-category-tag">QMS Software</span></div>
-                        <div class="inventory-slot"><span class="slot-item-name">Minitab &amp; Excel</span><span class="slot-category-tag">Stats Modeling</span></div>
-                        <div class="inventory-slot"><span class="slot-item-name">SOLID-WORKS</span><span class="slot-category-tag">CAD Packaging</span></div>
-                        <div class="inventory-slot"><span class="slot-item-name">MATLAB &amp; Arduino</span><span class="slot-category-tag">Biosensors</span></div>
+                    <div class="slot-list">
+                        <div class="pixel-slot"><span class="slot-name">CAPA &amp; NCR</span><span class="slot-meta">Corrective Actions</span></div>
+                        <div class="pixel-slot"><span class="slot-name">Root Cause Analysis</span><span class="slot-meta">RCA / 5-Why</span></div>
+                        <div class="pixel-slot"><span class="slot-name">FMEA Risk Analysis</span><span class="slot-meta">Failure Modes</span></div>
+                        <div class="pixel-slot"><span class="slot-name">Statistical Process Control</span><span class="slot-meta">SPC &middot; Cpk</span></div>
+                        <div class="pixel-slot"><span class="slot-name">QMS Audits Readiness</span><span class="slot-meta">FDA / ISO</span></div>
+                        <div class="pixel-slot"><span class="slot-name">Change Control</span><span class="slot-meta">ECO / MCO</span></div>
+                    </div>
+                </div>
+
+                <!-- Group 4: Software & Tools -->
+                <div class="toolkit-card">
+                    <div class="toolkit-header">
+                        <svg class="pixel-icon"><use href="#px-skills"></use></svg> Software &amp; Data Tools
+                    </div>
+                    <div class="slot-list">
+                        <div class="pixel-slot"><span class="slot-name">Teamcenter</span><span class="slot-meta">PLM System</span></div>
+                        <div class="pixel-slot"><span class="slot-name">Polarion</span><span class="slot-meta">ALM / OOS</span></div>
+                        <div class="pixel-slot"><span class="slot-name">ETQ Reliance</span><span class="slot-meta">QMS Software</span></div>
+                        <div class="pixel-slot"><span class="slot-name">Minitab &amp; Excel</span><span class="slot-meta">Stats Modeling</span></div>
+                        <div class="pixel-slot"><span class="slot-name">SOLID-WORKS</span><span class="slot-meta">CAD Packaging</span></div>
+                        <div class="pixel-slot"><span class="slot-name">MATLAB &amp; Arduino</span><span class="slot-meta">Biosensors</span></div>
                     </div>
                 </div>
             </div>
         </section>
 
         <!-- ==========================================================================
-             SPECIAL ORDERS BULLETIN BOARD (PROJECTS & LEADERSHIP)
+             FEATURED PROJECTS & LEADERSHIP (#projects)
              ========================================================================== -->
-        <section class="section-spacing" id="projects" aria-labelledby="bulletin-title">
+        <section class="section-spacing" id="projects" aria-labelledby="projects-title">
             <div class="section-header-banner">
                 <div class="banner-title-group">
-                    <span class="banner-ribbon">Bulletin Board</span>
-                    <h2 id="bulletin-title">Special Orders &amp; Leadership</h2>
+                    <span class="banner-ribbon">Projects</span>
+                    <h2 id="projects-title">Featured Projects &amp; Leadership</h2>
                 </div>
-                <span class="pixel-font" style="font-size: 0.8rem; color: var(--text-muted);">2 Posted Orders</span>
+                <span class="pixel-font" style="font-size: 0.8rem; color: var(--text-muted);">2 Highlights</span>
             </div>
 
-            <div class="bulletin-board">
-                <div class="bulletin-grid">
-                    <!-- Notice 1: Hexaflow Needle -->
-                    <div class="bulletin-notice">
-                        <div class="pin-thumbtack" aria-hidden="true"></div>
-                        <div class="notice-title-area">
-                            <span class="notice-badge">Special Order #01 &middot; Miami, FL</span>
-                            <h3 class="notice-title">Hexaflow: Bone Marrow Aspiration Needle</h3>
+            <div class="project-board">
+                <div class="project-grid">
+                    <!-- Project 1: Hexaflow Needle -->
+                    <div class="project-card">
+                        <div class="project-pin" aria-hidden="true"></div>
+                        <div class="project-title-area">
+                            <span class="project-badge">Engineering Project &middot; Miami, FL</span>
+                            <h3 class="project-card-title">Hexaflow: Bone Marrow Aspiration Needle</h3>
                             <p style="font-family: 'Silkscreen', monospace; font-size: 0.75rem; color: var(--text-muted); margin-top: 0.25rem;">Project Manager / Documentation Control &middot; Jan 2023 &ndash; Dec 2023</p>
                         </div>
-                        <p class="notice-desc">
+                        <p class="project-card-desc">
                             Secured $60,000 project sponsorship by effectively communicating clinical, technical, and testing specifications. Directed verification protocols, engineering testing reports, and multidisciplinary studies. Spearheaded the complete creation of the Design History File (DHF) and Device Master Record (DMR) in strict compliance with FDA and ISO regulatory requirements.
                         </p>
-                        <div class="notice-reward">
-                            <span>💰 Reward:</span> $60,000 Sponsorship &middot; FDA DHF/DMR Certified
+                        <div class="project-highlight-box">
+                            <svg class="pixel-icon"><use href="#px-dollar"></use></svg>
+                            <span>Impact: $60,000 Sponsorship &middot; FDA DHF/DMR Certified</span>
                         </div>
                     </div>
 
-                    <!-- Notice 2: Community Outreach -->
-                    <div class="bulletin-notice">
-                        <div class="pin-thumbtack" aria-hidden="true"></div>
-                        <div class="notice-title-area">
-                            <span class="notice-badge">Special Order #02 &middot; Miami, FL</span>
-                            <h3 class="notice-title">Engineering Outreach &amp; Mentorship</h3>
+                    <!-- Project 2: Community Outreach -->
+                    <div class="project-card">
+                        <div class="project-pin" aria-hidden="true"></div>
+                        <div class="project-title-area">
+                            <span class="project-badge">Leadership &amp; Mentorship &middot; Miami, FL</span>
+                            <h3 class="project-card-title">Engineering Outreach &amp; Mentorship</h3>
                             <p style="font-family: 'Silkscreen', monospace; font-size: 0.75rem; color: var(--text-muted); margin-top: 0.25rem;">SWE / BMES Representative &middot; Aug 2021 &ndash; Dec 2023</p>
                         </div>
-                        <p class="notice-desc">
+                        <p class="project-card-desc">
                             Represented the Society of Women Engineers (SWE) and Biomedical Engineering Society (BMES) at FIU's Engineering Expo, presenting biomedical engineering demonstrations to 1,500+ K-12 students. Featured panelist sharing personal insights on navigating an engineering career as an immigrant; provided ongoing 1-on-1 mentorship via coffee chats to guide aspiring engineers.
                         </p>
-                        <div class="notice-reward">
-                            <span>💖 Reward:</span> 1,500+ Students Inspired &middot; STEM Community Hearts
+                        <div class="project-highlight-box">
+                            <svg class="pixel-icon"><use href="#px-award"></use></svg>
+                            <span>Impact: 1,500+ Students Reached &middot; STEM Mentorship</span>
                         </div>
                     </div>
                 </div>
@@ -456,12 +531,12 @@
         </section>
 
         <!-- ==========================================================================
-             ABOUT & TOWN ARCHIVES (#about)
+             ABOUT & EDUCATION (#about)
              ========================================================================== -->
         <section class="section-spacing" id="about" aria-labelledby="about-title">
             <div class="section-header-banner">
                 <div class="banner-title-group">
-                    <span class="banner-ribbon">Town Archives</span>
+                    <span class="banner-ribbon">Background</span>
                     <h2 id="about-title">Education &amp; Background</h2>
                 </div>
             </div>
@@ -479,43 +554,51 @@
                         </p>
                         <div style="display: flex; gap: 0.75rem; flex-wrap: wrap;">
                             <a href="assets/pdf/jalaica-jaramillo-resume.pdf" target="_blank" rel="noopener noreferrer" class="pixel-btn">
-                                <span>📜</span> View Full Resume (PDF) ↗
+                                <svg class="pixel-icon"><use href="#px-resume"></use></svg> View Full Resume (PDF) ↗
                             </a>
                             <a href="#contact" class="pixel-btn pixel-btn-secondary">
-                                <span>✉</span> Send a Message
+                                <svg class="pixel-icon"><use href="#px-contact"></use></svg> Send a Message
                             </a>
                         </div>
                     </div>
 
                     <!-- Scholar Medals & Education -->
-                    <div class="scholar-card">
-                        <div class="scholar-badge-item">
-                            <div class="scholar-medal">🎓</div>
-                            <div class="scholar-text">
+                    <div class="credentials-card">
+                        <div class="credential-item">
+                            <div class="credential-icon-box">
+                                <svg class="pixel-icon"><use href="#px-award"></use></svg>
+                            </div>
+                            <div class="credential-text">
                                 <h4>Florida International University</h4>
                                 <p>B.Sc. in Biomedical Engineering (Biomaterials &amp; Biomechanics)</p>
                             </div>
                         </div>
 
-                        <div class="scholar-badge-item">
-                            <div class="scholar-medal">⭐</div>
-                            <div class="scholar-text">
+                        <div class="credential-item">
+                            <div class="credential-icon-box">
+                                <svg class="pixel-icon"><use href="#px-star"></use></svg>
+                            </div>
+                            <div class="credential-text">
                                 <h4>Dean’s List Scholar</h4>
                                 <p>Recognized for outstanding academic achievement</p>
                             </div>
                         </div>
 
-                        <div class="scholar-badge-item">
-                            <div class="scholar-medal">🔬</div>
-                            <div class="scholar-text">
+                        <div class="credential-item">
+                            <div class="credential-icon-box">
+                                <svg class="pixel-icon"><use href="#px-flask"></use></svg>
+                            </div>
+                            <div class="credential-text">
                                 <h4>CURE Scholar</h4>
                                 <p>Coulter Undergraduate Research Excellence Program Fellow</p>
                             </div>
                         </div>
 
-                        <div class="scholar-badge-item">
-                            <div class="scholar-medal">📜</div>
-                            <div class="scholar-text">
+                        <div class="credential-item">
+                            <div class="credential-icon-box">
+                                <svg class="pixel-icon"><use href="#px-resume"></use></svg>
+                            </div>
+                            <div class="credential-text">
                                 <h4>OURS Scholar</h4>
                                 <p>Opportunities for Undergraduate Research and Scholarship</p>
                             </div>
@@ -526,21 +609,21 @@
         </section>
 
         <!-- ==========================================================================
-             FARM MAILBOX / CONTACT FORM (#contact)
+             CONTACT SECTION (#contact)
              ========================================================================== -->
         <section class="section-spacing" id="contact" aria-labelledby="contact-title">
             <div class="section-header-banner">
                 <div class="banner-title-group">
-                    <span class="banner-ribbon">Farm Mailbox</span>
-                    <h2 id="contact-title">Send a Letter</h2>
+                    <span class="banner-ribbon">Connect</span>
+                    <h2 id="contact-title">Get In Touch</h2>
                 </div>
-                <span class="pixel-font" style="font-size: 0.8rem; color: var(--text-muted);">Delivery to Jalaica</span>
+                <span class="pixel-font" style="font-size: 0.8rem; color: var(--text-muted);">Direct Contact &middot; Miami, FL</span>
             </div>
 
-            <div class="letter-form-wrapper">
-                <div class="letter-paper">
-                    <div class="letter-header">
-                        <div class="letter-to">To: Jalaica Jaramillo &middot; Analytical Sciences Engineer</div>
+            <div class="contact-wrapper">
+                <div class="contact-sheet">
+                    <div class="contact-header">
+                        <div class="contact-recipient">To: Jalaica Jaramillo &middot; Analytical Sciences Engineer</div>
                         <div style="font-family: 'Press Start 2P', monospace; font-size: 0.6rem; color: var(--text-muted);">
                             Location: Miami / Deerfield Beach, FL
                         </div>
@@ -548,38 +631,38 @@
 
                     <div style="margin-bottom: 1.5rem; display: flex; gap: 1.5rem; flex-wrap: wrap;">
                         <a href="mailto:jalaicajaramillo@gmail.com" class="choice-option" style="padding: 0.4rem 0.85rem;">
-                            <span>💌</span> jalaicajaramillo@gmail.com
+                            <svg class="pixel-icon"><use href="#px-mail"></use></svg> jalaicajaramillo@gmail.com
                         </a>
                         <a href="tel:+13059751318" class="choice-option" style="padding: 0.4rem 0.85rem;">
-                            <span>📞</span> (305) 975-1318
+                            <svg class="pixel-icon"><use href="#px-phone"></use></svg> (305) 975-1318
                         </a>
                     </div>
 
                     <!-- Contact Form -->
-                    <form name="stardew_contact" method="POST" action="https://formspree.io/f/placeholder">
+                    <form name="portfolio_contact" method="POST" action="https://formspree.io/f/placeholder">
                         <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 1rem;">
-                            <div class="pixel-form-field">
+                            <div class="form-group">
                                 <label for="sender-name">Your Name</label>
-                                <input type="text" id="sender-name" name="name" class="pixel-input" placeholder="e.g. Robin or Demetrius" required>
+                                <input type="text" id="sender-name" name="name" class="form-input" placeholder="Your name or company" required>
                             </div>
-                            <div class="pixel-form-field">
+                            <div class="form-group">
                                 <label for="sender-email">Your Email Address</label>
-                                <input type="email" id="sender-email" name="email" class="pixel-input" placeholder="you@company.com" required>
+                                <input type="email" id="sender-email" name="email" class="form-input" placeholder="you@company.com" required>
                             </div>
                         </div>
 
-                        <div class="pixel-form-field">
+                        <div class="form-group">
                             <label for="letter-subject">Subject / Inquiry</label>
-                            <input type="text" id="letter-subject" name="subject" class="pixel-input" placeholder="e.g. Combination product analytical engineering opportunity">
+                            <input type="text" id="letter-subject" name="subject" class="form-input" placeholder="Combination products / Quality engineering opportunity">
                         </div>
 
-                        <div class="pixel-form-field">
-                            <label for="letter-message">Letter Content</label>
-                            <textarea id="letter-message" name="message" class="pixel-input" placeholder="Write your message to Jalaica..." required></textarea>
+                        <div class="form-group">
+                            <label for="letter-message">Message</label>
+                            <textarea id="letter-message" name="message" class="form-input" placeholder="Write your message to Jalaica..." required></textarea>
                         </div>
 
                         <button type="submit" class="pixel-btn" style="margin-top: 0.5rem;">
-                            <span>✉</span> Seal &amp; Send Letter
+                            <svg class="pixel-icon"><use href="#px-mail"></use></svg> Send Message
                         </button>
                     </form>
                 </div>
@@ -591,7 +674,7 @@
     <footer style="background: var(--wood-dark); color: #ffffff; border-top: 4px solid var(--wood-mid); padding: 2rem 0; margin-top: 3rem; text-align: center;">
         <div class="container" style="display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 1rem;">
             <div style="font-family: 'Silkscreen', monospace; font-size: 0.95rem;">
-                Jalaica Jaramillo <span>★</span> Biomedical &amp; Analytical Sciences
+                Jalaica Jaramillo &middot; Biomedical &amp; Analytical Sciences
             </div>
             <div style="font-family: 'Press Start 2P', monospace; font-size: 0.55rem; color: #fbcfe8;">
                 Built with precision &middot; Miami, FL
