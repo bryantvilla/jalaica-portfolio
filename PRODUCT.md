@@ -2,32 +2,31 @@
 
 ## Register
 
-brand
+Professional Engineering Portfolio
 
-## Users
+## Target Audience
 
-Engineering managers, recruiters, and engineering peers evaluating Bryant Villarreal for backend and platform software engineering roles at AI companies and major technology companies. Readers need to quickly understand his current work, technical contributions, and background, then review his resume or get in touch.
+Engineering directors, hiring managers, regulatory compliance leads, and recruiters evaluating Jalaica Jaramillo for analytical engineering, quality engineering, validation (V&V / TMV), and combination product development roles at medical device, pharmaceutical, and biotechnology companies (e.g., SHL Medical, Integer, Medtronic, Abbott, Boston Scientific, J&J).
 
 ## Product Purpose
 
-A personal engineering portfolio centered on Bryant's professional identity and access management work at UKG since September 2022. He is a Software Engineer II, promoted in January 2025 after working as an Associate Software Engineer from May 2023 through December 2024. His M.S. in Computer Science from Florida International University was completed in December 2025. Undergraduate projects are historical supporting material, not recent work.
+An authoritative, elegant personal engineering portfolio that highlights Jalaica's cross-functional engineering impact across autoinjector combination products, neurovascular catheter manufacturing, enterprise QMS modernization, and biomedical research.
 
 ## Brand Personality
 
-Precise, capable, candid. The user requested a dark, restrained, technical redesign and delegated the final choice between two visual previews. The selected direction combines a strong introduction with a conceptual identity-system diagram.
+Methodical, rigorous, sophisticated. "Pink, but professional"—combining an executive rose/plum palette with strict technical clarity, measurable achievements (e.g., $1M+ billing recovery, $70k/yr manufacturing savings, $60k project sponsorship), and standard regulatory frameworks (ISO 13485, FDA 21 CFR 820, ISO 11040-8, USP <382>).
 
-## Anti-references
+## Key Pillars
 
-Avoid the previous student-portfolio presentation, cartoon hero, floating icon navigation, repeated project cards, decorative glows, invented impact metrics, and claims of AI research or model-development experience. AI coding tools describe the development workflow, not a separate professional specialization.
+1. **Analytical Sciences & Combination Products:** Highlight current work at SHL Medical on autoinjector stability programs, container closure integrity testing (CCIT), TMV, and deviation resolutions in Polarion/Teamcenter.
+2. **Quality Systems & Audit Readiness:** Showcase SME leadership in the enterprise transition to ETQ Reliance at Integer, IQ protocols, and FDA/ISO compliance.
+3. **Manufacturing & Continuous Improvement:** Quantify results with $70,000/yr savings from catheter coiling optimization at InNeuroCo.
+4. **Academic & Research Rigor:** Detail biomaterials research at Florida International University (Prasad Lab), Dean's List, OURS Scholar, and CURE Scholar honors.
+5. **Leadership & Mentorship:** Emphasize SWE/BMES representation, 1,500+ student STEM outreach, and immigrant career guidance.
 
-## Design Principles
+## Accessibility & Standards
 
-- Lead with concrete professional engineering work.
-- Explain the problem, contribution, and engineering considerations clearly.
-- Distinguish conceptual illustrations from an employer's architecture.
-- Keep the resume and contact information easy to find.
-- Present undergraduate work as a small archive.
-
-## Accessibility & Inclusion
-
-Aim for WCAG AA contrast, semantic landmarks, keyboard-operable disclosures, visible focus, useful labels, readable mobile layouts, and reduced-motion support. Core content and links must work without JavaScript.
+- Adheres to WCAG AA / AAA contrast across both dark and light modes.
+- Fully operable without JavaScript.
+- Mobile-responsive across handheld, tablet, and wide desktop viewports.
+- Integrated offline/downloadable resume PDF and printable web resume.

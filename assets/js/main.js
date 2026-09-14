@@ -5,7 +5,7 @@ const themeColor = document.querySelector('meta[name="theme-color"]');
 function updateTheme(theme) {
     document.documentElement.dataset.theme = theme;
     themeButton.setAttribute('aria-label', theme === 'dark' ? 'Switch to light theme' : 'Switch to dark theme');
-    themeColor.setAttribute('content', theme === 'dark' ? '#151711' : '#f5f7f0');
+    themeColor.setAttribute('content', theme === 'dark' ? '#191417' : '#fdf8f9');
 }
 
 updateTheme(document.documentElement.dataset.theme);
@@ -14,7 +14,7 @@ themeButton.addEventListener('click', () => {
     const nextTheme = document.documentElement.dataset.theme === 'dark' ? 'light' : 'dark';
     updateTheme(nextTheme);
     try {
-        localStorage.setItem('portfolio-theme', nextTheme);
+        localStorage.setItem('jalaica-portfolio-theme', nextTheme);
     } catch {
         // The theme still works for this visit when storage is unavailable.
     }
@@ -31,7 +31,7 @@ function updateNavigation() {
     scheduled = false;
     header.classList.toggle('is-scrolled', window.scrollY > 12);
     const offset = header.getBoundingClientRect().height + 32;
-    const current = [...navigation].reverse().find(item => item.section.getBoundingClientRect().top <= offset);
+    const current = [...navigation].reverse().find(item => item.section && item.section.getBoundingClientRect().top <= offset);
     navigation.forEach(({ link }) => {
         if (link === current?.link) link.setAttribute('aria-current', 'location');
         else link.removeAttribute('aria-current');
