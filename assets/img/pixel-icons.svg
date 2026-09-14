@@ -246,13 +246,68 @@
       <rect x="6" y="5" width="1" height="1" fill="#ffffff"/>
     </symbol>
 
-    <!-- 16. Stardew Midnight Moon & Star -->
+    <!-- 16. Stardew Midnight Crescent Moon & Twinkling Stars -->
     <symbol id="px-moon" viewBox="0 0 16 16">
-      <path d="M5 2h5v2H5V2zm5 2h3v3h-3V4zm2 3h2v4h-2V7zm-2 4h3v3h-3v-3zm-5 3h5v2H5v-2zm-2-3h2v2H3v-2zm-1-4h2v4H2V7zm1-3h2v2H3V4z" fill="#6b21a8"/>
-      <rect x="4" y="3" width="5" height="10" fill="#c084fc"/>
-      <rect x="5" y="4" width="3" height="8" fill="#e9d5ff"/>
-      <rect x="12" y="2" width="2" height="2" fill="#facc15"/>
-      <rect x="13" y="1" width="1" height="1" fill="#fef08a"/>
+      <!-- Crescent Outer Shadow & Silhouette -->
+      <rect x="8" y="1" width="2" height="1" fill="#78350f"/>
+      <rect x="6" y="2" width="2" height="1" fill="#78350f"/>
+      <rect x="5" y="3" width="2" height="1" fill="#78350f"/>
+      <rect x="4" y="4" width="2" height="1" fill="#78350f"/>
+      <rect x="3" y="5" width="2" height="1" fill="#78350f"/>
+      <rect x="2" y="6" width="2" height="4" fill="#78350f"/>
+      <rect x="3" y="10" width="2" height="1" fill="#78350f"/>
+      <rect x="4" y="11" width="2" height="1" fill="#78350f"/>
+      <rect x="5" y="12" width="2" height="1" fill="#78350f"/>
+      <rect x="6" y="13" width="2" height="1" fill="#78350f"/>
+      <rect x="8" y="14" width="2" height="1" fill="#78350f"/>
+
+      <!-- Crescent Core Golden Body -->
+      <rect x="8" y="1" width="1" height="1" fill="#f59e0b"/>
+      <rect x="7" y="2" width="2" height="1" fill="#facc15"/>
+      <rect x="6" y="3" width="2" height="1" fill="#facc15"/>
+      <rect x="5" y="4" width="2" height="1" fill="#facc15"/>
+      <rect x="4" y="5" width="2" height="1" fill="#facc15"/>
+      <rect x="3" y="6" width="2" height="4" fill="#facc15"/>
+      <rect x="4" y="10" width="2" height="1" fill="#facc15"/>
+      <rect x="5" y="11" width="2" height="1" fill="#facc15"/>
+      <rect x="6" y="12" width="2" height="1" fill="#facc15"/>
+      <rect x="7" y="13" width="2" height="1" fill="#facc15"/>
+      <rect x="8" y="14" width="1" height="1" fill="#f59e0b"/>
+
+      <!-- Crescent Inner Concave Rim & Luminous Highlight -->
+      <rect x="9" y="1" width="1" height="1" fill="#ffffff"/>
+      <rect x="9" y="2" width="1" height="1" fill="#fef08a"/>
+      <rect x="8" y="3" width="1" height="1" fill="#fef08a"/>
+      <rect x="7" y="4" width="1" height="1" fill="#fef08a"/>
+      <rect x="6" y="5" width="1" height="1" fill="#fef08a"/>
+      <rect x="5" y="6" width="1" height="4" fill="#fef08a"/>
+      <rect x="6" y="10" width="1" height="1" fill="#fef08a"/>
+      <rect x="7" y="11" width="1" height="1" fill="#fef08a"/>
+      <rect x="8" y="12" width="1" height="1" fill="#fef08a"/>
+      <rect x="9" y="13" width="1" height="1" fill="#fef08a"/>
+      <rect x="9" y="14" width="1" height="1" fill="#ffffff"/>
+
+      <!-- Inner White Glimmer Points -->
+      <rect x="4" y="6" width="1" height="2" fill="#ffffff"/>
+      <rect x="6" y="3" width="1" height="1" fill="#ffffff"/>
+      <rect x="6" y="12" width="1" height="1" fill="#ffffff"/>
+
+      <!-- Twinkling Starlight in Night Sky -->
+      <!-- Large 4-Pointed Star -->
+      <rect x="12" y="4" width="1" height="1" fill="#fef08a"/>
+      <rect x="11" y="5" width="3" height="1" fill="#fde047"/>
+      <rect x="10" y="6" width="5" height="1" fill="#fde047"/>
+      <rect x="12" y="6" width="1" height="1" fill="#ffffff"/>
+      <rect x="11" y="7" width="3" height="1" fill="#fde047"/>
+      <rect x="12" y="8" width="1" height="1" fill="#fef08a"/>
+
+      <!-- Distant Sparkle Top-Right -->
+      <rect x="13" y="1" width="1" height="1" fill="#ffffff"/>
+      <rect x="14" y="2" width="1" height="1" fill="#93c5fd"/>
+
+      <!-- Distant Sparkle Lower-Right -->
+      <rect x="12" y="11" width="1" height="1" fill="#ffffff"/>
+      <rect x="11" y="12" width="1" height="1" fill="#93c5fd"/>
     </symbol>
 
     <!-- 17. Stardew Classic Telephone (Rose) -->

@@ -9,8 +9,8 @@ document.addEventListener('DOMContentLoaded', () => {
     function applyTheme(theme) {
         document.documentElement.dataset.theme = theme;
         if (themeBtn) {
-            themeBtn.setAttribute('aria-label', theme === 'dark' ? 'Switch to Day Mode' : 'Switch to Night Mode');
-            themeBtn.setAttribute('title', theme === 'dark' ? 'Switch to Day Mode' : 'Switch to Night Mode');
+            const isDark = theme === 'dark';
+            themeBtn.setAttribute('aria-label', isDark ? 'Switch to Day Mode' : 'Switch to Night Mode');
         }
         try {
             localStorage.setItem('pixel-portfolio-theme', theme);
