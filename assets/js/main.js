@@ -5,18 +5,12 @@
 document.addEventListener('DOMContentLoaded', () => {
     // 1. Day / Night Mode Toggle
     const themeBtn = document.getElementById('theme-button');
-    const themeIcon = document.getElementById('theme-icon');
 
     function applyTheme(theme) {
         document.documentElement.dataset.theme = theme;
-        if (theme === 'dark') {
-            themeIcon.innerHTML = '<use href="#px-sun"></use>';
-            themeBtn.setAttribute('aria-label', 'Switch to Day Mode');
-            themeBtn.setAttribute('title', 'Switch to Day Mode');
-        } else {
-            themeIcon.innerHTML = '<use href="#px-moon"></use>';
-            themeBtn.setAttribute('aria-label', 'Switch to Night Mode');
-            themeBtn.setAttribute('title', 'Switch to Night Mode');
+        if (themeBtn) {
+            themeBtn.setAttribute('aria-label', theme === 'dark' ? 'Switch to Day Mode' : 'Switch to Night Mode');
+            themeBtn.setAttribute('title', theme === 'dark' ? 'Switch to Day Mode' : 'Switch to Night Mode');
         }
         try {
             localStorage.setItem('pixel-portfolio-theme', theme);
@@ -26,10 +20,13 @@ document.addEventListener('DOMContentLoaded', () => {
     const savedTheme = localStorage.getItem('pixel-portfolio-theme') || 'light';
     applyTheme(savedTheme);
 
-    themeBtn.addEventListener('click', () => {
-        const nextTheme = document.documentElement.dataset.theme === 'dark' ? 'light' : 'dark';
-        applyTheme(nextTheme);
-    });
+    if (themeBtn) {
+        themeBtn.addEventListener('click', () => {
+            const isDark = document.documentElement.dataset.theme === 'dark';
+            const nextTheme = isDark ? 'light' : 'dark';
+            applyTheme(nextTheme);
+        });
+    }
 
     // 2. Floating Cherry Blossom Petals
     const petalsContainer = document.getElementById('petals');

@@ -1,7 +1,7 @@
 <svg xmlns="http://www.w3.org/2000/svg" style="display:none;" shape-rendering="crispEdges">
   <defs>
     <!-- 1. Stardew Leather Work Briefcase -->
-    <g id="px-work" viewBox="0 0 16 16">
+    <symbol id="px-work" viewBox="0 0 16 16">
       <rect x="5" y="1" width="6" height="3" fill="#452312"/>
       <rect x="6" y="2" width="4" height="1" fill="#fff5eb"/>
       <rect x="1" y="4" width="14" height="11" fill="#452312"/>
@@ -12,125 +12,105 @@
       <rect x="7" y="8" width="2" height="1" fill="#78350f"/>
       <rect x="3" y="7" width="2" height="6" fill="#f43f5e"/>
       <rect x="11" y="7" width="2" height="6" fill="#f43f5e"/>
-    </g>
+    </symbol>
 
     <!-- 2. Stardew Crafting Toolkit (Wrench & Screwdriver) -->
-    <g id="px-skills" viewBox="0 0 16 16">
-      <!-- Cross tool 1: Wrench (Steel & Blue) -->
-      <path d="M2 3l3-3 3 1-1 2 2 2-2 2-2-2-2 1z" fill="#475569"/>
-      <rect x="3" y="1" width="3" height="3" fill="#94a3b8"/>
-      <rect x="4" y="2" width="1" height="1" fill="#f1f5f9"/>
-      <path d="M5 5l6 6 2-2-6-6z" fill="#64748b"/>
-      <path d="M11 11l3 3-1 1-3-3z" fill="#334155"/>
-      <!-- Tool 2: Screwdriver (Rose/Pink handle, steel blade) -->
-      <path d="M12 2l2 2-4 4-2-2z" fill="#e11d48"/>
-      <rect x="12" y="2" width="2" height="2" fill="#fda4af"/>
-      <path d="M8 8l-4 4-2-2 4-4z" fill="#cbd5e1"/>
-      <rect x="2" y="13" width="2" height="2" fill="#94a3b8"/>
-      <rect x="1" y="14" width="1" height="1" fill="#facc15"/>
-    </g>
+    <symbol id="px-skills" viewBox="0 0 16 16">
+      <rect x="2" y="3" width="3" height="3" fill="#475569"/>
+      <rect x="3" y="2" width="1" height="1" fill="#94a3b8"/>
+      <path d="M4 5l6 6 2-2-6-6z" fill="#64748b"/>
+      <rect x="10" y="11" width="3" height="3" fill="#334155"/>
+      <!-- Screwdriver -->
+      <rect x="11" y="2" width="3" height="3" fill="#e11d48"/>
+      <rect x="12" y="2" width="1" height="1" fill="#fda4af"/>
+      <path d="M9 7l-5 5-2-2 5-5z" fill="#cbd5e1"/>
+      <rect x="2" y="12" width="2" height="2" fill="#94a3b8"/>
+      <rect x="1" y="13" width="1" height="1" fill="#facc15"/>
+    </symbol>
 
     <!-- 3. Stardew Blueprint / Project Folder -->
-    <g id="px-project" viewBox="0 0 16 16">
+    <symbol id="px-project" viewBox="0 0 16 16">
       <path d="M1 2h6l2 2h6v11H1V2z" fill="#0369a1"/>
       <rect x="2" y="4" width="12" height="8" fill="#0284c7"/>
       <rect x="3" y="5" width="10" height="6" fill="#38bdf8"/>
-      <!-- Grid lines -->
       <line x1="4" y1="8" x2="12" y2="8" stroke="#e0f2fe" stroke-width="1"/>
       <line x1="7" y1="5" x2="7" y2="10" stroke="#e0f2fe" stroke-width="1"/>
-      <!-- Gold corner tag -->
       <rect x="11" y="5" width="2" height="2" fill="#facc15"/>
-    </g>
+    </symbol>
 
     <!-- 4. Stardew Character Profile Avatar -->
-    <g id="px-about" viewBox="0 0 16 16">
-      <!-- Hair -->
+    <symbol id="px-about" viewBox="0 0 16 16">
       <rect x="4" y="1" width="8" height="3" fill="#2c191d"/>
       <rect x="3" y="3" width="10" height="4" fill="#482830"/>
-      <!-- Pink Hair Flower -->
       <rect x="10" y="2" width="3" height="3" fill="#e11d48"/>
       <rect x="11" y="3" width="1" height="1" fill="#fde047"/>
-      <!-- Face -->
       <rect x="5" y="4" width="6" height="5" fill="#f3bfa6"/>
       <rect x="6" y="5" width="1" height="2" fill="#2c191d"/>
       <rect x="9" y="5" width="1" height="2" fill="#2c191d"/>
       <rect x="5" y="7" width="1" height="1" fill="#fda4af"/>
       <rect x="10" y="7" width="1" height="1" fill="#fda4af"/>
-      <!-- Lab Coat & Pink Shirt -->
       <rect x="4" y="9" width="8" height="6" fill="#f8fafc"/>
       <rect x="6" y="9" width="4" height="6" fill="#f43f5e"/>
       <rect x="7" y="11" width="2" height="4" fill="#f3bfa6"/>
       <rect x="3" y="11" width="2" height="4" fill="#cbd5e1"/>
       <rect x="11" y="11" width="2" height="4" fill="#cbd5e1"/>
-    </g>
+    </symbol>
 
     <!-- 5. Stardew Letter Envelope with Wax Heart Seal -->
-    <g id="px-contact" viewBox="0 0 16 16">
+    <symbol id="px-contact" viewBox="0 0 16 16">
       <rect x="1" y="2" width="14" height="12" fill="#8d5b36"/>
       <rect x="2" y="3" width="12" height="10" fill="#fffdfa"/>
-      <!-- Flap shadows -->
       <path d="M2 3l6 5 6-5z" fill="#fef3c7"/>
       <path d="M2 3l6 5 6-5" stroke="#d97706" stroke-width="1" fill="none"/>
-      <!-- Red Wax Heart Seal -->
       <rect x="7" y="7" width="2" height="2" fill="#e11d48"/>
       <rect x="6" y="6" width="2" height="2" fill="#f43f5e"/>
       <rect x="8" y="6" width="2" height="2" fill="#f43f5e"/>
       <rect x="6" y="6" width="1" height="1" fill="#fda4af"/>
-    </g>
+    </symbol>
 
     <!-- 6. Stardew Ancient Parchment Scroll (Resume) -->
-    <g id="px-resume" viewBox="0 0 16 16">
+    <symbol id="px-resume" viewBox="0 0 16 16">
       <rect x="2" y="1" width="12" height="14" fill="#b45309"/>
       <rect x="3" y="2" width="10" height="12" fill="#fef3c7"/>
       <rect x="4" y="3" width="8" height="10" fill="#fffbeb"/>
-      <!-- Scroll curls -->
       <rect x="1" y="2" width="2" height="3" fill="#d97706"/>
       <rect x="13" y="11" width="2" height="3" fill="#d97706"/>
-      <!-- Ink writing lines -->
       <rect x="5" y="4" width="6" height="1" fill="#854d0e"/>
       <rect x="5" y="6" width="6" height="1" fill="#854d0e"/>
       <rect x="5" y="8" width="5" height="1" fill="#854d0e"/>
-      <!-- Red Wax Stamp -->
       <circle cx="9" cy="11" r="2" fill="#e11d48"/>
       <rect x="9" y="10" width="1" height="1" fill="#fecdd3"/>
-    </g>
+    </symbol>
 
     <!-- 7. Stardew Quality Knight Shield -->
-    <g id="px-shield" viewBox="0 0 16 16">
+    <symbol id="px-shield" viewBox="0 0 16 16">
       <path d="M2 1h12v4H2V1zm0 4h2v6H2V5zm10 0h2v6h-2V5zm-8 6h6v2H4v-2zm2 2h2v2H6v-2z" fill="#78350f"/>
       <rect x="3" y="2" width="10" height="3" fill="#f59e0b"/>
       <rect x="4" y="2" width="8" height="1" fill="#fef08a"/>
-      <!-- Red/Rose Field -->
       <rect x="4" y="4" width="8" height="6" fill="#be123c"/>
       <rect x="5" y="4" width="6" height="5" fill="#e11d48"/>
       <rect x="6" y="9" width="4" height="2" fill="#9f1239"/>
-      <!-- Glowing Emerald Checkmark -->
       <path d="M5 6l2 3 5-5" stroke="#16a34a" stroke-width="2" fill="none"/>
       <path d="M5 6l2 2 4-4" stroke="#22c55e" stroke-width="1.5" fill="none"/>
       <rect x="6" y="7" width="1" height="1" fill="#86efac"/>
-    </g>
+    </symbol>
 
     <!-- 8. Stardew Potion / Analytical Flask -->
-    <g id="px-flask" viewBox="0 0 16 16">
-      <!-- Cork stopper -->
+    <symbol id="px-flask" viewBox="0 0 16 16">
       <rect x="6" y="1" width="4" height="2" fill="#b45309"/>
       <rect x="7" y="1" width="2" height="1" fill="#d97706"/>
-      <!-- Glass neck -->
       <rect x="5" y="3" width="6" height="4" fill="#0284c7"/>
       <rect x="6" y="3" width="4" height="4" fill="#e0f2fe"/>
-      <!-- Bottle base with rose elixir -->
       <path d="M2 8h12l1 5H1z" fill="#0369a1"/>
       <path d="M3 9h10l-1 4H4z" fill="#e11d48"/>
       <rect x="4" y="9" width="8" height="2" fill="#f43f5e"/>
       <rect x="4" y="11" width="8" height="2" fill="#be123c"/>
-      <!-- Sparkle bubble -->
       <rect x="5" y="10" width="2" height="2" fill="#ffffff"/>
       <rect x="9" y="11" width="1" height="1" fill="#fecdd3"/>
-    </g>
+    </symbol>
 
     <!-- 9. Stardew Brass Gear / Process Optimization -->
-    <g id="px-gear" viewBox="0 0 16 16">
-      <!-- Outer teeth (Bronze/Gold) -->
+    <symbol id="px-gear" viewBox="0 0 16 16">
       <rect x="6" y="1" width="4" height="2" fill="#b45309"/>
       <rect x="7" y="1" width="2" height="1" fill="#fde047"/>
       <rect x="1" y="6" width="2" height="4" fill="#b45309"/>
@@ -143,85 +123,70 @@
       <rect x="10" y="3" width="3" height="3" fill="#d97706"/>
       <rect x="3" y="10" width="3" height="3" fill="#d97706"/>
       <rect x="10" y="10" width="3" height="3" fill="#d97706"/>
-      <!-- Center ring & rose axle -->
       <circle cx="8" cy="8" r="5" fill="#f59e0b"/>
       <circle cx="8" cy="8" r="4" fill="#f43f5e"/>
       <circle cx="8" cy="8" r="2" fill="#fef08a"/>
       <rect x="7" y="7" width="2" height="2" fill="#78350f"/>
-    </g>
+    </symbol>
 
     <!-- 10. Stardew Production Bar Chart -->
-    <g id="px-chart" viewBox="0 0 16 16">
+    <symbol id="px-chart" viewBox="0 0 16 16">
       <rect x="1" y="1" width="2" height="13" fill="#475569"/>
       <rect x="1" y="13" width="14" height="2" fill="#475569"/>
-      <!-- Bar 1 (Emerald Green) -->
       <rect x="4" y="8" width="2" height="5" fill="#16a34a"/>
       <rect x="4" y="8" width="2" height="1" fill="#86efac"/>
-      <!-- Bar 2 (Golden Honey) -->
       <rect x="8" y="5" width="2" height="8" fill="#d97706"/>
       <rect x="8" y="5" width="2" height="2" fill="#fde047"/>
-      <!-- Bar 3 (Strawberry Rose) -->
       <rect x="12" y="2" width="2" height="11" fill="#e11d48"/>
       <rect x="12" y="2" width="2" height="2" fill="#fda4af"/>
       <rect x="12" y="3" width="1" height="1" fill="#ffffff"/>
-    </g>
+    </symbol>
 
     <!-- 11. Stardew Gold Coin / Revenue ($1M+) -->
-    <g id="px-dollar" viewBox="0 0 16 16">
+    <symbol id="px-dollar" viewBox="0 0 16 16">
       <circle cx="8" cy="8" r="7" fill="#78350f"/>
       <circle cx="8" cy="8" r="6" fill="#ca8a04"/>
       <circle cx="8" cy="8" r="5" fill="#facc15"/>
       <rect x="5" y="4" width="4" height="2" fill="#fef08a"/>
-      <!-- Dollar / Star stamp in center -->
       <path d="M7 4h3v2H7V4zm-1 3h4v2H6V7zm1 3h3v2H7v-2z" fill="#b45309"/>
       <rect x="7" y="3" width="2" height="10" fill="#b45309"/>
-      <!-- Sparkle shine -->
       <rect x="4" y="4" width="2" height="2" fill="#ffffff"/>
-    </g>
+    </symbol>
 
     <!-- 12. Stardew Stardrop Star -->
-    <g id="px-star" viewBox="0 0 16 16">
+    <symbol id="px-star" viewBox="0 0 16 16">
       <path d="M7 1h2v2H7V1zm-2 3h6v2H5V4zm-4 3h14v2H1V7zm2 2h10v2H3V9zm2 2h6v2H5v-2zm-1 2h2v2H4v-2zm6 0h2v2h-2v-2z" fill="#78350f"/>
       <path d="M7 2h2v4H7V2zm-4 4h10v2H3V6zm2 2h6v2H5V8zm-1 2h2v2H4v-2zm6 0h2v2h-2v-2z" fill="#ca8a04"/>
       <path d="M7 3h2v4H7V3zm-3 4h8v1H4V7zm2 1h4v2H6V8z" fill="#facc15"/>
       <rect x="7" y="4" width="2" height="2" fill="#fef08a"/>
       <rect x="7" y="4" width="1" height="1" fill="#ffffff"/>
-    </g>
+    </symbol>
 
     <!-- 13. Stardew Quest Completed Checkmark -->
-    <g id="px-check" viewBox="0 0 16 16">
-      <rect x="1" y="7" width="4" height="4" fill="#14532d"/>
-      <rect x="4" y="10" width="4" height="4" fill="#14532d"/>
-      <rect x="7" y="7" width="4" height="4" fill="#14532d"/>
-      <rect x="10" y="4" width="4" height="4" fill="#14532d"/>
-      <rect x="13" y="1" width="3" height="4" fill="#14532d"/>
-      <path d="M2 8l4 4 8-8" stroke="#16a34a" stroke-width="3" fill="none"/>
-      <path d="M2 8l4 4 8-8" stroke="#22c55e" stroke-width="1.5" fill="none"/>
+    <symbol id="px-check" viewBox="0 0 16 16">
+      <path d="M2 8l4 4 8-8" stroke="#14532d" stroke-width="4" stroke-linecap="square" fill="none"/>
+      <path d="M2 8l4 4 8-8" stroke="#16a34a" stroke-width="3" stroke-linecap="square" fill="none"/>
+      <path d="M2 8l4 4 8-8" stroke="#22c55e" stroke-width="1.5" stroke-linecap="square" fill="none"/>
       <rect x="5" y="10" width="2" height="2" fill="#86efac"/>
       <rect x="12" y="3" width="2" height="2" fill="#86efac"/>
-    </g>
+    </symbol>
 
     <!-- 14. Stardew Scholar Medal & Academic Cap -->
-    <g id="px-award" viewBox="0 0 16 16">
-      <!-- Blue mortarboard -->
+    <symbol id="px-award" viewBox="0 0 16 16">
       <path d="M8 1l6 3-6 3-6-3 6-3z" fill="#1e3a8a"/>
       <path d="M8 2l4 2-4 2-4-2 4-2z" fill="#3b82f6"/>
       <rect x="8" y="3" width="1" height="1" fill="#93c5fd"/>
-      <!-- Gold tassel -->
       <rect x="13" y="4" width="1" height="4" fill="#facc15"/>
       <rect x="12" y="7" width="2" height="2" fill="#eab308"/>
-      <!-- Gold Medal below -->
       <circle cx="8" cy="11" r="4" fill="#b45309"/>
       <circle cx="8" cy="11" r="3" fill="#facc15"/>
       <rect x="7" y="10" width="2" height="2" fill="#fef08a"/>
-      <!-- Ribbon tails -->
       <rect x="5" y="8" width="2" height="4" fill="#f43f5e"/>
       <rect x="9" y="8" width="2" height="4" fill="#f43f5e"/>
-    </g>
+    </symbol>
 
     <!-- 15. Stardew Morning Sun -->
-    <g id="px-sun" viewBox="0 0 16 16">
-      <!-- Rays -->
+    <symbol id="px-sun" viewBox="0 0 16 16">
       <rect x="7" y="0" width="2" height="3" fill="#d97706"/>
       <rect x="7" y="13" width="2" height="3" fill="#d97706"/>
       <rect x="0" y="7" width="3" height="2" fill="#d97706"/>
@@ -230,62 +195,59 @@
       <rect x="12" y="2" width="2" height="2" fill="#ea580c"/>
       <rect x="2" y="12" width="2" height="2" fill="#ea580c"/>
       <rect x="12" y="12" width="2" height="2" fill="#ea580c"/>
-      <!-- Sun orb -->
       <circle cx="8" cy="8" r="5" fill="#f59e0b"/>
       <circle cx="8" cy="8" r="4" fill="#fbbf24"/>
       <rect x="6" y="5" width="3" height="3" fill="#fef08a"/>
       <rect x="6" y="5" width="1" height="1" fill="#ffffff"/>
-    </g>
+    </symbol>
 
     <!-- 16. Stardew Midnight Moon & Star -->
-    <g id="px-moon" viewBox="0 0 16 16">
+    <symbol id="px-moon" viewBox="0 0 16 16">
       <path d="M5 2h5v2H5V2zm5 2h3v3h-3V4zm2 3h2v4h-2V7zm-2 4h3v3h-3v-3zm-5 3h5v2H5v-2zm-2-3h2v2H3v-2zm-1-4h2v4H2V7zm1-3h2v2H3V4z" fill="#6b21a8"/>
       <rect x="4" y="3" width="5" height="10" fill="#c084fc"/>
       <rect x="5" y="4" width="3" height="8" fill="#e9d5ff"/>
-      <!-- Tiny star -->
       <rect x="12" y="2" width="2" height="2" fill="#facc15"/>
       <rect x="13" y="1" width="1" height="1" fill="#fef08a"/>
-    </g>
+    </symbol>
 
     <!-- 17. Stardew Classic Telephone (Rose) -->
-    <g id="px-phone" viewBox="0 0 16 16">
-      <path d="M2 2h4v3L4 6c1 2 2 3 4 4l1-2h3v4h-2c-6 0-9-3-9-9V2z" fill="#881337"/>
+    <symbol id="px-phone" viewBox="0 0 16 16">
+      <path d="M2 3h4v3L4 7c1 2 2 3 4 4l1-2h3v4h-2c-6 0-9-3-9-9V3z" fill="#881337"/>
       <rect x="2" y="3" width="3" height="2" fill="#e11d48"/>
       <rect x="3" y="3" width="1" height="1" fill="#fda4af"/>
       <rect x="10" y="11" width="3" height="2" fill="#e11d48"/>
       <rect x="11" y="11" width="1" height="1" fill="#fda4af"/>
       <path d="M5 5l2 2 2-2" stroke="#f43f5e" stroke-width="2" fill="none"/>
-    </g>
+    </symbol>
 
     <!-- 18. Stardew Letter Mail Icon -->
-    <g id="px-mail" viewBox="0 0 16 16">
+    <symbol id="px-mail" viewBox="0 0 16 16">
       <rect x="1" y="3" width="14" height="10" fill="#8d5b36"/>
       <rect x="2" y="4" width="12" height="8" fill="#fffdfa"/>
       <path d="M2 4l6 5 6-5z" fill="#fef3c7"/>
       <path d="M2 4l6 5 6-5" stroke="#d97706" stroke-width="1" fill="none"/>
-      <!-- Rose heart seal -->
       <rect x="7" y="8" width="2" height="2" fill="#e11d48"/>
       <rect x="6" y="7" width="2" height="2" fill="#f43f5e"/>
       <rect x="8" y="7" width="2" height="2" fill="#f43f5e"/>
-    </g>
+    </symbol>
 
     <!-- 19. Stardew Map Marker Pin -->
-    <g id="px-location" viewBox="0 0 16 16">
+    <symbol id="px-location" viewBox="0 0 16 16">
       <path d="M5 1h6v2H5V1zm-2 2h10v4H3V3zm1 4h8v3H4V7zm2 3h4v3H6v-3zm1 3h2v2H7v-2z" fill="#881337"/>
       <rect x="4" y="2" width="8" height="5" fill="#e11d48"/>
       <rect x="5" y="3" width="6" height="3" fill="#f43f5e"/>
       <circle cx="8" cy="5" r="2" fill="#ffffff"/>
       <rect x="7" y="11" width="2" height="3" fill="#475569"/>
-    </g>
+    </symbol>
 
     <!-- 20. Stardew Menu Pointer Arrow -->
-    <g id="px-arrow" viewBox="0 0 16 16">
+    <symbol id="px-arrow" viewBox="0 0 16 16">
       <path d="M2 7h8v2H2V7zm6-4h2v2H8V3zm2 2h2v2h-2V5zm0 4h2v2h-2V9zm-2 2h2v2H8v-2z" fill="#854d0e"/>
       <rect x="3" y="7" width="7" height="2" fill="#facc15"/>
       <rect x="7" y="5" width="3" height="2" fill="#facc15"/>
       <rect x="7" y="9" width="3" height="2" fill="#facc15"/>
       <rect x="10" y="6" width="2" height="4" fill="#fde047"/>
       <rect x="12" y="7" width="1" height="2" fill="#ffffff"/>
-    </g>
+    </symbol>
   </defs>
 </svg>

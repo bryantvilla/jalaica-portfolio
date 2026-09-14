@@ -169,12 +169,28 @@ button {
   display: inline-block;
   vertical-align: -3px;
   flex-shrink: 0;
+  overflow: visible;
 }
 
 .pixel-icon-lg {
   width: 24px;
   height: 24px;
   vertical-align: -4px;
+}
+
+/* Day / Night Mode Icon Switching */
+.theme-sun-icon {
+  display: none;
+}
+.theme-moon-icon {
+  display: block;
+}
+
+[data-theme='dark'] .theme-sun-icon {
+  display: block;
+}
+[data-theme='dark'] .theme-moon-icon {
+  display: none;
 }
 
 .container {
