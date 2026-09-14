@@ -957,14 +957,19 @@ button {
 }
 
 .credential-icon-box {
-  width: 32px;
-  height: 32px;
-  background: var(--gold-accent);
+  width: 40px;
+  height: 40px;
+  background: var(--parchment-inner);
   border: 2px solid var(--wood-dark);
+  box-shadow: inset 1px 1px 0 0 #ffffff, 0 2px 0 0 var(--shadow-color);
   display: grid;
   place-items: center;
-  color: var(--wood-dark);
   flex-shrink: 0;
+}
+
+.credential-icon-box .pixel-icon {
+  width: 24px;
+  height: 24px;
 }
 
 .credential-text h4 {
