@@ -1,383 +1,604 @@
 <!DOCTYPE html>
-<html lang="en" data-theme="dark">
+<html lang="en" data-theme="light">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
-    <meta name="color-scheme" content="dark light">
-    <meta name="theme-color" content="#191417">
+    <meta name="color-scheme" content="light dark">
+    <meta name="theme-color" content="#ffeef2">
     <title>Jalaica Jaramillo | Biomedical &amp; Analytical Sciences Engineer</title>
-    <meta name="description" content="Jalaica Jaramillo, Analytical Sciences Engineer at SHL Medical. Biomedical engineering, autoinjector combination products, test method validation (TMV), CCIT, ISO 13485, and FDA 21 CFR 820.">
-    <meta property="og:type" content="website">
-    <meta property="og:title" content="Jalaica Jaramillo | Biomedical &amp; Analytical Sciences Engineer">
-    <meta property="og:description" content="Ensuring precision, quality, and compliance in life-saving medical devices and combination products.">
-    <meta property="og:image" content="assets/img/about.svg">
-    <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="Jalaica Jaramillo | Biomedical &amp; Analytical Sciences Engineer">
-    <meta name="twitter:description" content="Ensuring precision, quality, and compliance in life-saving medical devices and combination products.">
+    <meta name="description" content="Jalaica Jaramillo — Analytical Sciences Engineer at SHL Medical. Autoinjector combination products, test method validation (TMV), CCIT, ISO 13485, and FDA 21 CFR 820.">
     <link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml">
-    <link rel="preload" href="assets/fonts/manrope-variable.ttf" as="font" type="font/ttf" crossorigin>
-    <script>
-        try {
-            let theme = localStorage.getItem('jalaica-portfolio-theme') || localStorage.getItem('portfolio-theme');
-            if (theme === 'light' || theme === 'dark') document.documentElement.dataset.theme = theme;
-        } catch {}
-    </script>
     <link rel="stylesheet" href="assets/css/styles.css">
     <script src="assets/js/main.js" defer></script>
 </head>
 <body>
-    <a class="skip-link" href="#main">Skip to content</a>
-    <svg class="icon-definitions" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
-        <defs>
-            <symbol id="icon-arrow" viewBox="0 0 24 24"><path d="M4 12h15m-6-6 6 6-6 6"/></symbol>
-            <symbol id="icon-shield" viewBox="0 0 24 24"><path d="m12 3 8 3v6c0 5-8 9-8 9s-8-4-8-9V6l8-3Z"/><path d="m8.5 12 2.5 2.5 4.5-5"/></symbol>
-            <symbol id="icon-flask" viewBox="0 0 24 24"><path d="M9 3h6M10 3v5l-6 10.5A2 2 0 0 0 5.7 21h12.6a2 2 0 0 0 1.7-2.5L14 8V3M8.5 14h7"/></symbol>
-            <symbol id="icon-activity" viewBox="0 0 24 24"><path d="M22 12h-4l-3 9L9 3l-3 9H2"/></symbol>
-            <symbol id="icon-layers" viewBox="0 0 24 24"><path d="m12 2 10 5-10 5-10-5 10-5ZM2 12l10 5 10-5M2 17l10 5 10-5"/></symbol>
-            <symbol id="icon-check-circle" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="m8.5 12 2.5 2.5 4.5-5"/></symbol>
-            <symbol id="icon-document" viewBox="0 0 24 24"><path d="M5 3h9l5 5v13H5V3Zm9 0v6h5M9 13h6m-6 4h6"/></symbol>
-            <symbol id="icon-users" viewBox="0 0 24 24"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M22 21v-2a4 4 0 0 0-3-3.87M16 3.13a4 4 0 0 1 0 7.75"/></symbol>
-            <symbol id="icon-phone" viewBox="0 0 24 24"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></symbol>
-            <symbol id="icon-mail" viewBox="0 0 24 24"><rect width="20" height="16" x="2" y="4" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></symbol>
-            <symbol id="icon-location" viewBox="0 0 24 24"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/><circle cx="12" cy="10" r="3"/></symbol>
-            <symbol id="icon-sun" viewBox="0 0 24 24"><circle cx="12" cy="12" r="4"/><path d="M12 2v2m0 16v2M2 12h2m16 0h2M5 5l1.5 1.5m11 11L19 19M5 19l1.5-1.5m11-11L19 5"/></symbol>
-            <symbol id="icon-moon" viewBox="0 0 24 24"><path d="M20.5 14A9 9 0 0 1 10 3.5 9 9 0 1 0 20.5 14Z"/></symbol>
-        </defs>
-    </svg>
+    <!-- Gentle floating cherry blossom petals -->
+    <div class="petals-container" aria-hidden="true" id="petals"></div>
 
-    <header class="site-header" id="header">
-        <div class="header-inner container">
-            <a href="#home" class="wordmark">Jalaica Jaramillo<span aria-hidden="true">.</span></a>
-            <nav class="site-nav" aria-label="Main navigation">
-                <a class="nav-link" href="#work">Work</a>
-                <a class="nav-link" href="#skills">Skills</a>
-                <a class="nav-link" href="#projects">Projects</a>
-                <a class="nav-link" href="#about">About</a>
-                <a class="nav-link" href="#contact">Contact</a>
-                <a class="nav-resume" href="assets/pdf/jalaica-jaramillo-resume.pdf" target="_blank" rel="noopener noreferrer">Resume <span aria-hidden="true">↗</span></a>
+    <!-- STARDEW VALLEY GAME HUD / TOP NAVIGATION -->
+    <header class="game-hud" id="header">
+        <div class="container hud-inner">
+            <div class="player-badge">
+                <img src="assets/img/jalaica-pixel-portrait.svg" alt="Jalaica Pixel Portrait" class="player-avatar-mini" width="40" height="40">
+                <div class="player-info">
+                    <a href="#home" class="player-name">Jalaica Jaramillo <span>★</span></a>
+                    <span class="player-title">Lv. 26 Analytical Sciences Engineer</span>
+                </div>
+            </div>
+
+            <nav class="hud-nav" aria-label="Game Menu">
+                <a href="#work" class="nav-tab"><span>📜</span> Quests</a>
+                <a href="#skills" class="nav-tab"><span>🎒</span> Skills</a>
+                <a href="#projects" class="nav-tab"><span>🏆</span> Orders</a>
+                <a href="#about" class="nav-tab"><span>🏡</span> About</a>
+                <a href="#contact" class="nav-tab"><span>📬</span> Mailbox</a>
+                <a href="assets/pdf/jalaica-jaramillo-resume.pdf" target="_blank" rel="noopener noreferrer" class="nav-tab pixel-btn" style="padding: 0.35rem 0.75rem; font-size: 0.7rem;"><span>📄</span> Resume ↗</a>
             </nav>
-            <button class="theme-toggle" id="theme-button" type="button" aria-label="Switch to light theme" hidden>
-                <svg class="icon theme-sun" aria-hidden="true"><use href="#icon-sun"></use></svg>
-                <svg class="icon theme-moon" aria-hidden="true"><use href="#icon-moon"></use></svg>
-            </button>
+
+            <div class="hud-clock">
+                <div class="time-box" id="hud-time" aria-label="Game Time">
+                    <span id="time-icon">☀️</span> <span id="time-text">Spring 13 · 10:00AM</span>
+                </div>
+                <button class="theme-toggle-btn" id="theme-button" type="button" aria-label="Toggle Day / Night Mode" title="Toggle Day/Night Mode">
+                    <span id="theme-icon">🌙</span>
+                </button>
+            </div>
         </div>
     </header>
 
-    <main id="main">
-        <section class="hero container" id="home" aria-labelledby="hero-title">
-            <div class="hero-copy">
-                <p class="eyebrow hero-eyebrow">Biomedical &amp; Analytical Sciences Engineer</p>
-                <h1 id="hero-title"><span>Engineering quality</span> <span>behind life-saving</span> <span>medical devices.</span></h1>
-                <p class="hero-description">I'm Jalaica, an Analytical Sciences Engineer at SHL Medical specializing in autoinjector combination products, test method validation (TMV), container closure integrity testing (CCIT), and regulated medical device quality systems.</p>
-                <div class="hero-actions">
-                    <a href="#work" class="button button-primary">Explore my work <svg class="icon" aria-hidden="true"><use href="#icon-arrow"></use></svg></a>
-                    <a href="#contact" class="text-link">Get in touch <span aria-hidden="true">↗</span></a>
+    <main class="container" id="main">
+        <!-- ==========================================================================
+             HERO SECTION: STARDEW DIALOGUE BOX
+             ========================================================================== -->
+        <section class="hero-section" id="home" aria-labelledby="hero-name">
+            <div class="pixel-panel">
+                <div class="dialogue-wrapper">
+                    <!-- Left: Portrait Frame -->
+                    <div class="dialogue-portrait-col">
+                        <div class="dialogue-portrait-frame">
+                            <img src="assets/img/jalaica-pixel-portrait.svg" alt="Jalaica Jaramillo Pixel Art Character" width="160" height="160">
+                        </div>
+                        <div class="dialogue-nameplate" id="hero-name">Jalaica Jaramillo</div>
+                    </div>
+
+                    <!-- Right: Dialogue Box Content -->
+                    <div class="dialogue-box">
+                        <div class="dialogue-header">
+                            <span class="dialogue-badge">SHL Medical</span>
+                            <span class="dialogue-company">Analytical Sciences Engineer &middot; Deerfield Beach, FL</span>
+                        </div>
+
+                        <h1 class="dialogue-speech">"I engineer quality, precision, and compliance into life-saving medical devices."</h1>
+
+                        <p class="dialogue-body">
+                            Hello! I'm Jalaica, an Analytical Sciences Engineer specializing in autoinjector combination products, test method validation (TMV/TMD/TMT), and container closure integrity testing (CCIT). I ensure high-volume pharmaceutical delivery systems comply with ISO 13485 and FDA 21 CFR 820 regulations.
+                        </p>
+
+                        <!-- Dialogue Response Choices -->
+                        <div class="dialogue-choices">
+                            <a href="#work" class="choice-option">
+                                <span class="choice-pointer">▶</span> Inspect active career quests &amp; engineering contributions
+                            </a>
+                            <a href="#skills" class="choice-option">
+                                <span class="choice-pointer">▶</span> Open standards, testing tools, and QMS inventory
+                            </a>
+                            <a href="#projects" class="choice-option">
+                                <span class="choice-pointer">▶</span> Check special orders board ($60K needle project &amp; STEM outreach)
+                            </a>
+                            <a href="#contact" class="choice-option">
+                                <span class="choice-pointer">▶</span> Send a letter via postbox (Inquire for opportunities)
+                            </a>
+                            <a href="assets/pdf/jalaica-jaramillo-resume.pdf" target="_blank" rel="noopener noreferrer" class="choice-option" style="color: var(--pink-vibrant); font-weight: 700;">
+                                <span class="choice-pointer">▶</span> Download Official 1-Page Resume (PDF) ↗
+                            </a>
+                        </div>
+                    </div>
                 </div>
-                <p class="hero-tenure">SHL Medical <span aria-hidden="true">/</span> <time datetime="2025-12">December 2025</time> &ndash; present <span aria-hidden="true">·</span> Deerfield Beach, FL</p>
-            </div>
 
-            <figure class="system-figure" aria-labelledby="system-caption">
-                <div class="figure-heading"><span class="eyebrow">Lifecycle focus</span><span class="figure-index" aria-hidden="true">01 / V&amp;V + QMS</span></div>
-                <div class="system-map" aria-hidden="true">
-                    <div class="standards-data">
-                        <svg viewBox="0 0 64 64" class="standards-icon"><path d="M32 6 8 16v16c0 15 24 26 24 26s24-11 24-26V16L32 6Z"/><path d="M22 31l7 7 14-14"/></svg>
-                        <span>ISO 13485 &amp; 21 CFR 820</span>
+                <!-- Player Stats Bar -->
+                <div class="stats-bar-grid">
+                    <div class="stat-item">
+                        <div class="stat-icon-wrapper">🛡️</div>
+                        <div class="stat-details">
+                            <span class="stat-label">Quality &amp; Standards</span>
+                            <span class="stat-value">ISO 13485 &middot; 21 CFR 820</span>
+                            <div class="stat-meter"><div class="stat-meter-fill" style="width: 100%;"></div></div>
+                        </div>
                     </div>
-                    <div class="vertical-connector"></div>
-                    <div class="system-node design-node"><svg class="icon" aria-hidden="true"><use href="#icon-layers"></use></svg><span>Design &amp; DHF</span></div>
-                    <svg class="icon flow-arrow arrow-one" aria-hidden="true"><use href="#icon-arrow"></use></svg>
-                    <div class="system-node validation-node"><svg class="icon" aria-hidden="true"><use href="#icon-check-circle"></use></svg><span>V&amp;V Testing</span></div>
-                    <svg class="icon flow-arrow arrow-two" aria-hidden="true"><use href="#icon-arrow"></use></svg>
-                    <div class="system-node delivery-node"><svg class="icon" aria-hidden="true"><use href="#icon-activity"></use></svg><span>Commercial Release</span></div>
-                    <svg class="system-branches" viewBox="0 0 400 52" preserveAspectRatio="none"><path d="M200 0v26M100 52V26h200v26"/></svg>
-                    <div class="system-capabilities"><span>TMV &amp; Stability (CCIT)</span><span>Risk &amp; CAPA Control</span></div>
-                </div>
-                <figcaption id="system-caption"><span>Combination products &amp; medical devices</span><span>Regulated lifecycle</span></figcaption>
-            </figure>
-        </section>
 
-        <section class="work section-border" id="work" aria-labelledby="work-title">
-            <div class="container">
-                <div class="section-heading">
-                    <div><p class="eyebrow">Professional work</p><h2 id="work-title">Engineering quality.</h2></div>
-                    <p>Contributions across autoinjector combination products, neurovascular catheter manufacturing, and enterprise QMS transitions.</p>
-                </div>
-
-                <details class="work-item" id="shl-medical" open>
-                    <summary>
-                        <span class="work-symbol" aria-hidden="true"><svg class="icon"><use href="#icon-flask"></use></svg></span>
-                        <span class="work-overview"><span class="work-category">SHL Medical · Analytical Sciences Engineer</span><span class="work-title">Autoinjector stability programs &amp; test method validation</span><span class="work-description">Directing customer-facing stability testing, ISO 11040-8 / USP &lt;382&gt; leak testing, and deviation documentation per ISO 13485 and 21 CFR 820.</span></span>
-                        <span class="work-technologies">Autoinjectors · CCIT<br>TMV / TMD / TMT · Polarion</span>
-                        <span class="disclosure-action"><span class="read-label"><span class="when-closed">Read more</span><span class="when-open">Close details</span></span><svg class="icon" aria-hidden="true"><use href="#icon-arrow"></use></svg></span>
-                    </summary>
-                    <div class="work-detail">
-                        <div>
-                            <h3>The challenge</h3>
-                            <p>Autoinjector combination products combine complex mechanical actuation with sensitive biologics. They require airtight Container Closure Integrity Testing (CCIT), strict deviation control under ISO 13485 and 21 CFR 820, and seamless coordination across global pharmaceutical partner accounts.</p>
+                    <div class="stat-item">
+                        <div class="stat-icon-wrapper">🧪</div>
+                        <div class="stat-details">
+                            <span class="stat-label">Test Method Validation</span>
+                            <span class="stat-value">CCIT &middot; TMV &middot; Instron</span>
+                            <div class="stat-meter"><div class="stat-meter-fill" style="width: 98%;"></div></div>
                         </div>
-                        <div>
-                            <h3>My contribution</h3>
-                            <p>Manage customer-facing stability testing programs, author regulated deviation investigations in Teamcenter and Polarion, and lead internal training on ISO 11040-8 and USP &lt;382&gt; leak-testing methodologies. Designed and implemented a centralized billing-tracking system that recovered and billed over $1M in previously unbilled purchase orders, and trained all Analytical Sciences team members on milestone tracking. Perform Test Method Validation (TMV), Development (TMD), and Transfer (TMT) using Instron mechanical testing and CCIT equipment.</p>
-                        </div>
-                        <p class="work-takeaway"><span>Engineering focus</span> Container closure integrity testing (CCIT), Instron mechanical testing, Test Method Validation (TMV/TMD/TMT), Out-of-Specification (OOS) investigations, and $1M+ revenue recovery tracking.</p>
                     </div>
-                </details>
 
-                <details class="work-item" id="integer-inneuroco">
-                    <summary>
-                        <span class="work-symbol" aria-hidden="true"><svg class="icon"><use href="#icon-shield"></use></svg></span>
-                        <span class="work-overview"><span class="work-category">Integer (Previously InNeuroCo) · Quality Engineer</span><span class="work-title">Enterprise QMS transition &amp; regulatory audit readiness</span><span class="work-description">Subject matter expertise during company-wide QMS transition to ETQ Reliance, leading IQ/software validation, and audit readiness.</span></span>
-                        <span class="work-technologies">ETQ Reliance · 21 CFR 820<br>IQ Validation · CAPA / NCR</span>
-                        <span class="disclosure-action"><span class="read-label"><span class="when-closed">Read more</span><span class="when-open">Close details</span></span><svg class="icon" aria-hidden="true"><use href="#icon-arrow"></use></svg></span>
-                    </summary>
-                    <div class="work-detail">
-                        <div>
-                            <h3>The challenge</h3>
-                            <p>Transitioning enterprise quality infrastructure across medical device manufacturing facilities demands complete audit traceability, validated software workflows, and zero regulatory exposure during external inspections.</p>
+                    <div class="stat-item">
+                        <div class="stat-icon-wrapper">💰</div>
+                        <div class="stat-details">
+                            <span class="stat-label">Billing Revenue Recovered</span>
+                            <span class="stat-value">+$1,000,000+ Invoiced</span>
+                            <div class="stat-meter"><div class="stat-meter-fill" style="width: 100%;"></div></div>
                         </div>
-                        <div>
-                            <h3>My contribution</h3>
-                            <p>Served as company-wide Subject Matter Expert (SME) during the QMS transition to ETQ Reliance, authoring and reviewing protocols, training personnel, and ensuring strict compliance with FDA 21 CFR 820 and ISO 13485. Led Installation Qualification (IQ), software validation, and cross-functional validation supporting process and product compliance through design transfer. Prepared validation documentation for internal, supplier, and FDA/ISO regulatory audits while investigating CAPAs, NCRs, and SCARs via root cause analysis.</p>
-                        </div>
-                        <p class="work-takeaway"><span>Engineering focus</span> QMS digital transformation, Installation Qualification (IQ), software validation protocols, root cause analysis (RCA), and FDA/ISO audit readiness.</p>
                     </div>
-                </details>
 
-                <details class="work-item" id="inneuroco-mfg">
-                    <summary>
-                        <span class="work-symbol" aria-hidden="true"><svg class="icon"><use href="#icon-activity"></use></svg></span>
-                        <span class="work-overview"><span class="work-category">InNeuroCo · Manufacturing Engineer-Internship</span><span class="work-title">Catheter manufacturing validation &amp; process optimization</span><span class="work-description">Executing IQ/OQ validation protocols, FMEA, and process optimization saving $70,000 annually in catheter coiling operations.</span></span>
-                        <span class="work-technologies">Neurovascular Catheters<br>IQ / OQ · FMEA · Minitab</span>
-                        <span class="disclosure-action"><span class="read-label"><span class="when-closed">Read more</span><span class="when-open">Close details</span></span><svg class="icon" aria-hidden="true"><use href="#icon-arrow"></use></svg></span>
-                    </summary>
-                    <div class="work-detail">
-                        <div>
-                            <h3>The challenge</h3>
-                            <p>Neurovascular catheter manufacturing requires microscopic mechanical tolerances, cleanroom validation, and rigorous risk analysis to prevent defects during critical clinical interventions.</p>
+                    <div class="stat-item">
+                        <div class="stat-icon-wrapper">⚙️</div>
+                        <div class="stat-details">
+                            <span class="stat-label">Process Optimization</span>
+                            <span class="stat-value">+$70,000/yr Saved</span>
+                            <div class="stat-meter"><div class="stat-meter-fill" style="width: 95%;"></div></div>
                         </div>
-                        <div>
-                            <h3>My contribution</h3>
-                            <p>Executed validation protocols (IQ, OQ), Failure Mode and Effects Analysis (FMEA), and CAPA documentation to support compliant catheter manufacturing. Conducted comparability assessments and process optimization projects, including an automated coiling efficiency enhancement that saved $70,000 annually. Authored packaging and material specification documents in SOLID-WORKS, and performed data verification and trend reporting using Minitab, Pareto charts, and statistical pivot tables.</p>
-                        </div>
-                        <p class="work-takeaway"><span>Engineering focus</span> Manufacturing validation (IQ/OQ), FMEA risk analysis, SOLID-WORKS packaging specifications, and statistical process optimization ($70K/yr savings).</p>
                     </div>
-                </details>
-
-                <details class="work-item" id="prasad-lab">
-                    <summary>
-                        <span class="work-symbol" aria-hidden="true"><svg class="icon"><use href="#icon-layers"></use></svg></span>
-                        <span class="work-overview"><span class="work-category">Prasad Lab for Materials Research · Researcher</span><span class="work-title">Biomaterials synthesis &amp; real-time sensor validation</span><span class="work-description">Material synthesis, biomechanical testing, and sensor validation for real-time biological monitoring using MATLAB and Arduino.</span></span>
-                        <span class="work-technologies">Biomaterials · PDMS<br>MATLAB · Arduino · Sensors</span>
-                        <span class="disclosure-action"><span class="read-label"><span class="when-closed">Read more</span><span class="when-open">Close details</span></span><svg class="icon" aria-hidden="true"><use href="#icon-arrow"></use></svg></span>
-                    </summary>
-                    <div class="work-detail">
-                        <div>
-                            <h3>The challenge</h3>
-                            <p>Creating resilient, biocompatible sensor interfaces requires stable elastomeric formulation, predictable stress-strain biomechanics, and low-noise data acquisition under physiological conditions.</p>
-                        </div>
-                        <div>
-                            <h3>My contribution</h3>
-                            <p>Conducted material synthesis, characterization, and data analysis of biomaterials and PDMS composites for bioinspired medical applications. Developed, calibrated, and validated real-time sensors for physiological monitoring, integrating experimental hardware with custom MATLAB and Arduino statistical data pipelines.</p>
-                        </div>
-                        <p class="work-takeaway"><span>Engineering focus</span> Polymer composite synthesis, biomechanical characterization, sensor integration, and MATLAB statistical modeling.</p>
-                    </div>
-                </details>
-
-                <div class="work-footer">
-                    <p>Analytical Sciences Engineer <span aria-hidden="true">·</span> Combination Products &amp; Medical Devices <span aria-hidden="true">·</span> SHL Medical</p>
-                    <a class="text-link" href="assets/pdf/jalaica-jaramillo-resume.pdf" target="_blank" rel="noopener noreferrer">Full experience in my resume <span aria-hidden="true">↗</span></a>
                 </div>
             </div>
         </section>
 
-        <section class="toolkit container section-spacing" id="skills" aria-labelledby="skills-title">
-            <div class="toolkit-intro">
-                <p class="eyebrow">Standards &amp; Technical Practice</p>
-                <h2 id="skills-title">From regulatory standards<br>to laboratory execution.</h2>
-                <p>My expertise bridges global regulatory compliance, physical testing methods, statistical analysis, and product lifecycle systems.</p>
+        <!-- ==========================================================================
+             CAREER QUEST LOG (WORK EXPERIENCE)
+             ========================================================================== -->
+        <section class="section-spacing" id="work" aria-labelledby="quests-title">
+            <div class="section-header-banner">
+                <div class="banner-title-group">
+                    <span class="banner-ribbon">Quest Journal</span>
+                    <h2 id="quests-title">Professional Experience</h2>
+                </div>
+                <span class="pixel-font" style="font-size: 0.8rem; color: var(--text-muted);">4 Quests Logged</span>
             </div>
-            <dl class="toolkit-list">
-                <div>
-                    <dt>Quality Systems &amp; Standards</dt>
-                    <dd>ISO 13485, FDA 21 CFR 820, EU MDR, MDSAP, ISO 9001, GMP / QSR, ISO 11040-8, USP &lt;382&gt;</dd>
-                </div>
-                <div>
-                    <dt>Testing &amp; Validation</dt>
-                    <dd>Test Method Validation (TMV), TMD, TMT, Container Closure Integrity Testing (CCIT), Instron Mechanical Testing, IQ / OQ / PQ, Stability Testing Programs</dd>
-                </div>
-                <div>
-                    <dt>Quality &amp; Risk Methodologies</dt>
-                    <dd>CAPA, NCR, SCAR, Root Cause Analysis (RCA), FMEA, Statistical Process Control (SPC), Supplier Quality, QMS Audits, Change Control / Change Notifications</dd>
-                </div>
-                <div>
-                    <dt>Software &amp; Enterprise Tools</dt>
-                    <dd>Teamcenter, Polarion, SAP, ETQ Reliance, Minitab, SOLID-WORKS, MATLAB, Arduino, Microsoft Excel (Pivot tables, statistical analysis)</dd>
-                </div>
-            </dl>
-        </section>
 
-        <section class="projects section-border" id="projects" aria-labelledby="projects-title">
-            <div class="container">
-                <div class="section-heading">
+            <!-- Quest 1: SHL Medical -->
+            <article class="quest-item">
+                <div class="quest-header">
+                    <div class="quest-title-area">
+                        <div class="quest-status-icon" title="Active Main Quest">⭐</div>
+                        <div>
+                            <h3 class="quest-title">SHL Medical &middot; Analytical Sciences Engineer</h3>
+                            <div class="quest-meta">
+                                <span>Deerfield Beach, FL</span> &middot;
+                                <time datetime="2025-12">Dec 2025 &ndash; Present</time>
+                            </div>
+                        </div>
+                    </div>
+                    <span class="quest-badge">Active Main Quest</span>
+                </div>
+                <div class="quest-body">
                     <div>
-                        <p class="eyebrow">Projects &amp; Leadership</p>
-                        <h2 id="projects-title">Innovation &amp; outreach.</h2>
-                    </div>
-                    <p>Demonstrated leadership across medical device documentation control, multi-disciplinary capstone engineering, and STEM community mentorship.</p>
-                </div>
-
-                <div class="project-grid">
-                    <article class="project-card">
-                        <div class="project-header">
-                            <h3>Hexaflow: Bone Marrow Aspiration Needle</h3>
-                            <time datetime="2023-01/2023-12">Jan 2023 &ndash; Dec 2023</time>
-                        </div>
-                        <p class="project-role">Project Manager / Documentation Control &middot; Miami, FL</p>
-                        <p>Secured $60,000 in project sponsorship through technical requirement presentations. Directed multidisciplinary verification protocols, testing reports, and engineering studies. Spearheaded the full creation of the Design History File (DHF) and Device Master Record (DMR) in strict compliance with FDA and ISO regulatory requirements.</p>
-                        <div class="project-tags">
-                            <span class="project-tag">$60,000 Sponsorship</span>
-                            <span class="project-tag">DHF &amp; DMR</span>
-                            <span class="project-tag">FDA / ISO Compliance</span>
-                            <span class="project-tag">Verification Protocols</span>
-                        </div>
-                    </article>
-
-                    <article class="project-card">
-                        <div class="project-header">
-                            <h3>Engineering Outreach &amp; Mentorship</h3>
-                            <time datetime="2021-08/2023-12">Aug 2021 &ndash; Dec 2023</time>
-                        </div>
-                        <p class="project-role">SWE / BMES Representative &middot; Miami, FL</p>
-                        <p>Represented the Society of Women Engineers (SWE) and Biomedical Engineering Society (BMES) at FIU's Engineering Expo, presenting biomedical concepts to 1,500+ K-12 students. Featured speaker on an engineering panel addressing career navigation as an immigrant, providing ongoing 1-on-1 mentorship through coffee chats to guide aspiring engineers.</p>
-                        <div class="project-tags">
-                            <span class="project-tag">1,500+ Students Reached</span>
-                            <span class="project-tag">SWE / BMES</span>
-                            <span class="project-tag">Immigrant in STEM Panelist</span>
-                            <span class="project-tag">1-on-1 Mentorship</span>
-                        </div>
-                    </article>
-                </div>
-            </div>
-        </section>
-
-        <section class="about section-border" id="about" aria-labelledby="about-title">
-            <div class="container about-layout">
-                <div class="portrait-column">
-                    <div class="bio-card">
-                        <div class="bio-badge-icon">
-                            <svg class="icon" aria-hidden="true"><use href="#icon-flask"></use></svg>
-                        </div>
-                        <div>
-                            <p class="bio-card-name">Jalaica Jaramillo</p>
-                            <p class="bio-card-title">Analytical Sciences Engineer</p>
-                        </div>
-                        <div class="bio-card-creds">
-                            <p>SHL Medical &middot; Deerfield Beach, FL</p>
-                            <p>B.Sc. Biomedical Engineering &middot; FIU</p>
-                        </div>
-                    </div>
-                    <p class="portrait-caption">Jalaica Jaramillo<br><span>Biomedical engineer. Dedicated to device safety &amp; compliance.</span></p>
-                </div>
-
-                <div class="about-copy">
-                    <p class="eyebrow">The engineer behind the work</p>
-                    <h2 id="about-title">Biomaterials foundation.<br>Regulated system execution.</h2>
-                    <p>I am an Analytical Sciences Engineer at SHL Medical in South Florida, where I support autoinjector combination products across major pharmaceutical accounts. With a degree in Biomedical Engineering concentrated in Biomaterials and Biomechanics from Florida International University, I bring a methodical approach to laboratory testing, container closure integrity, and deviation investigations.</p>
-                    <p>My career has bridged the full spectrum of medical device quality: from biomaterial polymer synthesis in university research labs, to cleanroom catheter validation and $70,000/year process improvements at InNeuroCo, to enterprise-wide QMS modernization at Integer, and high-precision autoinjector stability programs at SHL Medical.</p>
-                    <p>Beyond the testing bench, I am deeply passionate about engineering governance, documentation traceability (DHF/DMR), and mentoring the next generation of engineers—particularly women and immigrants navigating careers in STEM.</p>
-
-                    <div class="education" id="education" aria-labelledby="education-title">
-                        <h3 class="eyebrow" id="education-title">Education / Florida International University</h3>
-                        <div class="education-item">
-                            <div>
-                                <h4>B.Sc. in Biomedical Engineering</h4>
-                                <p>Concentration in Biomaterials and Biomechanics &middot; Miami, FL</p>
-                            </div>
-                            <time datetime="2024">FIU Graduate</time>
-                        </div>
-                        <div class="education-item">
-                            <div>
-                                <h4>Academic Honors &amp; Scholarships</h4>
-                                <p>Dean’s List &middot; OURS Scholar (Opportunities for Undergraduate Research &amp; Scholarship) &middot; CURE Scholar (Coulter Undergraduate Research Excellence Program)</p>
-                            </div>
-                            <time datetime="2023">Honor Recipient</time>
-                        </div>
+                        <h4 class="quest-section-heading"><span>🎯</span> Quest Objectives &amp; Focus</h4>
+                        <p style="color: var(--text-secondary); margin-bottom: 0.75rem;">
+                            Direct customer-facing stability testing programs, protocol/report authoring, and regulated deviation investigations across multiple global accounts for high-precision autoinjector combination products.
+                        </p>
                     </div>
 
-                    <details class="archive" id="undergraduate-work">
-                        <summary><span>Research &amp; collegiate leadership archive</span><span class="archive-sign" aria-hidden="true">+</span></summary>
-                        <p>Academic milestones, honors, and leadership projects completed at Florida International University.</p>
-                        <ul>
-                            <li><strong>Prasad Lab for Materials Research:</strong> Synthesis and characterization of PDMS biomaterial composites with MATLAB/Arduino biosensor calibration.</li>
-                            <li><strong>Coulter Undergraduate Research Excellence (CURE) Scholar:</strong> Competitive research fellowship supporting biomedical research at FIU.</li>
-                            <li><strong>OURS Scholar:</strong> Opportunities for Undergraduate Research and Scholarship award for biomedical academic excellence.</li>
-                            <li><strong>FIU Engineering Expo:</strong> Interactive biomedical demonstrations inspiring 1,500+ South Florida K-12 students.</li>
+                    <div>
+                        <h4 class="quest-section-heading"><span>📜</span> Log Entries &amp; Contributions</h4>
+                        <ul class="quest-bullets">
+                            <li>Manage customer-facing stability testing programs, protocol and report writing, and cross-functional project coordination across accounts for autoinjector combination products.</li>
+                            <li>Author and execute deviation documentation for regulated stability and testing programs, ensuring findings are investigated and closed per ISO 13485 and 21 CFR 820 in Polarion and Teamcenter EQMS.</li>
+                            <li>Conduct research and lead internal technical training on <strong>ISO 11040-8</strong> and <strong>USP &lt;382&gt;</strong> leak-testing methodology to strengthen test method development.</li>
+                            <li>Drive revenue recovery initiative by improving protocol and report turnaround times across customer accounts.</li>
+                            <li>Architected and implemented a centralized billing-tracking system to capture all PO information; recovered and billed over <strong>$1,000,000+</strong> in current and previously unbilled POs.</li>
+                            <li>Trained all Analytical Sciences team members on the new billing tracking system and milestone initiation workflows.</li>
+                            <li>Perform mechanical and package-integrity testing using <strong>Instron</strong> and <strong>CCIT</strong> (Container Closure Integrity Testing) equipment.</li>
+                            <li>Execute Test Method Validation (TMV), Test Method Development (TMD), and Test Method Transfer (TMT) to support reproducible test methods.</li>
                         </ul>
-                    </details>
+                    </div>
+
+                    <div class="quest-rewards">
+                        <div class="reward-title"><span>🏆</span> Unlocked Rewards &amp; Impact</div>
+                        <div class="reward-tags">
+                            <span class="reward-tag">+$1M+ Revenue Recovered</span>
+                            <span class="reward-tag">ISO 11040-8 &middot; USP &lt;382&gt; Trainer</span>
+                            <span class="reward-tag">CCIT &amp; Instron Validation</span>
+                            <span class="reward-tag">Polarion &amp; Teamcenter Workflows</span>
+                        </div>
+                    </div>
+                </div>
+            </article>
+
+            <!-- Quest 2: Integer -->
+            <article class="quest-item">
+                <div class="quest-header">
+                    <div class="quest-title-area">
+                        <div class="quest-status-icon" title="Completed Quest">✔</div>
+                        <div>
+                            <h3 class="quest-title">Integer (Previously InNeuroCo) &middot; Quality Engineer</h3>
+                            <div class="quest-meta">
+                                <span>Pembroke Pines, FL</span> &middot;
+                                <time datetime="2024-07/2025-08">Jul 2024 &ndash; Aug 2025</time>
+                            </div>
+                        </div>
+                    </div>
+                    <span class="quest-badge" style="background: var(--pink-pastel);">Quest Complete</span>
+                </div>
+                <div class="quest-body">
+                    <div>
+                        <h4 class="quest-section-heading"><span>🎯</span> Quest Objectives &amp; Focus</h4>
+                        <p style="color: var(--text-secondary); margin-bottom: 0.75rem;">
+                            Serve as company-wide Subject Matter Expert (SME) during enterprise quality system migration, lead software validations, and ensure regulatory readiness for FDA and ISO audits.
+                        </p>
+                    </div>
+
+                    <div>
+                        <h4 class="quest-section-heading"><span>📜</span> Log Entries &amp; Contributions</h4>
+                        <ul class="quest-bullets">
+                            <li>Served as SME in company-wide QMS transition to <strong>ETQ Reliance</strong>, authoring and reviewing validation protocols, training staff, and ensuring FDA 21 CFR 820 and ISO 13485 compliance.</li>
+                            <li>Led Installation Qualification (IQ), software validation, and cross-functional validation activities, supporting process and product compliance through design transfer and lifecycle management.</li>
+                            <li>Prepared and maintained validation documentation for internal, supplier, and FDA/ISO regulatory audits, addressing findings to maintain audit readiness.</li>
+                            <li>Supported investigations (CAPAs, NCRs, SCARs, deviations), performing root cause analysis and driving continuous improvement.</li>
+                        </ul>
+                    </div>
+
+                    <div class="quest-rewards">
+                        <div class="reward-title"><span>🏆</span> Unlocked Rewards &amp; Impact</div>
+                        <div class="reward-tags">
+                            <span class="reward-tag">ETQ Reliance QMS SME</span>
+                            <span class="reward-tag">FDA / ISO Audit Readiness</span>
+                            <span class="reward-tag">Installation Qualification (IQ)</span>
+                            <span class="reward-tag">CAPA Root Cause Analysis</span>
+                        </div>
+                    </div>
+                </div>
+            </article>
+
+            <!-- Quest 3: InNeuroCo Mfg -->
+            <article class="quest-item">
+                <div class="quest-header">
+                    <div class="quest-title-area">
+                        <div class="quest-status-icon" title="Completed Quest">✔</div>
+                        <div>
+                            <h3 class="quest-title">InNeuroCo &middot; Manufacturing Engineer Intern</h3>
+                            <div class="quest-meta">
+                                <span>Pembroke Pines, FL</span> &middot;
+                                <time datetime="2023-07/2024-07">Jul 2023 &ndash; Jul 2024</time>
+                            </div>
+                        </div>
+                    </div>
+                    <span class="quest-badge" style="background: var(--pink-pastel);">Quest Complete</span>
+                </div>
+                <div class="quest-body">
+                    <div>
+                        <h4 class="quest-section-heading"><span>🎯</span> Quest Objectives &amp; Focus</h4>
+                        <p style="color: var(--text-secondary); margin-bottom: 0.75rem;">
+                            Execute cleanroom validation protocols (IQ, OQ) and process optimization projects for neurovascular catheter devices to improve yield and regulatory compliance.
+                        </p>
+                    </div>
+
+                    <div>
+                        <h4 class="quest-section-heading"><span>📜</span> Log Entries &amp; Contributions</h4>
+                        <ul class="quest-bullets">
+                            <li>Executed validation protocols (IQ, OQ), FMEA, and CAPA to support compliant manufacturing of neurovascular catheter devices.</li>
+                            <li>Drafted and executed validation documents (work instructions, protocols, reports) in collaboration with R&amp;D, Quality, and Regulatory teams.</li>
+                            <li>Conducted comparability assessments and process optimization projects, including a catheter coiling efficiency improvement that saved <strong>$70,000/year</strong>.</li>
+                            <li>Performed data verification, statistical analysis, and trend reporting using <strong>Minitab</strong>, Excel, Pareto charts, and pivot tables.</li>
+                            <li>Authored medical packaging and material specification documents in <strong>SOLID-WORKS</strong>.</li>
+                        </ul>
+                    </div>
+
+                    <div class="quest-rewards">
+                        <div class="reward-title"><span>🏆</span> Unlocked Rewards &amp; Impact</div>
+                        <div class="reward-tags">
+                            <span class="reward-tag">+$70,000/yr Coiling Savings</span>
+                            <span class="reward-tag">IQ / OQ Execution</span>
+                            <span class="reward-tag">Minitab Pareto Analysis</span>
+                            <span class="reward-tag">SOLID-WORKS Packaging Specs</span>
+                        </div>
+                    </div>
+                </div>
+            </article>
+
+            <!-- Quest 4: Prasad Lab -->
+            <article class="quest-item">
+                <div class="quest-header">
+                    <div class="quest-title-area">
+                        <div class="quest-status-icon" title="Completed Quest">✔</div>
+                        <div>
+                            <h3 class="quest-title">Prasad Lab for Materials Research &middot; Researcher</h3>
+                            <div class="quest-meta">
+                                <span>Miami, FL</span> &middot;
+                                <time datetime="2022-08/2023-12">Aug 2022 &ndash; Dec 2023</time>
+                            </div>
+                        </div>
+                    </div>
+                    <span class="quest-badge" style="background: var(--pink-pastel);">Quest Complete</span>
+                </div>
+                <div class="quest-body">
+                    <div>
+                        <h4 class="quest-section-heading"><span>🎯</span> Quest Objectives &amp; Focus</h4>
+                        <p style="color: var(--text-secondary); margin-bottom: 0.75rem;">
+                            Biomaterial polymer synthesis, biomechanical testing, and physiological sensor development for real-time biological monitoring.
+                        </p>
+                    </div>
+
+                    <div>
+                        <h4 class="quest-section-heading"><span>📜</span> Log Entries &amp; Contributions</h4>
+                        <ul class="quest-bullets">
+                            <li>Conducted material synthesis, mechanical characterization, and data analysis of biomaterials and PDMS composites for biomedical applications.</li>
+                            <li>Developed and validated sensors for real-time biological monitoring, integrating experimental sensor hardware with statistical analysis in <strong>MATLAB</strong> and <strong>Arduino</strong>.</li>
+                        </ul>
+                    </div>
+
+                    <div class="quest-rewards">
+                        <div class="reward-title"><span>🏆</span> Unlocked Rewards &amp; Impact</div>
+                        <div class="reward-tags">
+                            <span class="reward-tag">PDMS Polymer Synthesis</span>
+                            <span class="reward-tag">Biosensor Calibration</span>
+                            <span class="reward-tag">MATLAB &amp; Arduino Data Modeling</span>
+                        </div>
+                    </div>
+                </div>
+            </article>
+        </section>
+
+        <!-- ==========================================================================
+             SKILLS & INVENTORY BAGS (#skills)
+             ========================================================================== -->
+        <section class="section-spacing" id="skills" aria-labelledby="skills-title">
+            <div class="section-header-banner">
+                <div class="banner-title-group">
+                    <span class="banner-ribbon">Item Inventory</span>
+                    <h2 id="skills-title">Technical Skills &amp; Standards</h2>
+                </div>
+                <span class="pixel-font" style="font-size: 0.8rem; color: var(--text-muted);">4 Inventory Bags</span>
+            </div>
+
+            <div class="inventory-bags-grid">
+                <!-- Bag 1: Quality Systems & Standards -->
+                <div class="inventory-bag">
+                    <div class="bag-header">
+                        <span>🛡️</span> Quality &amp; Regulatory Standards
+                    </div>
+                    <div class="bag-slots">
+                        <div class="inventory-slot"><span class="slot-item-name">ISO 13485</span><span class="slot-category-tag">Medical QMS</span></div>
+                        <div class="inventory-slot"><span class="slot-item-name">FDA 21 CFR 820</span><span class="slot-category-tag">QSR / cGMP</span></div>
+                        <div class="inventory-slot"><span class="slot-item-name">ISO 11040-8</span><span class="slot-category-tag">Leak Testing</span></div>
+                        <div class="inventory-slot"><span class="slot-item-name">USP &lt;382&gt;</span><span class="slot-category-tag">Package Integrity</span></div>
+                        <div class="inventory-slot"><span class="slot-item-name">EU MDR &amp; MDSAP</span><span class="slot-category-tag">Global Regs</span></div>
+                        <div class="inventory-slot"><span class="slot-item-name">ISO 9001</span><span class="slot-category-tag">Quality Mgmt</span></div>
+                    </div>
+                </div>
+
+                <!-- Bag 2: Testing & Validation -->
+                <div class="inventory-bag">
+                    <div class="bag-header">
+                        <span>🧪</span> Testing &amp; Validation
+                    </div>
+                    <div class="bag-slots">
+                        <div class="inventory-slot"><span class="slot-item-name">TMV / TMD / TMT</span><span class="slot-category-tag">Test Methods</span></div>
+                        <div class="inventory-slot"><span class="slot-item-name">CCIT Leak Testing</span><span class="slot-category-tag">Container Closure</span></div>
+                        <div class="inventory-slot"><span class="slot-item-name">Instron Mechanical</span><span class="slot-category-tag">Tensile / Break</span></div>
+                        <div class="inventory-slot"><span class="slot-item-name">IQ, OQ, PQ</span><span class="slot-category-tag">Equipment Qual</span></div>
+                        <div class="inventory-slot"><span class="slot-item-name">Stability Protocols</span><span class="slot-category-tag">Drug Delivery</span></div>
+                        <div class="inventory-slot"><span class="slot-item-name">Autoinjectors &amp; Catheters</span><span class="slot-category-tag">Device Types</span></div>
+                    </div>
+                </div>
+
+                <!-- Bag 3: Quality Engineering & Risk -->
+                <div class="inventory-bag">
+                    <div class="bag-header">
+                        <span>⚡</span> Quality &amp; Risk Methodologies
+                    </div>
+                    <div class="bag-slots">
+                        <div class="inventory-slot"><span class="slot-item-name">CAPA &amp; NCR</span><span class="slot-category-tag">Corrective Actions</span></div>
+                        <div class="inventory-slot"><span class="slot-item-name">Root Cause Analysis</span><span class="slot-category-tag">RCA / 5-Why</span></div>
+                        <div class="inventory-slot"><span class="slot-item-name">FMEA Risk Analysis</span><span class="slot-category-tag">Failure Modes</span></div>
+                        <div class="inventory-slot"><span class="slot-item-name">Statistical Process Control</span><span class="slot-category-tag">SPC &middot; Cpk</span></div>
+                        <div class="inventory-slot"><span class="slot-item-name">QMS Audits Readiness</span><span class="slot-category-tag">FDA / ISO</span></div>
+                        <div class="inventory-slot"><span class="slot-item-name">Change Control</span><span class="slot-category-tag">ECO / MCO</span></div>
+                    </div>
+                </div>
+
+                <!-- Bag 4: Software & Tools -->
+                <div class="inventory-bag">
+                    <div class="bag-header">
+                        <span>💻</span> Software &amp; Engineering Tools
+                    </div>
+                    <div class="bag-slots">
+                        <div class="inventory-slot"><span class="slot-item-name">Teamcenter</span><span class="slot-category-tag">PLM System</span></div>
+                        <div class="inventory-slot"><span class="slot-item-name">Polarion</span><span class="slot-category-tag">ALM / OOS</span></div>
+                        <div class="inventory-slot"><span class="slot-item-name">ETQ Reliance</span><span class="slot-category-tag">QMS Software</span></div>
+                        <div class="inventory-slot"><span class="slot-item-name">Minitab &amp; Excel</span><span class="slot-category-tag">Stats Modeling</span></div>
+                        <div class="inventory-slot"><span class="slot-item-name">SOLID-WORKS</span><span class="slot-category-tag">CAD Packaging</span></div>
+                        <div class="inventory-slot"><span class="slot-item-name">MATLAB &amp; Arduino</span><span class="slot-category-tag">Biosensors</span></div>
+                    </div>
                 </div>
             </div>
         </section>
 
-        <section class="contact container section-spacing" id="contact" aria-labelledby="contact-title">
-            <div class="contact-copy">
-                <p class="eyebrow">Connect &amp; Collaborate</p>
-                <h2 id="contact-title">Let's connect.</h2>
-                <p>I am open to discussions regarding combination product analytical testing, medical device quality engineering, test method validation, and regulatory compliance.</p>
-                
-                <div class="contact-meta">
-                    <div class="contact-item">
-                        <svg class="icon" aria-hidden="true"><use href="#icon-mail"></use></svg>
-                        <a class="contact-email text-link" href="mailto:jalaicajaramillo@gmail.com">jalaicajaramillo@gmail.com <span aria-hidden="true">↗</span></a>
+        <!-- ==========================================================================
+             SPECIAL ORDERS BULLETIN BOARD (PROJECTS & LEADERSHIP)
+             ========================================================================== -->
+        <section class="section-spacing" id="projects" aria-labelledby="bulletin-title">
+            <div class="section-header-banner">
+                <div class="banner-title-group">
+                    <span class="banner-ribbon">Bulletin Board</span>
+                    <h2 id="bulletin-title">Special Orders &amp; Leadership</h2>
+                </div>
+                <span class="pixel-font" style="font-size: 0.8rem; color: var(--text-muted);">2 Posted Orders</span>
+            </div>
+
+            <div class="bulletin-board">
+                <div class="bulletin-grid">
+                    <!-- Notice 1: Hexaflow Needle -->
+                    <div class="bulletin-notice">
+                        <div class="pin-thumbtack" aria-hidden="true"></div>
+                        <div class="notice-title-area">
+                            <span class="notice-badge">Special Order #01 &middot; Miami, FL</span>
+                            <h3 class="notice-title">Hexaflow: Bone Marrow Aspiration Needle</h3>
+                            <p style="font-family: 'Silkscreen', monospace; font-size: 0.75rem; color: var(--text-muted); margin-top: 0.25rem;">Project Manager / Documentation Control &middot; Jan 2023 &ndash; Dec 2023</p>
+                        </div>
+                        <p class="notice-desc">
+                            Secured $60,000 project sponsorship by effectively communicating clinical, technical, and testing specifications. Directed verification protocols, engineering testing reports, and multidisciplinary studies. Spearheaded the complete creation of the Design History File (DHF) and Device Master Record (DMR) in strict compliance with FDA and ISO regulatory requirements.
+                        </p>
+                        <div class="notice-reward">
+                            <span>💰 Reward:</span> $60,000 Sponsorship &middot; FDA DHF/DMR Certified
+                        </div>
                     </div>
-                    <div class="contact-item">
-                        <svg class="icon" aria-hidden="true"><use href="#icon-phone"></use></svg>
-                        <a class="text-link" href="tel:+13059751318">(305) 975-1318 <span aria-hidden="true">↗</span></a>
-                    </div>
-                    <div class="contact-item">
-                        <svg class="icon" aria-hidden="true"><use href="#icon-location"></use></svg>
-                        <span>Miami, FL / Deerfield Beach, FL</span>
+
+                    <!-- Notice 2: Community Outreach -->
+                    <div class="bulletin-notice">
+                        <div class="pin-thumbtack" aria-hidden="true"></div>
+                        <div class="notice-title-area">
+                            <span class="notice-badge">Special Order #02 &middot; Miami, FL</span>
+                            <h3 class="notice-title">Engineering Outreach &amp; Mentorship</h3>
+                            <p style="font-family: 'Silkscreen', monospace; font-size: 0.75rem; color: var(--text-muted); margin-top: 0.25rem;">SWE / BMES Representative &middot; Aug 2021 &ndash; Dec 2023</p>
+                        </div>
+                        <p class="notice-desc">
+                            Represented the Society of Women Engineers (SWE) and Biomedical Engineering Society (BMES) at FIU's Engineering Expo, presenting biomedical engineering demonstrations to 1,500+ K-12 students. Featured panelist sharing personal insights on navigating an engineering career as an immigrant; provided ongoing 1-on-1 mentorship via coffee chats to guide aspiring engineers.
+                        </p>
+                        <div class="notice-reward">
+                            <span>💖 Reward:</span> 1,500+ Students Inspired &middot; STEM Community Hearts
+                        </div>
                     </div>
                 </div>
+            </div>
+        </section>
 
-                <div class="social-links">
-                    <a class="text-link" href="mailto:jalaicajaramillo@gmail.com">Email <span aria-hidden="true">↗</span></a>
-                    <a class="text-link" href="assets/pdf/jalaica-jaramillo-resume.pdf" target="_blank" rel="noopener noreferrer">View Resume (PDF) <span aria-hidden="true">↗</span></a>
+        <!-- ==========================================================================
+             ABOUT & TOWN ARCHIVES (#about)
+             ========================================================================== -->
+        <section class="section-spacing" id="about" aria-labelledby="about-title">
+            <div class="section-header-banner">
+                <div class="banner-title-group">
+                    <span class="banner-ribbon">Town Archives</span>
+                    <h2 id="about-title">Education &amp; Background</h2>
                 </div>
             </div>
 
-            <form name="jalaica_contact" method="POST" action="https://formspree.io/f/placeholder" class="contact-form" aria-label="Send Jalaica a message">
-                <div class="form-heading">
-                    <h3>Send a message</h3>
-                    <p>Reach out directly with project inquiries or opportunities.</p>
-                </div>
-                <div class="form-row">
-                    <div class="form-field">
-                        <label for="name">Name</label>
-                        <input type="text" id="name" name="name" autocomplete="name" placeholder="Your name" required>
+            <div class="pixel-panel">
+                <div class="about-columns">
+                    <!-- Bio Narrative -->
+                    <div>
+                        <h3 style="margin-bottom: 1rem; color: var(--pink-vibrant);">Biomaterials Foundation. Regulated Execution.</h3>
+                        <p style="color: var(--text-secondary); margin-bottom: 1rem; line-height: 1.7;">
+                            I graduated from Florida International University with a B.Sc. in Biomedical Engineering, concentrating in Biomaterials and Biomechanics. My background unites physical lab testing, polymer characterization, cleanroom manufacturing, and enterprise QMS modernization.
+                        </p>
+                        <p style="color: var(--text-secondary); margin-bottom: 1.25rem; line-height: 1.7;">
+                            At SHL Medical, I manage container closure integrity testing and stability programs for autoinjector combination products. Whether driving a $1M revenue recovery initiative or training cross-functional teams on ISO 11040-8 / USP &lt;382&gt;, my goal is to deliver safe, compliant devices that patients and physicians can trust unconditionally.
+                        </p>
+                        <div style="display: flex; gap: 0.75rem; flex-wrap: wrap;">
+                            <a href="assets/pdf/jalaica-jaramillo-resume.pdf" target="_blank" rel="noopener noreferrer" class="pixel-btn">
+                                <span>📜</span> View Full Resume (PDF) ↗
+                            </a>
+                            <a href="#contact" class="pixel-btn pixel-btn-secondary">
+                                <span>✉</span> Send a Message
+                            </a>
+                        </div>
                     </div>
-                    <div class="form-field">
-                        <label for="email">Email</label>
-                        <input type="email" id="email" name="email" autocomplete="email" placeholder="you@company.com" required>
+
+                    <!-- Scholar Medals & Education -->
+                    <div class="scholar-card">
+                        <div class="scholar-badge-item">
+                            <div class="scholar-medal">🎓</div>
+                            <div class="scholar-text">
+                                <h4>Florida International University</h4>
+                                <p>B.Sc. in Biomedical Engineering (Biomaterials &amp; Biomechanics)</p>
+                            </div>
+                        </div>
+
+                        <div class="scholar-badge-item">
+                            <div class="scholar-medal">⭐</div>
+                            <div class="scholar-text">
+                                <h4>Dean’s List Scholar</h4>
+                                <p>Recognized for outstanding academic achievement</p>
+                            </div>
+                        </div>
+
+                        <div class="scholar-badge-item">
+                            <div class="scholar-medal">🔬</div>
+                            <div class="scholar-text">
+                                <h4>CURE Scholar</h4>
+                                <p>Coulter Undergraduate Research Excellence Program Fellow</p>
+                            </div>
+                        </div>
+
+                        <div class="scholar-badge-item">
+                            <div class="scholar-medal">📜</div>
+                            <div class="scholar-text">
+                                <h4>OURS Scholar</h4>
+                                <p>Opportunities for Undergraduate Research and Scholarship</p>
+                            </div>
+                        </div>
                     </div>
                 </div>
-                <div class="form-field">
-                    <label for="subject">Subject</label>
-                    <input type="text" id="subject" name="subject" placeholder="Combination products / Quality engineering opportunity">
+            </div>
+        </section>
+
+        <!-- ==========================================================================
+             FARM MAILBOX / CONTACT FORM (#contact)
+             ========================================================================== -->
+        <section class="section-spacing" id="contact" aria-labelledby="contact-title">
+            <div class="section-header-banner">
+                <div class="banner-title-group">
+                    <span class="banner-ribbon">Farm Mailbox</span>
+                    <h2 id="contact-title">Send a Letter</h2>
                 </div>
-                <div class="form-field">
-                    <label for="message-input">Message</label>
-                    <textarea name="message" id="message-input" rows="4" placeholder="Tell me about your team or project requirements." required></textarea>
+                <span class="pixel-font" style="font-size: 0.8rem; color: var(--text-muted);">Delivery to Jalaica</span>
+            </div>
+
+            <div class="letter-form-wrapper">
+                <div class="letter-paper">
+                    <div class="letter-header">
+                        <div class="letter-to">To: Jalaica Jaramillo &middot; Analytical Sciences Engineer</div>
+                        <div style="font-family: 'Press Start 2P', monospace; font-size: 0.6rem; color: var(--text-muted);">
+                            Location: Miami / Deerfield Beach, FL
+                        </div>
+                    </div>
+
+                    <div style="margin-bottom: 1.5rem; display: flex; gap: 1.5rem; flex-wrap: wrap;">
+                        <a href="mailto:jalaicajaramillo@gmail.com" class="choice-option" style="padding: 0.4rem 0.85rem;">
+                            <span>💌</span> jalaicajaramillo@gmail.com
+                        </a>
+                        <a href="tel:+13059751318" class="choice-option" style="padding: 0.4rem 0.85rem;">
+                            <span>📞</span> (305) 975-1318
+                        </a>
+                    </div>
+
+                    <!-- Contact Form -->
+                    <form name="stardew_contact" method="POST" action="https://formspree.io/f/placeholder">
+                        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 1rem;">
+                            <div class="pixel-form-field">
+                                <label for="sender-name">Your Name</label>
+                                <input type="text" id="sender-name" name="name" class="pixel-input" placeholder="e.g. Robin or Demetrius" required>
+                            </div>
+                            <div class="pixel-form-field">
+                                <label for="sender-email">Your Email Address</label>
+                                <input type="email" id="sender-email" name="email" class="pixel-input" placeholder="you@company.com" required>
+                            </div>
+                        </div>
+
+                        <div class="pixel-form-field">
+                            <label for="letter-subject">Subject / Inquiry</label>
+                            <input type="text" id="letter-subject" name="subject" class="pixel-input" placeholder="e.g. Combination product analytical engineering opportunity">
+                        </div>
+
+                        <div class="pixel-form-field">
+                            <label for="letter-message">Letter Content</label>
+                            <textarea id="letter-message" name="message" class="pixel-input" placeholder="Write your message to Jalaica..." required></textarea>
+                        </div>
+
+                        <button type="submit" class="pixel-btn" style="margin-top: 0.5rem;">
+                            <span>✉</span> Seal &amp; Send Letter
+                        </button>
+                    </form>
                 </div>
-                <button type="submit" class="button button-primary">Send message <svg class="icon" aria-hidden="true"><use href="#icon-arrow"></use></svg></button>
-            </form>
+            </div>
         </section>
     </main>
 
-    <footer class="site-footer section-border">
-        <div class="container footer-inner">
-            <a class="wordmark" href="#home">Jalaica Jaramillo<span aria-hidden="true">.</span></a>
-            <p>Biomedical engineering. Quality, precision, and compliance at every stage.</p>
-            <a class="text-link" href="#home">Back to top <span aria-hidden="true">↑</span></a>
+    <!-- FOOTER -->
+    <footer style="background: var(--wood-dark); color: #ffffff; border-top: 4px solid var(--wood-mid); padding: 2rem 0; margin-top: 3rem; text-align: center;">
+        <div class="container" style="display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 1rem;">
+            <div style="font-family: 'Silkscreen', monospace; font-size: 0.95rem;">
+                Jalaica Jaramillo <span>★</span> Biomedical &amp; Analytical Sciences
+            </div>
+            <div style="font-family: 'Press Start 2P', monospace; font-size: 0.55rem; color: #fbcfe8;">
+                Built with precision &middot; Miami, FL
+            </div>
+            <a href="#home" class="pixel-btn pixel-btn-secondary" style="font-size: 0.7rem; padding: 0.4rem 0.85rem;">
+                Back to Top ↑
+            </a>
         </div>
     </footer>
 </body>

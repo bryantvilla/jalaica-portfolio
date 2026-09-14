@@ -1,0 +1,127 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48" width="192" height="192" shape-rendering="crispEdges">
+  <!-- Stardew Valley Style Pixel Art Portrait: Jalaica Jaramillo (Biomedical & Analytical Sciences Engineer) -->
+  <defs>
+    <style>
+      .bg { fill: #fde8ee; }
+      .frame-dark { fill: #4a2135; }
+      .frame-med { fill: #8a4163; }
+      .frame-light { fill: #d87d9f; }
+      .frame-gold { fill: #e5a954; }
+      .hair-dark { fill: #2c191d; }
+      .hair { fill: #482830; }
+      .hair-light { fill: #663b46; }
+      .skin-shadow { fill: #d9997d; }
+      .skin { fill: #f3bfa6; }
+      .skin-light { fill: #fce1d2; }
+      .blush { fill: #e88698; }
+      .eye-white { fill: #ffffff; }
+      .eye { fill: #2c1a1f; }
+      .eye-sparkle { fill: #fcebf0; }
+      .lip { fill: #d66478; }
+      .ribbon-dark { fill: #9e2548; }
+      .ribbon { fill: #e04b73; }
+      .ribbon-light { fill: #ffa1b9; }
+      .coat-shadow { fill: #cbd5e1; }
+      .coat { fill: #f8fafc; }
+      .coat-trim { fill: #e2e8f0; }
+      .shirt { fill: #f472b6; }
+      .steth { fill: #38bdf8; }
+      .earring { fill: #facc15; }
+    </style>
+  </defs>
+
+  <!-- Background inside frame -->
+  <rect x="3" y="3" width="42" height="42" class="bg"/>
+
+  <!-- Pixel Hair Backing -->
+  <rect x="14" y="8" width="20" height="8" class="hair-dark"/>
+  <rect x="11" y="12" width="26" height="14" class="hair-dark"/>
+  <rect x="10" y="18" width="28" height="14" class="hair-dark"/>
+  <rect x="9" y="24" width="7" height="12" class="hair"/>
+  <rect x="32" y="24" width="7" height="12" class="hair"/>
+
+  <!-- Neck & Shoulders -->
+  <rect x="21" y="28" width="6" height="5" class="skin-shadow"/>
+  <rect x="22" y="29" width="4" height="4" class="skin"/>
+
+  <!-- Lab Coat & Pink Shirt -->
+  <rect x="16" y="33" width="16" height="12" class="shirt"/>
+  <rect x="12" y="34" width="7" height="11" class="coat"/>
+  <rect x="29" y="34" width="7" height="11" class="coat"/>
+  <rect x="10" y="37" width="4" height="8" class="coat"/>
+  <rect x="34" y="37" width="4" height="8" class="coat"/>
+  <rect x="17" y="34" width="2" height="11" class="coat-shadow"/>
+  <rect x="29" y="34" width="2" height="11" class="coat-shadow"/>
+  <rect x="22" y="33" width="4" height="3" class="skin"/>
+  <!-- Lapels -->
+  <polygon points="17,34 21,39 19,45 15,36" class="coat"/>
+  <polygon points="31,34 27,39 29,45 33,36" class="coat"/>
+  <!-- ID Badge / Stethoscope detail -->
+  <rect x="14" y="37" width="3" height="4" class="frame-gold"/>
+  <rect x="15" y="38" width="1" height="2" class="shirt"/>
+
+  <!-- Face Shape -->
+  <rect x="15" y="15" width="18" height="14" class="skin"/>
+  <rect x="17" y="29" width="14" height="3" class="skin"/>
+  <rect x="19" y="32" width="10" height="2" class="skin-shadow"/>
+  <rect x="20" y="31" width="8" height="2" class="skin"/>
+
+  <!-- Cheeks / Blush -->
+  <rect x="16" y="24" width="3" height="2" class="blush"/>
+  <rect x="29" y="24" width="3" height="2" class="blush"/>
+
+  <!-- Eyes (Anime/Stardew warm detailed pixel eyes) -->
+  <!-- Left Eye -->
+  <rect x="17" y="20" width="4" height="4" class="eye-white"/>
+  <rect x="18" y="20" width="3" height="4" class="eye"/>
+  <rect x="18" y="20" width="1" height="2" class="eye-sparkle"/>
+  <rect x="16" y="19" width="5" height="1" class="hair-dark"/>
+  <!-- Right Eye -->
+  <rect x="27" y="20" width="4" height="4" class="eye-white"/>
+  <rect x="27" y="20" width="3" height="4" class="eye"/>
+  <rect x="27" y="20" width="1" height="2" class="eye-sparkle"/>
+  <rect x="27" y="19" width="5" height="1" class="hair-dark"/>
+
+  <!-- Cute Nose & Smile -->
+  <rect x="23" y="24" width="2" height="1" class="skin-shadow"/>
+  <rect x="22" y="27" width="4" height="1" class="lip"/>
+  <rect x="23" y="28" width="2" height="1" class="lip"/>
+
+  <!-- Hair Bangs & Layers -->
+  <rect x="14" y="10" width="20" height="5" class="hair"/>
+  <rect x="13" y="12" width="22" height="4" class="hair"/>
+  <rect x="12" y="15" width="4" height="7" class="hair"/>
+  <rect x="32" y="15" width="4" height="7" class="hair"/>
+  <rect x="16" y="14" width="6" height="4" class="hair"/>
+  <rect x="22" y="13" width="7" height="3" class="hair-light"/>
+  <rect x="26" y="14" width="6" height="4" class="hair"/>
+
+  <!-- Pink Flower / Hair Ribbon (Cute signature accessory) -->
+  <rect x="31" y="11" width="5" height="5" class="ribbon"/>
+  <rect x="32" y="10" width="3" height="1" class="ribbon-light"/>
+  <rect x="32" y="16" width="3" height="1" class="ribbon-dark"/>
+  <rect x="30" y="12" width="1" height="3" class="ribbon-dark"/>
+  <rect x="36" y="12" width="1" height="3" class="ribbon-light"/>
+  <rect x="33" y="13" width="1" height="1" class="frame-gold"/>
+
+  <!-- Golden Earrings -->
+  <rect x="13" y="24" width="1" height="2" class="earring"/>
+  <rect x="34" y="24" width="1" height="2" class="earring"/>
+
+  <!-- Stardew Valley Ornate Dialogue Box Border -->
+  <!-- Dark outer bevel -->
+  <rect x="0" y="0" width="48" height="2" class="frame-dark"/>
+  <rect x="0" y="46" width="48" height="2" class="frame-dark"/>
+  <rect x="0" y="0" width="2" height="48" class="frame-dark"/>
+  <rect x="46" y="0" width="2" height="48" class="frame-dark"/>
+  <!-- Medium bevel -->
+  <rect x="2" y="2" width="44" height="1" class="frame-light"/>
+  <rect x="2" y="2" width="1" height="44" class="frame-light"/>
+  <rect x="2" y="45" width="44" height="1" class="frame-med"/>
+  <rect x="45" y="2" width="1" height="44" class="frame-med"/>
+  <!-- Gold corner studs -->
+  <rect x="2" y="2" width="3" height="3" class="frame-gold"/>
+  <rect x="43" y="2" width="3" height="3" class="frame-gold"/>
+  <rect x="2" y="43" width="3" height="3" class="frame-gold"/>
+  <rect x="43" y="43" width="3" height="3" class="frame-gold"/>
+</svg>
