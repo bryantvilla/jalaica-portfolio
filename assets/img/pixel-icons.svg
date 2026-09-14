@@ -349,5 +349,44 @@
       <rect x="10" y="6" width="2" height="4" fill="#fde047"/>
       <rect x="12" y="7" width="1" height="2" fill="#ffffff"/>
     </symbol>
+
+    <!-- 21. Philippine Tropical Hibiscus (Gumamela) -->
+    <symbol id="px-hibiscus" viewBox="0 0 16 16">
+      <!-- Emerald Leaves -->
+      <rect x="2" y="2" width="3" height="3" fill="#15803d"/>
+      <rect x="3" y="1" width="2" height="2" fill="#22c55e"/>
+      <rect x="11" y="11" width="3" height="3" fill="#15803d"/>
+      <rect x="12" y="12" width="2" height="2" fill="#22c55e"/>
+      <!-- 5 Crimson & Coral Petals -->
+      <rect x="6" y="2" width="4" height="4" fill="#f43f5e"/>
+      <rect x="7" y="1" width="2" height="2" fill="#fb7185"/>
+      <rect x="2" y="6" width="4" height="4" fill="#e11d48"/>
+      <rect x="1" y="7" width="2" height="2" fill="#f43f5e"/>
+      <rect x="10" y="6" width="4" height="4" fill="#f43f5e"/>
+      <rect x="13" y="7" width="2" height="2" fill="#fb7185"/>
+      <rect x="4" y="10" width="4" height="4" fill="#be123c"/>
+      <rect x="8" y="10" width="4" height="4" fill="#be123c"/>
+      <!-- Center Overlap & Throat -->
+      <rect x="5" y="5" width="6" height="6" fill="#e11d48"/>
+      <rect x="7" y="7" width="2" height="2" fill="#881337"/>
+      <!-- Golden Stamen & Pollen Tip -->
+      <rect x="8" y="6" width="1" height="1" fill="#facc15"/>
+      <rect x="9" y="5" width="1" height="1" fill="#facc15"/>
+      <rect x="10" y="4" width="1" height="1" fill="#facc15"/>
+      <rect x="11" y="3" width="2" height="2" fill="#fef08a"/>
+      <rect x="12" y="3" width="1" height="1" fill="#ffffff"/>
+    </symbol>
+
+    <!-- 22. Cebu Golden Carabao Mango -->
+    <symbol id="px-mango" viewBox="0 0 16 16">
+      <rect x="7" y="1" width="2" height="3" fill="#5c2d16"/>
+      <rect x="9" y="1" width="3" height="2" fill="#15803d"/>
+      <rect x="10" y="0" width="3" height="2" fill="#22c55e"/>
+      <path d="M6 3h4v2h2v2h2v4h-2v2h-2v1H6v-1H4v-2H3V7h1V5h2V3z" fill="#b45309"/>
+      <rect x="5" y="4" width="6" height="7" fill="#f59e0b"/>
+      <rect x="4" y="6" width="7" height="4" fill="#fbbf24"/>
+      <rect x="5" y="5" width="4" height="4" fill="#fde047"/>
+      <rect x="6" y="6" width="2" height="2" fill="#ffffff"/>
+    </symbol>
   </defs>
 </svg>

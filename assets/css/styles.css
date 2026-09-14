@@ -1169,6 +1169,25 @@ textarea.form-input {
   animation: fall 12s linear infinite;
 }
 
+.petal.petal-hibiscus {
+  background: radial-gradient(circle at 30% 30%, #fb7185 0%, #e11d48 70%, #9f1239 100%);
+  border-radius: 14px 4px 14px 4px;
+  opacity: 0.75;
+}
+
+.petal.petal-sampaguita {
+  background: radial-gradient(circle at 40% 40%, #ffffff 50%, #fef08a 100%);
+  border-radius: 12px 12px 1px 12px;
+  box-shadow: 0 0 4px rgba(254, 240, 138, 0.4);
+  opacity: 0.8;
+}
+
+.petal.petal-sakura {
+  background: #ffb7cb;
+  border-radius: 12px 1px 12px 1px;
+  opacity: 0.65;
+}
+
 @keyframes fall {
   0% {
     transform: translateY(-20px) rotate(0deg) translateX(0);

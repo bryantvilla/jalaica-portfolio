@@ -28,14 +28,16 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     }
 
-    // 2. Floating Cherry Blossom Petals
+    // 2. Floating Tropical Petals (Hibiscus, Sampaguita, & Sakura)
     const petalsContainer = document.getElementById('petals');
     if (petalsContainer && !window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
-        const petalCount = 16;
+        const petalCount = 18;
+        const petalTypes = ['petal-hibiscus', 'petal-sampaguita', 'petal-sakura'];
         for (let i = 0; i < petalCount; i++) {
             const petal = document.createElement('div');
-            petal.className = 'petal';
-            const size = Math.random() * 8 + 6;
+            const type = petalTypes[i % petalTypes.length];
+            petal.className = `petal ${type}`;
+            const size = Math.random() * 8 + 7;
             petal.style.width = `${size}px`;
             petal.style.height = `${size * 1.3}px`;
             petal.style.left = `${Math.random() * 100}%`;
