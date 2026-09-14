@@ -17,9 +17,74 @@
     <!-- Floating ambient tropical petals -->
     <div class="petals-container" aria-hidden="true" id="petals"></div>
 
-    <!-- Subtle Background Watermark (Isolated strictly to canvas background) -->
-    <div class="bg-backdrop-art" aria-hidden="true">
-        <svg class="bg-sunburst" viewBox="0 0 160 160" xmlns="http://www.w3.org/2000/svg" shape-rendering="crispEdges">
+    <!-- Subtle Background Cebuano Scenery & Watermarks (Strictly isolated to page backdrop) -->
+    <div class="site-bg-scenery" aria-hidden="true">
+        <!-- 1. Upper Sky Drifting Clouds -->
+        <div class="bg-cloud bg-cloud-1"></div>
+        <div class="bg-cloud bg-cloud-2"></div>
+        <div class="bg-cloud bg-cloud-3"></div>
+
+        <!-- 2. Scattered Background Landmarks & Plumerias (Non-highlightable, ambient backdrop) -->
+        <!-- Hero Section Margin Scenery -->
+        <div class="bg-scenic-item bg-scenic-left scenic-sirao float-subtle-1">
+            <img src="assets/img/cebu-sirao-windmill.svg" alt="" width="72" height="91" loading="lazy">
+        </div>
+        <div class="bg-scenic-item bg-scenic-right scenic-taoist float-subtle-2">
+            <img src="assets/img/cebu-taoist-temple.svg" alt="" width="70" height="90" loading="lazy">
+        </div>
+        <div class="bg-scenic-item bg-scenic-left scenic-plum-1 float-subtle-3">
+            <img src="assets/img/cebu-plumeria-cluster.svg" alt="" width="82" height="65" loading="lazy">
+        </div>
+
+        <!-- Experience Section Margin Scenery -->
+        <div class="bg-scenic-item bg-scenic-left scenic-magellan float-subtle-4">
+            <img src="assets/img/cebu-magellans-cross.svg" alt="" width="72" height="86" loading="lazy">
+        </div>
+        <div class="bg-scenic-item bg-scenic-right scenic-plum-2 float-subtle-1">
+            <img src="assets/img/cebu-plumeria.svg" alt="" width="58" height="58" loading="lazy">
+        </div>
+        <div class="bg-scenic-item bg-scenic-right scenic-fort-san-pedro float-subtle-3">
+            <img src="assets/img/cebu-fort-san-pedro.svg" alt="" width="72" height="79" loading="lazy">
+        </div>
+
+        <!-- Osmeña Peak Jagged Karst Hills (Blended softly behind Experience) -->
+        <div class="bg-osmena-ridge">
+            <img src="assets/img/cebu-osmena-peaks.svg" alt="" width="1200" height="260" loading="lazy">
+        </div>
+
+        <!-- Skills Section Margin Scenery -->
+        <div class="bg-scenic-item bg-scenic-left scenic-temple-leah float-subtle-2">
+            <img src="assets/img/cebu-temple-of-leah.svg" alt="" width="74" height="67" loading="lazy">
+        </div>
+        <div class="bg-scenic-item bg-scenic-right scenic-plum-3 float-subtle-4">
+            <img src="assets/img/cebu-plumeria-cluster.svg" alt="" width="82" height="65" loading="lazy">
+        </div>
+        <div class="bg-scenic-item bg-scenic-right scenic-baluarte float-subtle-1">
+            <img src="assets/img/cebu-baluarte.svg" alt="" width="70" height="106" loading="lazy">
+        </div>
+
+        <!-- Projects Section Margin Scenery -->
+        <div class="bg-scenic-item bg-scenic-left scenic-basilica float-subtle-3">
+            <img src="assets/img/cebu-basilica-tower.svg" alt="" width="68" height="104" loading="lazy">
+        </div>
+        <div class="bg-scenic-item bg-scenic-right scenic-lapulapu float-subtle-2">
+            <img src="assets/img/cebu-lapulapu.svg" alt="" width="64" height="98" loading="lazy">
+        </div>
+        <div class="bg-scenic-item bg-scenic-left scenic-plum-4 float-subtle-1">
+            <img src="assets/img/cebu-plumeria.svg" alt="" width="58" height="58" loading="lazy">
+        </div>
+
+        <!-- About Section Margin Scenery -->
+        <div class="bg-scenic-item bg-scenic-left scenic-plum-5 float-subtle-4">
+            <img src="assets/img/cebu-plumeria-cluster.svg" alt="" width="82" height="65" loading="lazy">
+        </div>
+        <div class="bg-scenic-item bg-scenic-right scenic-plum-6 float-subtle-3">
+            <img src="assets/img/cebu-plumeria-cluster.svg" alt="" width="82" height="65" loading="lazy">
+        </div>
+
+        <!-- 5. Top Celestial Sunburst Watermark -->
+        <div class="bg-backdrop-art">
+            <svg class="bg-sunburst" viewBox="0 0 160 160" xmlns="http://www.w3.org/2000/svg" shape-rendering="crispEdges">
             <!-- Center Disc -->
             <rect x="70" y="70" width="20" height="20" fill="currentColor" />
             <rect x="66" y="74" width="28" height="12" fill="currentColor" />
@@ -62,6 +127,7 @@
             <rect x="130" y="24" width="6" height="6" fill="currentColor" />
             <rect x="77" y="136" width="6" height="6" fill="currentColor" />
         </svg>
+        </div>
     </div>
 
     <!-- Pixel Art Icon Symbol Sprite (Full-Color Stardew Valley Palette) -->
@@ -1090,12 +1156,14 @@
                         </div>
                     </div>
 
-                    <div style="margin-bottom: 1.5rem; display: flex; gap: 1.5rem; flex-wrap: wrap;">
-                        <a href="mailto:jalaicajaramillo@gmail.com" class="choice-option" style="padding: 0.4rem 0.85rem;">
-                            <svg class="pixel-icon"><use href="#px-mail"></use></svg> jalaicajaramillo@gmail.com
+                    <div class="contact-direct-links">
+                        <a href="mailto:jalaicajaramillo@gmail.com" class="choice-option contact-choice-link">
+                            <svg class="pixel-icon" style="flex-shrink: 0;"><use href="#px-mail"></use></svg>
+                            <span class="contact-email-text">jalaicajaramillo@gmail.com</span>
                         </a>
-                        <a href="tel:+13059751318" class="choice-option" style="padding: 0.4rem 0.85rem;">
-                            <svg class="pixel-icon"><use href="#px-phone"></use></svg> (305) 975-1318
+                        <a href="tel:+13059751318" class="choice-option contact-choice-link">
+                            <svg class="pixel-icon" style="flex-shrink: 0;"><use href="#px-phone"></use></svg>
+                            <span>(305) 975-1318</span>
                         </a>
                     </div>
 
@@ -1136,18 +1204,29 @@
         </section>
     </main>
 
-    <!-- FOOTER -->
-    <footer style="background: var(--wood-dark); color: #ffffff; border-top: 4px solid var(--wood-mid); padding: 2rem 0; margin-top: 3rem; text-align: center;">
-        <div class="container" style="display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 1rem;">
-            <div style="font-family: 'Silkscreen', monospace; font-size: 0.95rem;">
-                Jalaica Jaramillo &middot; Biomedical &amp; Analytical Sciences
+    <!-- CEBU BEACH FOOTER SCENIC -->
+    <footer class="cebu-beach-footer" id="footer">
+        <!-- Panoramic Pixel Art Cebu Beach Scene (Bantayan & Mactan Shoreline) -->
+        <div class="beach-panorama-wrapper" aria-hidden="true">
+            <img src="assets/img/cebu-beach-footer.svg" alt="Pixel Art Cebu Beach Scene with Leaning Coconut Palms and Visayan Outrigger Bangka Boat" class="cebu-beach-img" width="1000" height="220" loading="lazy">
+            <div class="beach-caption-tag" title="Central Visayas Coastline, Cebu">
+                <span>Cebu Shoreline &bull; Visayas</span>
             </div>
-            <div style="font-family: 'Press Start 2P', monospace; font-size: 0.55rem; color: #fbcfe8;">
-                Built with precision &middot; Miami, FL
+        </div>
+
+        <!-- Footer Navigation / Credits Bar -->
+        <div class="footer-bar">
+            <div class="container footer-bar-inner">
+                <div class="footer-brand">
+                    Jalaica Jaramillo &middot; Biomedical &amp; Analytical Sciences
+                </div>
+                <div class="footer-note">
+                    Built with precision &middot; Miami, FL
+                </div>
+                <a href="#home" class="pixel-btn pixel-btn-secondary footer-top-btn">
+                    Back to Top ↑
+                </a>
             </div>
-            <a href="#home" class="pixel-btn pixel-btn-secondary" style="font-size: 0.7rem; padding: 0.4rem 0.85rem;">
-                Back to Top ↑
-            </a>
         </div>
     </footer>
 </body>

@@ -28,21 +28,28 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     }
 
-    // 2. Floating Background Petals (Tropical Hibiscus, Sampaguita, & Golden Sun Drift)
+    // 2. Floating Ambient Tropical Petals (Kalachuchi, Hibiscus, Sampaguita, & Golden Sun Drift)
     const petalsContainer = document.getElementById('petals');
     if (petalsContainer && !window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
-        const petalCount = 18;
-        const petalTypes = ['petal-hibiscus', 'petal-sampaguita', 'petal-gold-drift', 'petal-sakura'];
+        const petalCount = 20;
+        const petalTypes = [
+            'petal-plumeria',
+            'petal-plumeria',
+            'petal-hibiscus',
+            'petal-sampaguita',
+            'petal-gold-drift',
+            'petal-sakura'
+        ];
         for (let i = 0; i < petalCount; i++) {
             const petal = document.createElement('div');
             const type = petalTypes[i % petalTypes.length];
             petal.className = `petal ${type}`;
-            const size = Math.random() * 8 + 7;
+            const size = Math.random() * 8 + 8;
             petal.style.width = `${size}px`;
-            petal.style.height = `${size * 1.3}px`;
+            petal.style.height = `${size * 1.35}px`;
             petal.style.left = `${Math.random() * 100}%`;
-            petal.style.animationDelay = `${Math.random() * 10}s`;
-            petal.style.animationDuration = `${Math.random() * 8 + 8}s`;
+            petal.style.animationDelay = `${Math.random() * 12}s`;
+            petal.style.animationDuration = `${Math.random() * 8 + 9}s`;
             petalsContainer.appendChild(petal);
         }
     }
@@ -72,4 +79,38 @@ document.addEventListener('DOMContentLoaded', () => {
 
     window.addEventListener('scroll', updateNavHighlight, { passive: true });
     updateNavHighlight();
+
+    // 4. Smart Auto-Hide HUD Navigation on Scroll
+    // Smoothly scrolls away when scrolling down, reveals when scrolling up or at top
+    const hud = document.getElementById('header');
+    if (hud) {
+        let lastScrollY = window.scrollY;
+        let ticking = false;
+
+        function handleHUDScroll() {
+            const currentScrollY = window.scrollY;
+            const scrollDelta = currentScrollY - lastScrollY;
+
+            if (currentScrollY <= 30) {
+                // At top of page: always reveal
+                hud.classList.remove('hud-hidden');
+            } else if (scrollDelta > 8 && currentScrollY > 60) {
+                // Scrolling down: hide HUD
+                hud.classList.add('hud-hidden');
+            } else if (scrollDelta < -8) {
+                // Scrolling up: reveal HUD
+                hud.classList.remove('hud-hidden');
+            }
+
+            lastScrollY = currentScrollY;
+            ticking = false;
+        }
+
+        window.addEventListener('scroll', () => {
+            if (!ticking) {
+                window.requestAnimationFrame(handleHUDScroll);
+                ticking = true;
+            }
+        }, { passive: true });
+    }
 });

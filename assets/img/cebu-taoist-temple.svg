@@ -1,0 +1,62 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 76 98" width="76" height="98" shape-rendering="crispEdges">
+  <!-- Golden Pagoda Finial Spire -->
+  <rect x="37" y="2" width="2" height="10" fill="#f59e0b"/>
+  <rect x="35" y="5" width="6" height="4" fill="#fbbf24"/>
+  <rect x="36" y="9" width="4" height="3" fill="#f59e0b"/>
+
+  <!-- Tier 1 Pagoda Roof (Curved Chinese Jade Green tiles with upturned eaves) -->
+  <rect x="32" y="12" width="12" height="3" fill="#059669"/>
+  <rect x="28" y="15" width="20" height="3" fill="#10b981"/>
+  <rect x="24" y="18" width="28" height="3" fill="#059669"/>
+  <!-- Upturned roof corners with golden accents -->
+  <rect x="20" y="17" width="5" height="3" fill="#fbbf24"/>
+  <rect x="51" y="17" width="5" height="3" fill="#fbbf24"/>
+
+  <!-- Top Pavilion Chamber with Red Pillars & Balustrade -->
+  <rect x="28" y="21" width="20" height="10" fill="#fee2e2"/>
+  <rect x="29" y="21" width="3" height="10" fill="#dc2626"/>
+  <rect x="44" y="21" width="3" height="10" fill="#dc2626"/>
+  <rect x="35" y="23" width="6" height="8" fill="#451a03"/>
+  <!-- Red hanging lanterns -->
+  <rect x="22" y="21" width="3" height="4" fill="#ef4444"/>
+  <rect x="51" y="21" width="3" height="4" fill="#ef4444"/>
+
+  <!-- Tier 2 Pagoda Roof (Middle Wider Jade Green Canopy) -->
+  <rect x="22" y="31" width="32" height="3" fill="#059669"/>
+  <rect x="16" y="34" width="44" height="4" fill="#10b981"/>
+  <rect x="12" y="38" width="52" height="3" fill="#047857"/>
+  <!-- Flared eaves -->
+  <rect x="8" y="36" width="5" height="3" fill="#fbbf24"/>
+  <rect x="63" y="36" width="5" height="3" fill="#fbbf24"/>
+
+  <!-- Middle Pavilion Chamber with intricate brackets -->
+  <rect x="20" y="41" width="36" height="14" fill="#fef2f2"/>
+  <rect x="21" y="41" width="4" height="14" fill="#dc2626"/>
+  <rect x="36" y="41" width="4" height="14" fill="#dc2626"/>
+  <rect x="51" y="41" width="4" height="14" fill="#dc2626"/>
+  <!-- Golden Calligraphy Plaque -->
+  <rect x="33" y="43" width="10" height="5" fill="#fbbf24"/>
+  <rect x="35" y="44" width="6" height="3" fill="#dc2626"/>
+
+  <!-- Tier 3 Grand Lower Roof -->
+  <rect x="10" y="55" width="56" height="4" fill="#059669"/>
+  <rect x="4" y="59" width="68" height="4" fill="#10b981"/>
+  <rect x="2" y="63" width="72" height="4" fill="#047857"/>
+  <!-- Flared eaves with gold dragons -->
+  <rect x="0" y="60" width="4" height="4" fill="#f59e0b"/>
+  <rect x="72" y="60" width="4" height="4" fill="#f59e0b"/>
+
+  <!-- Temple Base Terrace & Steps -->
+  <rect x="10" y="67" width="56" height="12" fill="#fed7aa"/>
+  <rect x="14" y="69" width="6" height="10" fill="#dc2626"/>
+  <rect x="56" y="69" width="6" height="10" fill="#dc2626"/>
+  <!-- Central Grand Arched Red Doorway -->
+  <rect x="31" y="69" width="14" height="10" fill="#7f1d1d"/>
+  <rect x="34" y="71" width="8" height="8" fill="#451a03"/>
+
+  <!-- 81 Winding Steps of Beverly Hills Foundation -->
+  <rect x="6" y="79" width="64" height="5" fill="#ffedd5"/>
+  <rect x="4" y="84" width="68" height="5" fill="#fed7aa"/>
+  <rect x="2" y="89" width="72" height="5" fill="#fdba74"/>
+  <rect x="0" y="94" width="76" height="4" fill="#ea580c"/>
+</svg>
